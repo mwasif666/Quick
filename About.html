@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Font Awesome 6 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <!-- FontAwesome Pro -->
+    <link
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://db.onlinewebfonts.com/c/8ca6bf77985692e1319f58705d4a14c7?family=Font+Awesome+6+Pro+Solid"
+      rel="stylesheet"
+    />
+    <link
+      href="https://db.onlinewebfonts.com/c/b6803a3242e9eb3bbdf920fac17c6ac9?family=Font+Awesome+6+Pro+Regular"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome 4 -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Calendly Api  -->
+    <link
+      href="https://assets.calendly.com/assets/external/widget.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://assets.calendly.com/assets/external/widget.js"
+      type="text/javascript"
+    ></script>
+
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <!-- Flta icon -->
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div class="spinner"></div>
+    </div>
+    <!-- Topbar Start -->
+    <section class="contact_nav">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="contact_phone">
+                <i class="fa-solid fa-phone-flip"></i>
+                <p>Have Questions? (866) 991-3924</p>
+              </div>
+            </div>
+            <div class="col">
+              <a
+                href="./Admin/Home.html"
+                style="text-decoration: none; color: #6b6a75"
+              >
+                <div class="contact_user">
+                  <i class="fa-solid fa-user"></i>
+                  <p>Student Portal</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Topbar End -->
+
+    <section class="background_about">
+      <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
+          <div class="container">
+            <a href="index.html" class="navbar-brand p-0">
+              <nav id="navbar">
+                <div class="logo">
+                  <img
+                    id="default-logo"
+                    src="./Images/Header/quickstart-logo-white-1.webp"
+                    alt="Default Logo"
+                  />
+                  <img
+                    id="scroll-logo"
+                    src="./Images/Header/quickstart-logo-new-theme.png"
+                    alt="Scroll Logo"
+                  />
+                </div>
+                <!-- Other navbar items (e.g., links) -->
+              </nav>
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarCollapse"
+            >
+              <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <div class="navbar-nav ms-auto py-0">
+                <div class="nav-item dropdown">
+                  <ul>
+                    <li>
+                      <a
+                        href="#"
+                        class="nav-link dropdown-toggle"
+                        data-bs-toggle="dropdown"
+                        >PROGRAMMS</a
+                      >
+                      <div class="dropdown-menuu">
+                        <ul>
+                          <li>
+                            <a
+                              >IT Bootcamps <i class="fas fa-caret-right"></i
+                            ></a>
+                            <div class="dropdown-menu-1">
+                              <ul>
+                                <li><a href="#">Cybersecurity</a></li>
+                                <li><a href="#">Cloud Engineering</a></li>
+                                <li><a href="#">Software Engineering</a></li>
+                                <li>
+                                  <a href="#">Data Science & Analytics</a>
+                                </li>
+                                <li><a href="#">AI/Machine Learning</a></li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li>
+                            <a href="#">Workforce Development</a>
+                          </li>
+                          <li>
+                            <a href="#"
+                              >Military <i class="fas fa-caret-right"></i
+                            ></a>
+                            <div class="dropdown-menu-1">
+                              <ul>
+                                <li><a href="#">Army Funded Training</a></li>
+                                <li>
+                                  <a href="#">Air Force Funded Training</a>
+                                </li>
+                                <li><a href="#">MyCAA Funded Training</a></li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li>
+                            <a href="#">Finance & Funding</a>
+                          </li>
+                          <li>
+                            <a href="#">Career Services</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <a href="./Certificate.html" class="nav-item nav-link"
+                  >CERTIFICATES</a
+                >
+                <div class="nav-item dropdown">
+                  <a
+                    href="#"
+                    class="nav-link dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    >COURSES</a
+                  >
+                  <div class="dropdown-menu m-0">
+                    <a href="./GTR_Course.html" class="dropdown-item"
+                      >GTR Courses</a
+                    >
+                  </div>
+                </div>
+                <div class="nav-item dropdown">
+                  <a
+                    href="#"
+                    class="nav-link dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    >ENTERPRISE & GOVERNMENT</a
+                  >
+                  <div class="dropdown-menu m-0">
+                    <a href="./Corporate.html" class="dropdown-item"
+                      >Corporate & Bussines</a
+                    >
+                    <a href="./State.html" class="dropdown-item"
+                      >State & Local Government</a
+                    >
+                    <a href="./Federal.html" class="dropdown-item"
+                      >Federal & DoD</a
+                    >
+                    <a href="./Master.html" class="dropdown-item"
+                      >Master Subscription</a
+                    >
+                  </div>
+                </div>
+
+                <a href="#" class="nav-item nav-link">ARTICLE</a>
+              </div>
+              <button
+                type="button"
+                class="btn btn-search ms-3"
+                data-bs-toggle="modal"
+                data-bs-target="#searchModal"
+              >
+                <i class="fa fa-search"></i>
+              </button>
+              <button
+                type="button"
+                class="btn btn-search ms-3"
+                data-bs-toggle="modal"
+                data-bs-target="#searchModal"
+              >
+                <i class="fa-solid fa-phone"></i>
+              </button>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="container-fluid certificate-content">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h1>About Us</h1>
+              <nav
+                aria-label="breadcrumb"
+                class="d-flex justify-content-center"
+              >
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item">
+                    <a href="./index.html"><i class="fas fa-home"></i> HOME</a>
+                  </li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    ABOUT US
+                  </li>
+                </ol>
+              </nav>
+              <p>
+                QuickStart offers IT training for emerging and established
+                professionals in the field. For 35 years, QuickStart has
+                partnered with IT experts and hiring managers to develop
+                industry-aligned certificate courses and bootcamp training
+                programs. Through online learning tailored to the latest
+                developments in AWS (Amazon Web Services), Cisco, CompTIA,
+                Microsoft Azure, and more, QuickStart empowers entry-level and
+                experienced IT professionals with leading-edge skills for the
+                workforce.
+              </p>
+              <p id="text">
+                To best prepare students for professional success, QuickStart
+                offers personalized learning plans and career support services,
+                including resume building, coaching, and job placement. Students
+                emerge ready to add value to their organizations, improve their
+                earning power, and achieve their professional goals. Follow
+                QuickStart on LinkedIn, Twitter, Instagram, and Facebook.
+              </p>
+
+              <!-- CTAs -->
+              <div class="buttonsWrapper py-5">
+                <a
+                  type="btn"
+                  class="btn btn btn-primary btn-hover-btn btn-expert"
+                  href="#"
+                  id="read_more"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop"
+                  ><span>Read More</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-cards">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row card-gap">
+            <div class="card">
+              <div class="card-img">
+                <img
+                  src="./Images/card-img2.webp"
+                  class="card-img-top"
+                  alt="..."
+                />
+
+                <h1><span class="counter" data-count="170">0 </span>+</h1>
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title p-4">Virtual Instructor-Led Courses</h5>
+                <p class="card-text">
+                  Covering certifications and learning designed for your
+                  organization
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <img
+                  src="./Images/card-img1.webp"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <h1><span class="counter" data-count="900">0 </span>+</h1>
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title p-4">On-Demand Courses</h5>
+                <p class="card-text">To advance your teams skillsets</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <img
+                  src="./Images/card-img3.webp"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <h1><span class="counter" data-count="147">0 </span>+</h1>
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title p-4">Years In Learning</h5>
+                <p class="card-text">
+                  Established as a leader in the online IT training industry
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Workflow -->
+    <section class="Workforce_programs pt-5">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7 Workforce_programs-col1">
+              <img
+                src="./Images/Workflow/dotted-bg.png"
+                alt=""
+                class="img-1-workflow"
+              />
+              <div class="row">
+                <div class="col-md-10 workflow_content py-4">
+                  <h4 style="font-size: 36px">
+                    Cognitive
+                    <span class="text-primary"> Learning</span> Platform
+                  </h4>
+                  <h6 class="text-black" style="font-weight: 700">
+                    With over 35 years of IT training experience and 20 years of
+                    research, we developed an AI-enabled cloud-based platform –
+                    CLIPP.
+                  </h6>
+                  <p>
+                    The Cognitive Learning & IT Project Performance (CLIPP)
+                    platform enhances the course process for students by
+                    personalizing their learning plans to meet their goals. This
+                    tool allows students to run analytics to rank their
+                    competencies against personal goals, generate “bite-sized”
+                    learning based on user research, schedule coaching sessions,
+                    and more.
+                  </p>
+                  <div class="main-counter-about d-flex">
+                    <div class="data-counter-about">
+                      <h1><span class="counter" data-count="270">0 </span>+</h1>
+                      <h6>
+                        On-Demand <br />
+                        Courses
+                      </h6>
+                    </div>
+                    <div class="data-counter-about">
+                      <h1><span class="counter" data-count="270">0 </span>+</h1>
+                      <h6>On-Demand Courses</h6>
+                    </div>
+                    <div class="data-counter-img">
+                      <img src="./Images/About/clipp-logo.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 Workforce_programs-about"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content" style="background: rgba(9, 30, 62, 0.7)">
+          <div class="modal-header border-0">
+            <button
+              type="button"
+              class="btn bg-white btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div
+            class="modal-body d-flex align-items-center justify-content-center"
+          >
+            <div class="input-group" style="max-width: 600px">
+              <input
+                type="text"
+                class="form-control bg-transparent border-primary p-3"
+                placeholder="Type search keyword"
+              />
+              <button class="btn btn-primary px-4">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slick Slider -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="./slick-1.8.1/slick/slick-theme.css" />
+
+    <section class="support">
+      <div class="container-fluid p-0">
+        <div class="row">
+          <div class="col support-col-1">
+            <img src="./Images/About/student-support-2.webp" alt="" />
+          </div>
+          <div class="col support-col-2">
+            <div class="support-col-content w-75">
+              <h1>Student and Alumni Support</h1>
+              <h6 class="text-dark">
+                Our training process carefully guides students through our
+                courses to completion.
+              </h6>
+              <p>
+                Our instructors and mentors are readily available to assist with
+                any questions or support that students may need.
+                <br />
+                <br />
+                At course completion, our career counselors assist students with
+                job placement.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About WorkFLow -->
+
+    <section class="Workforce_programs py-5">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7 Workforce_programs-col1 px-5">
+              <img
+                src="./Images/Workflow/dotted-bg.png"
+                alt=""
+                class="img-1-workflow"
+              />
+              <div class="row">
+                <div class="col-md-10 workflow_content2">
+                  <h1>
+                    Technology Partners and
+                    <span style="color: #0077bc; font-weight: 800">
+                      Products
+                    </span>
+                  </h1>
+                  <p>
+                    QuickStart delivers high-quality IT training through
+                    partnerships with top industry organizations. By
+                    collaborating with our technology partners, we can design IT
+                    training built around the leading-edge tools online learners
+                    need to succeed in the field.
+                  </p>
+                  <div class="data-counter-about">
+                    <h1><span class="counter" data-count="1000">0 </span>+</h1>
+                    <h6>Technologies</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 Workforce_programs-col3">
+              <div class="group-images-main">
+                <div class="div-group-images d-flex gap-3">
+                  <div class="img-group-1">
+                    <img
+                      src="./Images/Workflow/comptia.svg"
+                      alt=""
+                      class="img1"
+                    />
+                  </div>
+                  <div class="img-group-2">
+                    <img
+                      src="./Images/Workflow/microsoft.svg"
+                      alt=""
+                      class="img5"
+                    />
+                  </div>
+                </div>
+                <div class="div-group-images d-flex gap-3">
+                  <div class="img-group-1">
+                    <img
+                      src="./Images/Workflow/ec-council.svg"
+                      alt=""
+                      class="img2"
+                    />
+                  </div>
+                  <div class="img-group-2">
+                    <img
+                      src="./Images/Workflow/cisco-logo-1.png"
+                      alt=""
+                      class="img6"
+                    />
+                  </div>
+                </div>
+                <div class="div-group-images d-flex gap-1">
+                  <div class="img-group-1">
+                    <img
+                      src="./Images/Workflow/kubernetes-horizontal-color.png"
+                      alt=""
+                      class="img3"
+                    />
+                  </div>
+                  <div class="img-group-2">
+                    <img
+                      src="./Images/Workflow/Google_Cloud-removebg-preview.png"
+                      alt=""
+                      class="img7"
+                    />
+                  </div>
+                </div>
+                <div class="div-group-images d-flex gap-3">
+                  <div class="img-group-1">
+                    <img
+                      src="./Images/Workflow/pmp-logo-3.png"
+                      alt=""
+                      class="img4"
+                    />
+                  </div>
+                  <div class="img-group-2">
+                    <img
+                      src="./Images/Workflow/itil-logo-3.png"
+                      alt=""
+                      class="img8"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partners -->
+
+    <section class="uni-partner">
+      <div class="container-fluid p-0">
+        <div class="container">
+          <div class="row text-center d-flex justify-content-center py-5">
+            <div class="col-md-6">
+              <h1 class="pb-3">University Partners</h1>
+              <p class="pb-3">
+                We partner with elite institutions to offer an array of IT
+                bootcamps. To promote lifelong learning alongside our higher
+                education partners, we offer bootcamps in the following areas:
+                AI/ML, Cybersecurity, Cloud Engineering, Data Science &
+                Analytics, Software Engineering, and Web Development.
+              </p>
+              <div class="btn-partner-uni">
+                <a href="#" class="btn btn-primary btn-hover-btn custom-button">
+                  Partner With QuickStart
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="slick-carousel">
+            <img src="./Images/About/chico.png" alt="" />
+            <img src="./Images/About/csup (1).png" alt="" />
+            <img src="./Images/About/scu.png" alt="" />
+            <img src="./Images/About/ttu.png" alt="" />
+            <img src="./Images/About/ucsb.png" alt="" />
+            <img src="./Images/About/utexas.png" alt="" />
+            <img src="./Images/About/wagner.png" alt="" />
+            <img src="./Images/About/neiu.png" alt="" />
+            <img src="./Images/About/hofstra.svg" alt="" />
+            <img src="./Images/About/utk.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- meet Team -->
+    <section class="Workforce_programs py-5 team-about">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 Workforce_programs-col1 px-5">
+              <img
+                src="./Images/Workflow/dotted-bg.png"
+                alt=""
+                class="img-1-workflow"
+              />
+              <div class="row">
+                <div class="col-md-10 workflow_content2">
+                  <h1>
+                    The
+                    <span style="color: #0077bc; font-weight: 800">
+                      QuickStart Team
+                    </span>
+                  </h1>
+                  <p>
+                    Our team is focused on promoting accessible and affordable
+                    IT education.
+                  </p>
+                  <div class="counters-about">
+                    <div class="data-counter-about">
+                      <h1><span class="counter" data-count="90">0 </span>+</h1>
+                      <h6>Motivated Employees</h6>
+                    </div>
+                    <div class="data-counter-about">
+                      <h1><span class="counter" data-count="12">0 </span>+</h1>
+                      <h6>Best-In-Class Instructors</h6>
+                    </div>
+                    <div class="data-counter-about">
+                      <h1><span class="counter" data-count="14">0 </span>+</h1>
+                      <h6>Technologies</h6>
+                    </div>
+                    <div class="data-counter-about">
+                      <h1><span class="counter" data-count="04">0 </span>+</h1>
+                      <h6>Technologies</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row teams-about">
+            <div class="col-md-5">
+              <div class="content-main-1">
+                <div class="content-team d-flex">
+                  <div class="content-team1 pb-4">
+                    <img src="./Images/Career/ali-syed.jpg" alt="" />
+                  </div>
+                  <div class="content-team3">
+                    <h6 style="font-weight: 700">Ali Syed</h6>
+                    <p>Director of Student Services</p>
+                  </div>
+                  <div class="content-team2 ms-auto d-flex gap-4">
+                    <i class="fa-solid fa-envelope"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </div>
+                </div>
+                <div class="content-team d-flex">
+                  <div class="content-team1 pb-4">
+                    <img src="./Images/Career/ali-syed.jpg" alt="" />
+                  </div>
+                  <div class="content-team3">
+                    <h6 style="font-weight: 700">Ali Syed</h6>
+                    <p>Director of Student Services</p>
+                  </div>
+                  <div class="content-team2 ms-auto d-flex gap-4">
+                    <i class="fa-solid fa-envelope"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </div>
+                </div>
+                <div class="content-team d-flex">
+                  <div class="content-team1">
+                    <img src="./Images/Career/ali-syed.jpg" alt="" />
+                  </div>
+                  <div class="content-team3">
+                    <h6 style="font-weight: 700">Ali Syed</h6>
+                    <p>Director of Student Services</p>
+                  </div>
+                  <div class="content-team2 ms-auto d-flex gap-4">
+                    <i class="fa-solid fa-envelope"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 offset-md-1">
+              <div class="content-main-1">
+                <div class="content-team d-flex">
+                  <div class="content-team1 pb-4">
+                    <img src="./Images/Career/ali-syed.jpg" alt="" />
+                  </div>
+                  <div class="content-team3">
+                    <h6 style="font-weight: 700">Ali Syed</h6>
+                    <p>Director of Student Services</p>
+                  </div>
+                  <div class="content-team2 ms-auto d-flex gap-4">
+                    <i class="fa-solid fa-envelope"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </div>
+                </div>
+                <div class="content-team d-flex">
+                  <div class="content-team1 pb-4">
+                    <img src="./Images/Career/ali-syed.jpg" alt="" />
+                  </div>
+                  <div class="content-team3">
+                    <h6 style="font-weight: 700">Ali Syed</h6>
+                    <p>Director of Student Services</p>
+                  </div>
+                  <div class="content-team2 ms-auto d-flex gap-4">
+                    <i class="fa-solid fa-envelope"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </div>
+                </div>
+                <div class="content-team d-flex">
+                  <div class="content-team1">
+                    <img src="./Images/Career/ali-syed.jpg" alt="" />
+                  </div>
+                  <div class="content-team3">
+                    <h6 style="font-weight: 700">Ali Syed</h6>
+                    <p>Director of Student Services</p>
+                  </div>
+                  <div class="content-team2 ms-auto d-flex gap-4">
+                    <i class="fa-solid fa-envelope"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+      <div class="container-fluid footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <img src="./Images/Header/quickstart-logo-white-1.webp" alt="" />
+              <div class="footer-form">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <i class="fa fa-paper-plane"></i>
+              </div>
+              <p class="para2">
+                By submitting your email, you agree to receive email marketing
+                from QuickStart and its partners .
+              </p>
+              <ul class="footer_social_icons">
+                <li class="facebook">
+                  <a
+                    href="https://www.facebook.com/quickstartlearninginc/"
+                    aria-label="Connect with QuickStart on Facebook"
+                    target="_blank"
+                  >
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="twitter">
+                  <a
+                    href="https://twitter.com/QuickStartIntel"
+                    aria-label="Connect with QuickStart on Twitter"
+                    target="_blank"
+                  >
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="linkedin">
+                  <a
+                    href="https://www.linkedin.com/company/quickstart-technologies-inc/"
+                    target="_blank"
+                    aria-label="Connect with QuickStart on Linkedin"
+                  >
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+                <li class="instagram">
+                  <a
+                    href="https://www.instagram.com/quickstart_inc/"
+                    aria-label="Connect with QuickStart on Instagram"
+                    target="_blank"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li class="youtube">
+                  <a
+                    href="https://www.youtube.com/channel/UCNJIEbGZaScUDsq_DMYTjYg"
+                    aria-label="Follow QuickStart on Youtube"
+                    target="_blank"
+                  >
+                    <i class="fab fa-youtube-play"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-6 company-footer">
+              <ul class="footer-listing">
+                <h4>Company</h4>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i>
+                  <a href="./About.html"> About</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i>
+                  <a href="./Career.html"> Careers</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i>
+                  <a href="./News.html"> In the News</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i>
+                  <a href="./Contact.html"> Contact Us</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-6">
+              <ul class="footer-listing">
+                <h4>Partner</h4>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i>
+                  <a href="./Partners.html"> Partner With Us</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-md-6 item adj-cus1">
+              <div class="f-item contact">
+                <div class="address">
+                  <ul class="footer-listing">
+                    <h4 class="widget-title">Support</h4>
+                    <li>
+                      <strong>Email:</strong><br />
+                      Sales:<a href="mailto:sales@quickstart.com">
+                        sales@quickstart.com </a
+                      ><br />
+                      Support:<a href="mailto:support@quickstart.com">
+                        support@quickstart.com
+                      </a>
+                    </li>
+                    <li>
+                      <strong>Live Chat:</strong>
+
+                      <a style="color: #cf8909 !important" href="#"
+                        >Leave A Message</a
+                      >
+                    </li>
+                    <li>
+                      <strong>Call:</strong><br />
+                      Sales: <a href="tel:8669913924"> (866) 991-3924 </a><br />
+                      Support: <a href="tel:8558008240"> (855) 800-8240 </a>
+                    </li>
+                    <li>
+                      <strong>Hours of Operations:</strong><br />
+                      <strong> Mon - Fri: </strong> 9AM-6PM Central
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid footer-hr">
+        <div class="bottom-footer">
+          <div class="bottom-footer-1">
+            <p>© Copyright 2023. All Rights Reserved by QuickStart Inc.</p>
+          </div>
+          <div class="bottom-footer-2">
+            <a href="#">Accessibility</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Swiper Slider -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+
+    <script src="jquery.js"></script>
+
+    <script src="js/main.js"></script>
+    <!-- Swiper -->
+
+    <!-- Counting -->
+    <script>
+      var a = 0;
+      $(window).scroll(function () {
+        var oTop = $(".counter").offset().top - window.innerHeight;
+        if (a == 0 && $(window).scrollTop() > oTop) {
+          $(".counter").each(function () {
+            var $this = $(this),
+              countTo = $this.attr("data-count");
+            $({
+              countNum: $this.text(),
+            }).animate(
+              {
+                countNum: countTo,
+              },
+
+              {
+                duration: 5000,
+                easing: "swing",
+                step: function () {
+                  //$this.text(Math.ceil(this.countNum));
+                  $this.text(Math.ceil(this.countNum).toLocaleString("en"));
+                },
+                complete: function () {
+                  $this.text(Math.ceil(this.countNum).toLocaleString("en"));
+                  //alert('finished');
+                },
+              }
+            );
+          });
+          a = 1;
+        }
+      });
+    </script>
+
+    <!-- Template Javascript -->
+    <script>
+      window.addEventListener("scroll", function () {
+        var navbar = document.getElementById("navbar");
+        var defaultLogo = document.getElementById("default-logo");
+        var scrollLogo = document.getElementById("scroll-logo");
+
+        // Change the logo when the user scrolls down (adjust the scroll threshold as needed)
+        if (window.scrollY > 40) {
+          navbar.style.backgroundColor = "transparent"; // Change background color on scroll
+          defaultLogo.style.opacity = 0; // Hide default logo
+          scrollLogo.style.opacity = 1; // Show scrolled logo
+        } else {
+          navbar.style.backgroundColor = "transparent"; // Change background color to default
+          defaultLogo.style.opacity = 1; // Show default logo
+          scrollLogo.style.opacity = 0; // Hide scrolled logo
+        }
+      });
+    </script>
+  </body>
+</html>

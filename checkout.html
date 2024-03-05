@@ -1,0 +1,688 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Certificates</title>
+
+  <!-- fancy box -->
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <!-- Bootstrap icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" />
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css" />
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Template Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .button,
+    .chevron {
+      display: inline-block;
+      margin: 1rem;
+      vertical-align: middle;
+    }
+
+    .chevron {
+      width: 18px;
+      height: 15px;
+    }
+
+    .chevron__group {
+      transform: translateY(0);
+      transition: transform 0.1s linear;
+    }
+
+    .chevron__box--left,
+    .chevron__box--right {
+      transform: rotate(0) translateY(0);
+      transition: transform 0.1s linear;
+    }
+
+    .chevron__box--left {
+      transform-origin: 1px 1px;
+    }
+
+    .chevron__box--right {
+      transform-origin: 7px 1px;
+    }
+
+    .chevron--flip .chevron__box--left {
+      transform: rotate(-90deg) translateY(0);
+    }
+
+    .chevron--flip .chevron__box--right {
+      transform: rotate(90deg) translateY(0);
+    }
+
+    .chevron--flip .chevron__group {
+      transform: translateY(3px);
+    }
+  </style>
+</head>
+
+<body>
+  <div id="spinner"
+    class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner"></div>
+  </div>
+  <!-- Topbar Start -->
+  <section class="contact_nav">
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="contact_phone">
+              <i class="fa-solid fa-phone-flip"></i>
+              <p>Have Questions? (866) 991-3924</p>
+            </div>
+          </div>
+          <div class="col">
+            <a href="./Admin/Home.html" style="text-decoration: none; color: #6b6a75">
+              <div class="contact_user">
+                <i class="fa-solid fa-user"></i>
+                <p>Student Portal</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Topbar End -->
+
+  <section>
+    <div class="container-fluid position-relative p-0">
+      <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0 bg-dark">
+        <div class="container">
+          <a href="index.html" class="navbar-brand p-0">
+            <nav id="navbar">
+              <div class="logo">
+                <img id="default-logo" src="./Images/Header/quickstart-logo-white-1.webp" alt="Default Logo" />
+                <img id="scroll-logo" src="./Images/Header/quickstart-logo-new-theme.png" alt="Scroll Logo" />
+              </div>
+              <!-- Other navbar items (e.g., links) -->
+            </nav>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="fa fa-bars"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+              <div class="nav-item dropdown">
+                <ul>
+                  <li>
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">PROGRAMMS</a>
+                    <div class="dropdown-menuu">
+                      <ul>
+                        <li>
+                          <a>IT Bootcamps <i class="fas fa-caret-right"></i></a>
+                          <div class="dropdown-menu-1">
+                            <ul>
+                              <li>
+                                <a href="./Cybersecurity.html">Cybersecurity</a>
+                              </li>
+                              <li>
+                                <a href="./Cloud.html">Cloud Engineering</a>
+                              </li>
+                              <li>
+                                <a href="./software.html">Software Engineering</a>
+                              </li>
+                              <li>
+                                <a href="./data_science.html">Data Science & Analytics</a>
+                              </li>
+                              <li>
+                                <a href="./AI.html">AI/Machine Learning</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li>
+                          <a href="./Workflow.html">Workforce Development</a>
+                        </li>
+                        <li>
+                          <a href="#">Military <i class="fas fa-caret-right"></i></a>
+                          <div class="dropdown-menu-1">
+                            <ul>
+                              <li>
+                                <a href="./Military.html">Army Funded Training</a>
+                              </li>
+                              <li>
+                                <a href="./Airforce.html">Air Force Funded Training</a>
+                              </li>
+                              <li>
+                                <a href="./MyCAA.html">MyCAA Funded Training</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li>
+                          <a href="./finance.html">Finance & Funding</a>
+                        </li>
+                        <li>
+                          <a href="./Career.html">Career Services</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <a href="./Certificate.html" class="nav-item nav-link">CERTIFICATES</a>
+              <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">COURSES</a>
+                <div class="dropdown-menu m-0">
+                  <a href="./GTR_Course.html" class="dropdown-item">GTR Courses</a>
+                </div>
+              </div>
+              <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">ENTERPRISE & GOVERNMENT</a>
+                <div class="dropdown-menu m-0">
+                  <a href="./Corporate.html" class="dropdown-item">Corporate & Bussines</a>
+                  <a href="./State.html" class="dropdown-item">State & Local Government</a>
+                  <a href="./Federal.html" class="dropdown-item">Federal & DoD</a>
+                  <a href="./Master.html" class="dropdown-item">Master Subscription</a>
+                </div>
+              </div>
+
+              <a href="#" class="nav-item nav-link">ARTICLE</a>
+              <div class="nav-item dropdown">
+                <a type="button" class="nav-item nav-link">
+                  <i class="fa-solid fa-phone"></i>
+                </a>
+                <div class="dropdown-menu drop-icon-phone">
+                  <h6 class="pt-3">SALES</h6>
+                  <a href="#" class="dropdown-item">+1 (866) 991-3924 </a>
+                  <p>Mon-Fri 9am to 6pm CST</p>
+                  <hr />
+                  <h6>Support</h6>
+                  <a href="#" class="dropdown-item">+1 (855) 800-8240</a>
+                  <p>Mon-Fri 9am to 6pm CST</p>
+                  <hr />
+                  <h6>Other</h6>
+                  <a href="#" class="dropdown-item">Chat</a>
+                  <a href="#" class="dropdown-item">Ask A Question</a>
+                  <br />
+                </div>
+              </div>
+              <a type="button" class="nav-item nav-link" data-bs-toggle="modal" data-bs-target="#searchModal">
+                <i class="fa fa-search"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
+  <section class="header-checkout">
+    <div class="container-fluid background-checkout"></div>
+  </section>
+
+  <!-- Full Screen Search Start -->
+  <div class="modal fade" id="searchModal" tabindex="-1">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content" style="background: rgba(9, 30, 62, 0.7)">
+        <div class="modal-header border-0">
+          <button type="button" class="btn btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-flex align-items-center justify-content-center">
+          <div class="input-group" style="max-width: 600px">
+            <input type="text" class="form-control bg-transparent border-primary p-3"
+              placeholder="Type search keyword" />
+            <button class="btn btn-primary px-4">
+              <i class="bi bi-search"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="checkout_card pb-5">
+    <div class="container-fluid">
+      <div class="container card">
+        <div class="row">
+          <div class="col-md-5">
+            <div class="content-checkout-cart">
+              <h3 id="h3-one">Enrollment Summary</h3>
+              <div class="row">
+                <div class="col d-flex gap-3">
+                  <img src="./Images/Checkout/azure_3.jpg" class="azure-img" alt="" />
+                  <h3>
+                    Microsoft Certified Azure Administrator Course + AZ-104
+                    Certification Exam Bundle
+                  </h3>
+                </div>
+              </div>
+              <h6 class="pt-2 pb-3" style="font-weight: 600">
+                1 X Enrollment | On Demand
+              </h6>
+
+              <div class="check d-flex">
+                <i class="fa-solid fa-check"></i>
+                <p>Official Microsoft Curriculum</p>
+              </div>
+              <div class="check d-flex">
+                <i class="fa-solid fa-check"></i>
+                <p>Microsoft Gold Learning Partner</p>
+              </div>
+              <div class="check d-flex">
+                <i class="fa-solid fa-check"></i>
+                <p>
+                  Access to tools such as Azure Portal, Cloud Shell, Azure
+                  PowerShell, CLI, and Resource Manager Templates.​
+                </p>
+              </div>
+              <div class="check d-flex">
+                <i class="fa-solid fa-check"></i>
+                <p>Get Official Microsoft Exam Voucher</p>
+              </div>
+              <div class="check d-flex">
+                <i class="fa-solid fa-check"></i>
+                <p>Certificate of Completion</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <div class="row">
+              <div class="col-md-12">
+                <ul id="progressbar">
+                  <li class="active "><span class="wizard-text">Student Info</span></li>
+                  <li><span class="wizard-text">Payment</span></li>
+                </ul>
+                <form id="msform">
+                  <!-- progressbar -->
+
+                  <!-- fieldsets -->
+                  <fieldset>
+                    <h2 class="fs-title py-2">Student Information</h2>
+                    <div class="field conding pb-3">
+                      <input id="printing" class="checkbox" type="checkbox" name="print" value="Yes" />
+                      <label for="printing">I have Already an Account</label>
+                    </div>
+                    <div class="field dependanting">
+                      <div class="row pb-3 g-3">
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="First name" aria-label="First name" />
+                        </div>
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" />
+                        </div>
+
+                        <div class="form-group">
+                          <input type="number" class="form-control" placeholder="Phone" />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-12">
+                      <div class="form-group pb-3">
+                        <input type="email" class="form-control" placeholder="Email" />
+                      </div>
+                      <div class="form-group pb-3">
+                        <input type="password" class="form-control" placeholder="Password" />
+                      </div>
+
+                    </div>
+
+                    <button type="button" name="next" class="next action-button " value="">Continue</button>
+
+                  </fieldset>
+                  <fieldset>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <h2 class="fs-title py-2">Payment</h2>
+                      </div>
+                      <div class="col-md-8 d-flex discount-images">
+                        <script async="" type="text/javascript"
+                          src="https://seal.godaddy.com/getSeal?sealID=qyigJJeAqDTyvLZkCXBbRaJ7d7kvo2A8DM4I3w5G4Zu6K06uHEj1dBmrwj7H"></script>
+                        <img style="cursor: pointer; cursor: hand" src="./Images/Checkout/siteseal_gd_3_h_l_m.gif"
+                          onclick="verifySeal();" alt="SSL site seal - click to verify" />
+                        <img src="./Images//Checkout/secure-stripe-payment-logo2.png" alt="" />
+                      </div>
+                      <div class="container py-4">
+                        <div class="row content-credit-card">
+                          <div class="col-8 card-1">
+                            <i class="fa-solid fa-credit-card"></i>
+
+                            <input type="text" placeholder="Card Number" />
+                          </div>
+
+                          <div class="col-2 card-1">
+                            <input type="text" placeholder="MM/YY" />
+                          </div>
+                          <div class="col-2 card-3">
+                            <input type="text" placeholder="CVC" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="field conding2 pb-3">
+                        <input id="printing2" class="checkbox" type="checkbox" name="print" value="Yes" />
+                        <label for="printing2">Apply Discount Code+</label>
+                      </div>
+                      <div class="field dependanting2 pb-3">
+                        <div class="form-group d-flex gap-2">
+                          <input type="text" class="form-control w-50" placeholder="Discount Code" />
+                          <button type="btn" class="btn discount-btn">Apply</button>
+                        </div>
+                      </div>
+                      <div class="content-checkout d-flex gap-5">
+                        <div>
+                          <ul>
+                            <li>
+                              <h6>Subtotal</h6>
+                            </li>
+                            <li>
+                              <h6>Discounts</h6>
+                            </li>
+                            <li>
+                              <h6>Tax</h6>
+                            </li>
+                          </ul>
+                        </div>
+                        <hr />
+                        <div>
+                          <ul>
+                            <li>
+                              <h6>$995.00</h6>
+                            </li>
+                            <li>
+                              <h6>$0.00</h6>
+                            </li>
+                            <li>
+                              <h6>$0.00</h6>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <hr />
+                      <div class="content-checkout-2 d-flex">
+                        <div>
+                          <ul>
+                            <li>
+                              <h3>Total</h3>
+                            </li>
+                          </ul>
+                        </div>
+                        <div>
+                          <ul>
+                            <li>
+                              <h3>$995.00</h3>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <input type="submit" name="submit" class="submit action-button" value="Submit" />
+                  </fieldset>
+                </form>
+              </div>
+              <!-- link to designify.me code snippets -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+
+  <footer>
+    <div class="container-fluid footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <img src="./Images/Header/quickstart-logo-white-1.webp" alt="" />
+            <div class="footer-form">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+              <i class="fa fa-paper-plane"></i>
+            </div>
+            <p class="para2">
+              By submitting your email, you agree to receive email marketing
+              from QuickStart and its partners .
+            </p>
+            <ul class="footer_social_icons">
+              <li class="facebook">
+                <a href="https://www.facebook.com/quickstartlearninginc/"
+                  aria-label="Connect with QuickStart on Facebook" target="_blank">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+              <li class="twitter">
+                <a href="https://twitter.com/QuickStartIntel" aria-label="Connect with QuickStart on Twitter"
+                  target="_blank">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="linkedin">
+                <a href="https://www.linkedin.com/company/quickstart-technologies-inc/" target="_blank"
+                  aria-label="Connect with QuickStart on Linkedin">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+              <li class="instagram">
+                <a href="https://www.instagram.com/quickstart_inc/" aria-label="Connect with QuickStart on Instagram"
+                  target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li class="youtube">
+                <a href="https://www.youtube.com/channel/UCNJIEbGZaScUDsq_DMYTjYg"
+                  aria-label="Follow QuickStart on Youtube" target="_blank">
+                  <i class="fab fa-youtube-play"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-6 company-footer">
+            <ul class="footer-listing">
+              <h4>Company</h4>
+              <li>
+                <i class="fa-solid fa-caret-right"></i>
+                <a href="./About.html"> About</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-caret-right"></i>
+                <a href="./Career.html"> Careers</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-caret-right"></i>
+                <a href="./News.html"> In the News</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-caret-right"></i>
+                <a href="./Contact.html"> Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <ul class="footer-listing">
+              <h4>Partner</h4>
+              <li>
+                <i class="fa-solid fa-caret-right"></i>
+                <a href="./Partners.html"> Partner With Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-6 item adj-cus1">
+            <div class="f-item contact">
+              <div class="address">
+                <ul class="footer-listing">
+                  <h4 class="widget-title">Support</h4>
+                  <li>
+                    <strong>Email:</strong><br />
+                    Sales:<a href="mailto:sales@quickstart.com">
+                      sales@quickstart.com </a><br />
+                    Support:<a href="mailto:support@quickstart.com">
+                      support@quickstart.com
+                    </a>
+                  </li>
+                  <li>
+                    <strong>Live Chat:</strong>
+
+                    <a style="color: #cf8909 !important" href="#">Leave A Message</a>
+                  </li>
+                  <li>
+                    <strong>Call:</strong><br />
+                    Sales: <a href="tel:8669913924"> (866) 991-3924 </a><br />
+                    Support: <a href="tel:8558008240"> (855) 800-8240 </a>
+                  </li>
+                  <li>
+                    <strong>Hours of Operations:</strong><br />
+                    <strong> Mon - Fri: </strong> 9AM-6PM Central
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid footer-hr">
+      <div class="bottom-footer">
+        <div class="bottom-footer-1">
+          <p>© Copyright 2023. All Rights Reserved by QuickStart Inc.</p>
+        </div>
+        <div class="bottom-footer-2">
+          <a href="#">Accessibility</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Full Screen Search End -->
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $(".conding input[type='checkbox']").click(function () {
+        $(".dependanting").toggle();
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $(".conding2 input[type='checkbox']").click(function () {
+        $(".dependanting2").toggle();
+      });
+    });
+  </script>
+  <script>
+    //jQuery time
+    var current_fs, next_fs, previous_fs; //fieldsets
+    var left, opacity, scale; //fieldset properties which we will animate
+    var animating; //flag to prevent quick multi-click glitches
+
+    $(".next").click(function () {
+      if (animating) return false;
+      animating = true;
+
+      current_fs = $(this).parent();
+      next_fs = $(this).parent().next();
+
+      //activate next step on progressbar using the index of next_fs
+      $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+
+      //show the next fieldset
+      next_fs.show();
+      //hide the current fieldset with style
+      current_fs.animate({ opacity: 0 }, {
+        step: function (now, mx) {
+          //as the opacity of current_fs reduces to 0 - stored in "now"
+          //1. scale current_fs down to 80%
+          scale = 1 - (1 - now) * 0.2;
+          //2. bring next_fs from the right(50%)
+          left = (now * 50) + "%";
+          //3. increase opacity of next_fs to 1 as it moves in
+          opacity = 1 - now;
+          current_fs.css({
+            'transform': 'scale(' + scale + ')',
+            'position': 'absolute'
+          });
+          next_fs.css({ 'left': left, 'opacity': opacity });
+        },
+        duration: 800,
+        complete: function () {
+          current_fs.hide();
+          animating = false;
+        },
+        //this comes from the custom easing plugin
+        easing: 'easeInOutBack'
+      });
+    });
+
+    $(".previous").click(function () {
+      if (animating) return false;
+      animating = true;
+
+      current_fs = $(this).parent();
+      previous_fs = $(this).parent().prev();
+
+      //de-activate current step on progressbar
+      $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
+
+      //show the previous fieldset
+      previous_fs.show();
+      //hide the current fieldset with style
+      current_fs.animate({ opacity: 0 }, {
+        step: function (now, mx) {
+          //as the opacity of current_fs reduces to 0 - stored in "now"
+          //1. scale previous_fs from 80% to 100%
+          scale = 0.8 + (1 - now) * 0.2;
+          //2. take current_fs to the right(50%) - from 0%
+          left = ((1 - now) * 50) + "%";
+          //3. increase opacity of previous_fs to 1 as it moves in
+          opacity = 1 - now;
+          current_fs.css({ 'left': left });
+          previous_fs.css({ 'transform': 'scale(' + scale + ')', 'opacity': opacity });
+        },
+        duration: 800,
+        complete: function () {
+          current_fs.hide();
+          animating = false;
+        },
+        //this comes from the custom easing plugin
+        easing: 'easeInOutBack'
+      });
+    });
+
+    $(".submit").click(function () {
+      return false;
+    })
+  </script>
+
+
+
+  <!-- Template Javascript -->
+  <script>
+    window.addEventListener("scroll", function () {
+      var navbar = document.getElementById("navbar");
+      var defaultLogo = document.getElementById("default-logo");
+      var scrollLogo = document.getElementById("scroll-logo");
+
+      // Change the logo when the user scrolls down (adjust the scroll threshold as needed)
+      if (window.scrollY > 40) {
+        navbar.style.backgroundColor = "transparent"; // Change background color on scroll
+        defaultLogo.style.opacity = 0; // Hide default logo
+        scrollLogo.style.opacity = 1; // Show scrolled logo
+      } else {
+        navbar.style.backgroundColor = "transparent"; // Change background color to default
+        defaultLogo.style.opacity = 1; // Show default logo
+        scrollLogo.style.opacity = 0; // Hide scrolled logo
+      }
+    });
+  </script>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

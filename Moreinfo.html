@@ -1,0 +1,1333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Certificates</title>
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <!-- fancy box -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.0/dist/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <!-- Bootstrap icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" />
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css" />
+
+  <!-- Font Awesome 4 -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <!-- Slick Slider -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="./slick-1.8.1/slick/slick-theme.css" />
+
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Template Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="more-info-body">
+  <div id="spinner"
+    class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner"></div>
+  </div>
+  <!-- Topbar Start -->
+  <section class="contact_nav">
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="contact_phone">
+              <i class="fa-solid fa-phone-flip"></i>
+              <p>Have Questions? (866) 991-3924</p>
+            </div>
+          </div>
+          <div class="col">
+            <a href="./Admin/Home.html" style="text-decoration: none; color: #6b6a75">
+              <div class="contact_user">
+                <i class="fa-solid fa-user"></i>
+                <p>Student Portal</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Topbar End -->
+
+  <section class="background-moreinfo">
+    <div class="container-fluid position-relative p-0">
+      <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
+        <div class="container">
+          <a href="index.html" class="navbar-brand p-0">
+            <nav id="navbar">
+              <div class="logo">
+                <img id="default-logo" src="./Images/Header/quickstart-logo-white-1.webp" alt="Default Logo" />
+                <img id="scroll-logo" src="./Images/Header/quickstart-logo-new-theme.png" alt="Scroll Logo" />
+              </div>
+              <!-- Other navbar items (e.g., links) -->
+            </nav>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="fa fa-bars"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+              <div class="nav-item dropdown">
+                <ul>
+                  <li>
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">PROGRAMMS</a>
+                    <div class="dropdown-menuu">
+                      <ul>
+                        <li>
+                          <a>IT Bootcamps <i class="fas fa-caret-right"></i></a>
+                          <div class="dropdown-menu-1">
+                            <ul>
+                              <li>
+                                <a href="./Cybersecurity.html">Cybersecurity</a>
+                              </li>
+                              <li>
+                                <a href="./Cloud.html">Cloud Engineering</a>
+                              </li>
+                              <li>
+                                <a href="./software.html">Software Engineering</a>
+                              </li>
+                              <li>
+                                <a href="./data_science.html">Data Science & Analytics</a>
+                              </li>
+                              <li>
+                                <a href="./AI.html">AI/Machine Learning</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li>
+                          <a href="./Workflow.html">Workforce Development</a>
+                        </li>
+                        <li>
+                          <a href="#">Military <i class="fas fa-caret-right"></i></a>
+                          <div class="dropdown-menu-1">
+                            <ul>
+                              <li>
+                                <a href="./Military.html">Army Funded Training</a>
+                              </li>
+                              <li>
+                                <a href="./Airforce.html">Air Force Funded Training</a>
+                              </li>
+                              <li>
+                                <a href="./MyCAA.html">MyCAA Funded Training</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li>
+                          <a href="./finance.html">Finance & Funding</a>
+                        </li>
+                        <li>
+                          <a href="./Career.html">Career Services</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <a href="./Certificate.html" class="nav-item nav-link">CERTIFICATES</a>
+              <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">COURSES</a>
+                <div class="dropdown-menu m-0">
+                  <a href="./GTR_Course.html" class="dropdown-item">GTR Courses</a>
+                </div>
+              </div>
+              <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">ENTERPRISE & GOVERNMENT</a>
+                <div class="dropdown-menu m-0">
+                  <a href="./Corporate.html" class="dropdown-item">Corporate & Bussines</a>
+                  <a href="./State.html" class="dropdown-item">State & Local Government</a>
+                  <a href="./Federal.html" class="dropdown-item">Federal & DoD</a>
+                  <a href="./Master.html" class="dropdown-item">Master Subscription</a>
+                </div>
+              </div>
+
+              <a href="#" class="nav-item nav-link">ARTICLE</a>
+              <div class="nav-item dropdown">
+                <a type="button" class="nav-item nav-link">
+                  <i class="fa-solid fa-phone"></i>
+                </a>
+                <div class="dropdown-menu drop-icon-phone">
+                  <h6 class="pt-3">SALES</h6>
+                  <a href="#" class="dropdown-item">+1 (866) 991-3924 </a>
+                  <p>Mon-Fri 9am to 6pm CST</p>
+                  <hr />
+                  <h6>Support</h6>
+                  <a href="#" class="dropdown-item">+1 (855) 800-8240</a>
+                  <p>Mon-Fri 9am to 6pm CST</p>
+                  <hr />
+                  <h6>Other</h6>
+                  <a href="#" class="dropdown-item">Chat</a>
+                  <a href="#" class="dropdown-item">Ask A Question</a>
+                  <br />
+                </div>
+              </div>
+              <a type="button" class="nav-item nav-link" data-bs-toggle="modal" data-bs-target="#searchModal">
+                <i class="fa fa-search"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="container-fluid certificate-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 px-5">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="./index.html">
+                    <ul class="d-flex gap-1">
+                      <li><i class="fas fa-home"></i></li>
+                      <li>HOME</li>
+                    </ul>
+                  </a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="./Certificate.html">
+                    <ul class="d-flex gap-1">
+                      <li><i class="fa-solid fa-certificate"></i></li>
+                      <li class="px-1">CERTIFICATES</li>
+                    </ul>
+                  </a>
+                </li>
+
+                <li class="breadcrumb-item active" aria-current="page">
+                  Microsoft Certified Azure Administrator Course + AZ-104
+                  Certification
+                </li>
+              </ol>
+            </nav>
+            <div class="CONTENT-MORE-INFO-IMG d-flex">
+              <img src="./Images/MOREINFO/azure_3.jpg" alt="" />
+
+              <h1>
+                Microsoft Certified Azure Administrator Course + AZ-104
+                Certification Exam Bundle
+              </h1>
+            </div>
+            <div class="content-more-info-3 d-flex align-items-center gap-3">
+              <div class="more-info-fire-png">
+                <img src="./Images/MOREINFO/fire.png" alt="" />
+                <img src="./Images/MOREINFO/fire.png" alt="" />
+                <img src="./Images/MOREINFO/fire.png" alt="" />
+                <img src="./Images/MOREINFO/fire.png" alt="" />
+                <img src="./Images/MOREINFO/fire.png" alt="" />
+              </div>
+              <div class="more-info-p-3 pt-3">
+                <p class="text-secondary">
+                  22 Learners Have Enrolled In This Course
+                </p>
+              </div>
+            </div>
+            <p>
+              This course targets experienced administrators who want to pass
+              the AZ-104 exam: Microsoft Azure Administrator and broaden their
+              knowledge of Azure from an administrative perspective.
+            </p>
+
+            <h5 style="color: #85fa50">
+              Next Class Starts October 30, 2023!
+            </h5>
+          </div>
+          <div class="col-md-2">
+            <div class="fixed_card">
+              <div class="card contact_Consultant p-0">
+                <div class="img-card-stae-img" id="img-card-stae-img">
+                  <img src="./Images/Corporate_img/800x600-state-local.jpg" alt="" />
+
+                  <div class="form-card-play-icon">
+                    <a data-fancybox="group-1" href="https://www.youtube.com/watch?v=y2aW4gjyhH4" class="fancybox-1">
+                      <i class="fa-solid fa-play"></i></a>
+                  </div>
+                </div>
+                <div class="content-card-more-info p-0">
+                  <h5 class="text-end px-2 pt-2" style="font-weight: 600; color: #01602d">
+                    $2,499/Year
+                  </h5>
+                  <div class="select-date px-3 my-2">
+                    <div class="dropdown4">
+                      <div class="select">
+                        <span>Select Upcoming Dates</span>
+                        <i class="fa fa-chevron-left"></i>
+                      </div>
+                      <input type="hidden" name="gender" />
+                      <ul class="dropdown-menu4">
+                        <li id="one" class="px-3 pt-3">
+                          <strong>Oct 30, 2023 - Nov 02, 2023</strong>
+                          <p>
+                            4 Days - Live Online - PST <br />
+                            08:00 AM - 04:00 PM PST
+                          </p>
+                          <button class="btn" style="
+                                background-color: #377bb5;
+                                color: white;
+                                font-size: 12px;
+                                border-radius: 5px;
+                              ">
+                            Gurented to Run
+                          </button>
+                        </li>
+                        <li id="two" class="px-3 pt-3">
+                          <strong>Oct 30, 2023 - Nov 02, 2023</strong>
+                          <p>
+                            4 Days - Live Online - PST <br />
+                            08:00 AM - 04:00 PM PST
+                          </p>
+                          <button class="btn" style="
+                                background-color: #377bb5;
+                                color: white;
+                                font-size: 12px;
+                                border-radius: 5px;
+                              ">
+                            Gurented to Run
+                          </button>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="btn-moreinfo text-center">
+                    <button class="btn text-white py-2" style="background-color: #01602d">
+                      Enroll Now
+                    </button>
+                  </div>
+                </div>
+                <div class="content-fixed-card2">
+                  <h6>This Course Includes:</h6>
+                  <ul>
+                    <li>Official Microsoft Curriculum</li>
+                    <li>
+                      Access to tools such as Azure Portal, Cloud Shell, Azure
+                      PowerShell, CLI, and Resource Manager Templates.​
+                    </li>
+                    <li>Get Official Microsoft Exam Voucher</li>
+                    <li>Certificate of Completion</li>
+                  </ul>
+                  <h6>More Information:</h6>
+
+                  <p><strong>Learning Style:</strong> On Demand</p>
+                  <p><strong>Provider:</strong> Microsoft</p>
+                  <p><strong>Difficulty:</strong> Beginner</p>
+                  <p><strong>Course Duration:</strong> 16 Hours</p>
+                  <p>
+                    <strong>Course Info:</strong>
+                    <a href=""><u> Download PDF </u></a>
+                  </p>
+                </div>
+                <div class="content-fixed-card2">
+                  <h6>Need Training for 5 or More People?:</h6>
+                  <h6>Customized to your team's need:</h6>
+                  <ul class="listing-fixed-card2">
+                    <li>
+                      <i class="fa-solid fa-check"></i>Annual Subscriptions
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-check"></i>Private Training.​
+                    </li>
+                    <li><i class="fa-solid fa-check"></i>Flexible Pricing</li>
+                    <li><i class="fa-solid fa-check"></i>Enterprise LMS</li>
+                    <li><i class="fa-solid fa-check"></i>Enterprise LMS</li>
+                    <li>
+                      <i class="fa-solid fa-check"></i>Dedicated Customer
+                      Success Manager
+                    </li>
+                  </ul>
+                  <div class="btn-moreinfo text-center mt-2">
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal5" class="btn py-2" style="
+                          background-color: white;
+                          color: #4787ff;
+                          border-color: #4787ff;
+                        ">
+                      Conatct a Learning Consultant
+                    </button>
+                    <!-- Button trigger modal -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: #0b3956">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-6">
+              <input type="text" class="form-control" id="validationCustom01" placeholder="First Name" required />
+              <div class="invalid-feedback">Please choose a First NAme.</div>
+            </div>
+            <div class="col-md-6">
+              <input type="text" class="form-control" id="validationCustom02" placeholder="Last Name" required />
+              <div class="invalid-feedback">Please choose a Last Name</div>
+            </div>
+            <div class="col-md-12">
+              <input type="email" class="form-control" id="validationCustom03" placeholder="Email" required />
+              <div class="invalid-feedback">
+                Please provide a valid Email.
+              </div>
+            </div>
+            <div class="col-md-6">
+              <input type="number" class="form-control" id="validationCustom01" placeholder="Phone Number" required />
+              <div class="invalid-feedback">Phone Number</div>
+            </div>
+            <div class="col-md-6">
+              <input type="text" class="form-control" id="validationCustom02" placeholder="Company Name" required />
+              <div class="invalid-feedback">Please choose a Company Name</div>
+            </div>
+            <div class="col-md-6">
+              <input type="text" class="form-control" id="validationCustom01" placeholder="City" required />
+              <div class="invalid-feedback">Enter City Name</div>
+            </div>
+            <div class="col-md-6">
+              <select class="form-select" id="validationCustom04" required>
+                <option selected disabled value="">State</option>
+                <option>...</option>
+              </select>
+              <div class="invalid-feedback">Please select a valid state.</div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer" style="background-color: #0b3956">
+          <button type="button" class="btn btn-success">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="course-info-more-info pt-5">
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 course-info-more-info2 offset-md-2" style="background-color: white">
+            <h4 class="py-2">Course Information</h4>
+            <div class="row">
+              <div class="col-md-12 course-info-more-info3">
+                <h6>
+                  <i>
+                    This course is for professionals preparing for the
+                    Microsoft Certified Azure Administrator AZ-104
+                    certification exam. The course also includes the official
+                    exam voucher.
+                  </i>
+                </h6>
+                <h3>About this Course:</h3>
+                <p>
+                  This course teaches IT Professionals how to manage their
+                  Azure subscriptions, create and scale virtual machines,
+                  implement storage solutions, configure virtual networking,
+                  back up and share data, connect Azure and on-premises sites,
+                  manage network traffic, implement Azure Active Directory,
+                  secure identities, and monitor your solution. Azure
+                  Administrators manage the cloud services that span storage,
+                  networking, and compute cloud capabilities, with a deep
+                  understanding of each service across the full IT lifecycle.
+                  They take end-user requests for new cloud applications and
+                  make recommendations on services to use for optimal
+                  performance and scale, as well as provision, size, monitor
+                  and adjust as appropriate. This role requires communicating
+                  and coordinating with vendors. Azure Administrators use the
+                  Azure Portal and as they become more proficient they use
+                  PowerShell and the Command Line Interface.
+                </p>
+                <ul>
+                  <h3 class="pt-2">Course Objectives:</h3>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <ul>
+                        <li>
+                          <ul class="d-flex gap-2">
+                            <li><i class="fa-solid fa-angle-right"></i></li>
+                            <li>Course Introduction</li>
+                          </ul>
+                        </li>
+                        <li>
+                          <ul class="d-flex gap-2">
+                            <li><i class="fa-solid fa-angle-right"></i></li>
+                            <li>
+                              Module 1: Managing Azure Subscriptions and
+                              Resource Groups
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <ul class="d-flex gap-2">
+                            <li><i class="fa-solid fa-angle-right"></i></li>
+                            <li>Module 2: Managing Resource Groups</li>
+                          </ul>
+                        </li>
+                        <li>
+                          <ul class="d-flex gap-2">
+                            <li><i class="fa-solid fa-angle-right"></i></li>
+                            <li>Module 3: Azure Identity Management</li>
+                          </ul>
+                        </li>
+                        <li>
+                          <ul class="d-flex gap-2">
+                            <li><i class="fa-solid fa-angle-right"></i></li>
+                            <li>Module 4: Storage</li>
+                          </ul>
+                        </li>
+                        <li>
+                          <ul class="d-flex gap-2">
+                            <li><i class="fa-solid fa-angle-right"></i></li>
+                            <li>
+                              Module 5: Deploying and Managing Virtual
+                              Networks
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <ul class="d-flex gap-2">
+                            <li><i class="fa-solid fa-angle-right"></i></li>
+                            <li>Module 6: Virtual Machines</li>
+                          </ul>
+                        </li>
+                        <li>
+                          <ul class="d-flex gap-2">
+                            <li><i class="fa-solid fa-angle-right"></i></li>
+                            <li>Module 7: Serverless Computing</li>
+                          </ul>
+                        </li>
+                        <li>
+                          <ul class="d-flex gap-2">
+                            <li><i class="fa-solid fa-angle-right"></i></li>
+                            <li>Course Conclusion</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <h3>Audience:</h3>
+                  <ul class="d-flex gap-2">
+                    <li><i class="fa-solid fa-angle-right"></i></li>
+                    <li>
+                      Azure Administrators manage the cloud services that span
+                      storage, networking, and compute cloud capabilities,
+                      with a deep understanding of each service across the
+                      full IT lifecycle. They take end-user requests for new
+                      cloud applications and make recommendations on services
+                      to use for optimal performance and scale, as well as
+                      provision, size, monitor and adjust as appropriate. This
+                      role requires communicating and coordinating with
+                      vendors. Azure Administrators use the Azure Portal and
+                      as they become more proficient they use PowerShell and
+                      the Command Line Interface.
+                    </li>
+                  </ul>
+                  <h3>Prerequisites:</h3>
+                  <ul class="d-flex gap-2">
+                    <li><i class="fa-solid fa-angle-right"></i></li>
+                    <li>
+                      Understanding of on-premises virtualization
+                      technologies, including: VMs, virtual networking, and
+                      virtual hard disks.
+                    </li>
+                  </ul>
+                  <ul class="d-flex gap-2">
+                    <li><i class="fa-solid fa-angle-right"></i></li>
+                    <li>
+                      Understanding of network configuration, including
+                      TCP/IP, Domain Name System (DNS), virtual private
+                      networks (VPNs), firewalls, and encryption technologies.
+                    </li>
+                  </ul>
+                  <ul class="d-flex gap-2">
+                    <li><i class="fa-solid fa-angle-right"></i></li>
+                    <li>
+                      Understanding of Active Directory concepts, including
+                      domains, forests, domain controllers, replication,
+                      Kerberos protocol, and Lightweight Directory Access
+                      Protocol (LDAP).
+                    </li>
+                  </ul>
+                  <ul class="d-flex gap-2">
+                    <li><i class="fa-solid fa-angle-right"></i></li>
+                    <li>
+                      Understanding of resilience and disaster recovery,
+                      including backup and restore operations.
+                    </li>
+                  </ul>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="course-info-more-info pt-4">
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 course-info-more-info2 offset-md-2" style="background-color: white">
+            <h4 class="py-2">Career & Salary Insight</h4>
+            <div class="row">
+              <div class="col-md-12 course-info-more-info3">
+                <div class="row">
+                  <div class="col">
+                    <p class="text-success" style="font-size: 20px; font-weight: 600">
+                      $64,287 - $184,732
+                    </p>
+                  </div>
+                  <div class="col">
+                    <label class="form-label">Role</label>
+                    <select class="form-select" id="validationCustom04" required>
+                      <option selected value="">One</option>
+                      <option selected value="">Two</option>
+                      <option selected value="">One</option>
+                      <option selected value="">One</option>
+                      <option>...</option>
+                    </select>
+                  </div>
+                  <div class="col">
+                    <label class="form-label">Location</label>
+                    <select class="form-select" id="validationCustom04" required>
+                      <option selected value="">One</option>
+                      <option selected value="">Two</option>
+                      <option selected value="">One</option>
+                      <option selected value="">One</option>
+                      <option>...</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div>
+                      <canvas id="myChart2"></canvas>
+                    </div>
+                  </div>
+                  <div class="col filter-p-2 mt-5">
+                    <p>Big Data</p>
+                    <p>Big Data</p>
+                    <p>Big Data</p>
+                    <p>Big Data</p>
+                    <p>Big Data</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col text-center">
+                    <h5>Average Salary</h5>
+                    <p>For Boise, ID</p>
+                  </div>
+                  <div class="col text-center">
+                    <h5>Skills You Need To Boost Your Value</h5>
+                    <p>
+                      There are 5 skills you need to become a Cloud Architect.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="course-info-more-info pt-4">
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 course-info-more-info2 offset-md-2" style="background-color: white">
+            <h4 class="py-2">Outline</h4>
+            <div class="row">
+              <div class="col-md-12 course-info-more-info3 pb-5">
+                <ul>
+                  <li>
+                    <ul class="d-flex gap-2">
+                      <li><i class="fa-solid fa-angle-right"></i></li>
+                      <li>Course Introduction</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="d-flex gap-2">
+                      <li><i class="fa-solid fa-angle-right"></i></li>
+                      <li>
+                        Module 1: Managing Azure Subscriptions and Resource
+                        Groups
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="d-flex gap-2">
+                      <li><i class="fa-solid fa-angle-right"></i></li>
+                      <li>Module 2: Managing Resource Groups</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="d-flex gap-2">
+                      <li><i class="fa-solid fa-angle-right"></i></li>
+                      <li>Module 3: Azure Identity Management</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="d-flex gap-2">
+                      <li><i class="fa-solid fa-angle-right"></i></li>
+                      <li>Module 4: Storage</li>
+                    </ul>
+                  </li>
+                </ul>
+                <ul class="text">
+                  <li>
+                    <ul class="d-flex gap-2">
+                      <li><i class="fa-solid fa-angle-right"></i></li>
+                      <li>
+                        Module 5: Deploying and Managing Virtual Networks
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="d-flex gap-2">
+                      <li><i class="fa-solid fa-angle-right"></i></li>
+                      <li>Module 6: Virtual Machines</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="d-flex gap-2">
+                      <li><i class="fa-solid fa-angle-right"></i></li>
+                      <li>Module 7: Serverless Computing</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="d-flex gap-2">
+                      <li><i class="fa-solid fa-angle-right"></i></li>
+                      <li>Course Conclusion</li>
+                    </ul>
+                  </li>
+                </ul>
+                <a class="read-more-link2 anchor-visit-article" style="background-color: gainsboro" href="">Show Full
+                  Outline [+]
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="course-info-more-info pt-4">
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 course-info-more-info2 offset-md-2" style="background-color: white">
+            <h4 class="py-2">Outline</h4>
+            <div class="row">
+              <div class="col-md-12 course-info-more-info3 pb-5">
+                <ul>
+                  <li class="back">
+                    Module 1: Design compute and application solutions
+                  </li>
+                  <li class="back">
+                    In this module you will learn about governance, compute,
+                    and application architectures.
+                  </li>
+                  <li class="back">Lessons</li>
+                  <li>
+                    <ul class="d-flex gap-2">
+                      <li><i class="fa-solid fa-angle-right"></i></li>
+                      <li>Managing Resource Groups</li>
+                    </ul>
+                  </li>
+                </ul>
+                <ul class="text">
+                  <li>
+                    <ul class="d-flex gap-2">
+                      <li><i class="fa-solid fa-angle-right"></i></li>
+                      <li>Managing Resource Groups</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="d-flex gap-2">
+                      <li><i class="fa-solid fa-angle-right"></i></li>
+                      <li>Managing Resource Groups</li>
+                    </ul>
+                  </li>
+
+                  <li class="back">Lab: Case Studies</li>
+                  <li class="back">
+                    After completing this module, students will be able to:
+                  </li>
+                  <li>
+                    <ul class="d-flex gap-2">
+                      <li><i class="fa-solid fa-angle-right"></i></li>
+                      <li>Managing Resource Groups</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="d-flex gap-2">
+                      <li><i class="fa-solid fa-angle-right"></i></li>
+                      <li>Managing Resource Groups</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="d-flex gap-2">
+                      <li><i class="fa-solid fa-angle-right"></i></li>
+                      <li>Managing Resource Groups</li>
+                    </ul>
+                  </li>
+                  <li class="back">Module 2: Design storage solutions</li>
+                  <li class="back">
+                    In this module, you will learn about non-relational
+                    storage, relational storage, and data integration
+                    solutions.
+                  </li>
+                  <li class="back">Lessons</li>
+                  <li>
+                    <ul class="d-flex gap-2">
+                      <li><i class="fa-solid fa-angle-right"></i></li>
+                      <li>Managing Resource Groups</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="d-flex gap-2">
+                      <li><i class="fa-solid fa-angle-right"></i></li>
+                      <li>Managing Resource Groups</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="d-flex gap-2">
+                      <li><i class="fa-solid fa-angle-right"></i></li>
+                      <li>Managing Resource Groups</li>
+                    </ul>
+                  </li>
+
+                  <li class="back">Lab: Case Studies</li>
+                  <li class="back">
+                    After completing this module, students will be able to:
+                  </li>
+                  <li>
+                    <ul class="d-flex gap-2">
+                      <li><i class="fa-solid fa-angle-right"></i></li>
+                      <li>Managing Resource Groups</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="d-flex gap-2">
+                      <li><i class="fa-solid fa-angle-right"></i></li>
+                      <li>Managing Resource Groups</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="d-flex gap-2">
+                      <li><i class="fa-solid fa-angle-right"></i></li>
+                      <li>Managing Resource Groups</li>
+                    </ul>
+                  </li>
+                </ul>
+                <a class="read-more-link2 anchor-visit-article" style="background-color: gainsboro" href="">Show Full
+                  Outline [+]
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="course-info-more-info pt-4">
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 course-info-more-info2 offset-md-2" style="background-color: white">
+            <h4 class="py-2">Credly Badge</h4>
+            <div class="row">
+              <div class="col-md-12 course-info-more-info3">
+                <div class="row d-flex">
+                  <div class="col-md-3 course-info-more-info4">
+                    <img src="./Images//MOREINFO/tempfile20210707-70-ihkpqc.png" alt="" />
+                  </div>
+                  <div class="col-md-9 ps-4 pt-3">
+                    <h6>
+                      Display your Completion Badge And Get The Recognition
+                      You Deserve.
+                    </h6>
+                    <p class="pt-3" style="color: #0b3956">
+                      Add a completion and readiness badge to your Linkedin
+                      profile, Facebook page, or Twitter account to validate
+                      your professional and technical expertise. With badges
+                      issued and validated by Credly, you can:
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-3 course-info-more-info5">
+                    <div>
+                      <img
+                        src=" https://d2vt2ta2gx5ab2.cloudfront.net/static/version1695802490/frontend/Infortis/custom/en_US/Itskills_Gamification/images/acclaim-logo.svg "
+                        alt="" />
+                    </div>
+                  </div>
+                  <div class="col-md-9 ps-5">
+                    <ul style="list-style-type: disc">
+                      <li>
+                        Let anyone verify your completion and achievement by
+                        clicking on the badge
+                      </li>
+                      <li>
+                        Display your hard work and validate your expertise
+                      </li>
+                      <li>
+                        Display each badges details about specific skills you
+                        developed.
+                      </li>
+                    </ul>
+                    <p style="color: #0b3956">
+                      Badges are issued by QuickStart and verified through
+                      Credly.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="course-info-more-info pt-4 pb-5">
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 course-info-more-info2 offset-md-2" style="background-color: white">
+            <h4 class="py-2">Reviews</h4>
+            <div class="row">
+              <div class="col-md-12 course-info-more-info3">
+                <p>You're reviewing:</p>
+                <h5>
+                  Microsoft Certified Azure Administrator Course + AZ-104
+                  Certification Exam Bundle
+                </h5>
+                <div class="row">
+                  <div class="col-md-3">
+                    <h5>Your Rating <span style="color: #ff5501">*</span></h5>
+                  </div>
+                  <div class="col-md-4">
+                    <p>Overall Satisfaction</p>
+                    <p>Quality of Instructor</p>
+                    <p>Course Value</p>
+                    <p>Course Quality</p>
+                  </div>
+                  <div class="col-md-5">
+                    <div class="col-md-5">
+                      <div class="rating-stars block" id="rating">
+                        <input type="hidden" readonly="readonly" class="rating-value" name="rating-stars-value"
+                          id="rating-stars-value">
+                        <div class="rating-stars-container">
+                          <div class="rating-star">
+                            <i class="fa fa-star"></i>
+                          </div>
+                          <div class="rating-star">
+                            <i class="fa fa-star"></i>
+                          </div>
+                          <div class="rating-star">
+                            <i class="fa fa-star"></i>
+                          </div>
+                          <div class="rating-star">
+                            <i class="fa fa-star"></i>
+                          </div>
+                          <div class="rating-star">
+                            <i class="fa fa-star"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="rating-stars block" id="rating">
+                        <input type="hidden" readonly="readonly" class="rating-value" name="rating-stars-value"
+                          id="rating-stars-value">
+                        <div class="rating-stars-container">
+                          <div class="rating-star">
+                            <i class="fa fa-star"></i>
+                          </div>
+                          <div class="rating-star">
+                            <i class="fa fa-star"></i>
+                          </div>
+                          <div class="rating-star">
+                            <i class="fa fa-star"></i>
+                          </div>
+                          <div class="rating-star">
+                            <i class="fa fa-star"></i>
+                          </div>
+                          <div class="rating-star">
+                            <i class="fa fa-star"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="rating-stars block" id="rating">
+                        <input type="hidden" readonly="readonly" class="rating-value" name="rating-stars-value"
+                          id="rating-stars-value">
+                        <div class="rating-stars-container">
+                          <div class="rating-star">
+                            <i class="fa fa-star"></i>
+                          </div>
+                          <div class="rating-star">
+                            <i class="fa fa-star"></i>
+                          </div>
+                          <div class="rating-star">
+                            <i class="fa fa-star"></i>
+                          </div>
+                          <div class="rating-star">
+                            <i class="fa fa-star"></i>
+                          </div>
+                          <div class="rating-star">
+                            <i class="fa fa-star"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="rating-stars block" id="rating">
+                        <input type="text" readonly="readonly" class="rating-value" name="rating-stars-value"
+                          id="rating-stars-value">
+                        <div class="rating-stars-container">
+                          <div class="rating-star">
+                            <i class="fa fa-star"></i>
+                          </div>
+                          <div class="rating-star">
+                            <i class="fa fa-star"></i>
+                          </div>
+                          <div class="rating-star">
+                            <i class="fa fa-star"></i>
+                          </div>
+                          <div class="rating-star">
+                            <i class="fa fa-star"></i>
+                          </div>
+                          <div class="rating-star">
+                            <i class="fa fa-star"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-3">
+                    <h5 class="">
+                      Nickname <span style="color: #ff5501">*</span>
+                    </h5>
+                  </div>
+                  <div class="col-md-9">
+                    <input type="email" class="form-control mb-3" id="exampleFormControlInput1" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-3">
+                    <h5 class="">
+                      Summary <span style="color: #ff5501">*</span>
+                    </h5>
+                  </div>
+                  <div class="col-md-9">
+                    <input type="email" class="form-control mb-3" id="exampleFormControlInput1" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-3">
+                    <h5 class="">
+                      Review <span style="color: #ff5501">*</span>
+                    </h5>
+                  </div>
+                  <div class="col-md-9">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-3"></div>
+                  <div class="col-md-9 btn-submit-hover py-5">
+                    <button type="submit" class="btn w-50 py-2" style="background-color: lightgray; color: black">
+                      Submit Review
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+
+  <footer>
+    <div class="container-fluid footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <img src="./Images/Header/quickstart-logo-white-1.webp" alt="" />
+            <div class="footer-form">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+              <i class="fa fa-paper-plane"></i>
+            </div>
+            <p class="para2">
+              By submitting your email, you agree to receive email marketing
+              from QuickStart and its partners .
+            </p>
+            <ul class="footer_social_icons">
+              <li class="facebook">
+                <a href="https://www.facebook.com/quickstartlearninginc/"
+                  aria-label="Connect with QuickStart on Facebook" target="_blank">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+              <li class="twitter">
+                <a href="https://twitter.com/QuickStartIntel" aria-label="Connect with QuickStart on Twitter"
+                  target="_blank">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="linkedin">
+                <a href="https://www.linkedin.com/company/quickstart-technologies-inc/" target="_blank"
+                  aria-label="Connect with QuickStart on Linkedin">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+              <li class="instagram">
+                <a href="https://www.instagram.com/quickstart_inc/" aria-label="Connect with QuickStart on Instagram"
+                  target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li class="youtube">
+                <a href="https://www.youtube.com/channel/UCNJIEbGZaScUDsq_DMYTjYg"
+                  aria-label="Follow QuickStart on Youtube" target="_blank">
+                  <i class="fab fa-youtube-play"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-6 company-footer">
+            <ul class="footer-listing">
+              <h4>Company</h4>
+              <li>
+                <i class="fa-solid fa-caret-right"></i>
+                <a href="./About.html"> About</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-caret-right"></i>
+                <a href="./Career.html"> Careers</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-caret-right"></i>
+                <a href="./News.html"> In the News</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-caret-right"></i>
+                <a href="./Contact.html"> Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <ul class="footer-listing">
+              <h4>Partner</h4>
+              <li>
+                <i class="fa-solid fa-caret-right"></i>
+                <a href="./Partners.html"> Partner With Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-6 item adj-cus1">
+            <div class="f-item contact">
+              <div class="address">
+                <ul class="footer-listing">
+                  <h4 class="widget-title">Support</h4>
+                  <li>
+                    <strong>Email:</strong><br />
+                    Sales:<a href="mailto:sales@quickstart.com">
+                      sales@quickstart.com </a><br />
+                    Support:<a href="mailto:support@quickstart.com">
+                      support@quickstart.com
+                    </a>
+                  </li>
+                  <li>
+                    <strong>Live Chat:</strong>
+
+                    <a style="color: #cf8909 !important" href="#">Leave A Message</a>
+                  </li>
+                  <li>
+                    <strong>Call:</strong><br />
+                    Sales: <a href="tel:8669913924"> (866) 991-3924 </a><br />
+                    Support: <a href="tel:8558008240"> (855) 800-8240 </a>
+                  </li>
+                  <li>
+                    <strong>Hours of Operations:</strong><br />
+                    <strong> Mon - Fri: </strong> 9AM-6PM Central
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid footer-hr">
+      <div class="bottom-footer">
+        <div class="bottom-footer-1">
+          <p>© Copyright 2023. All Rights Reserved by QuickStart Inc.</p>
+        </div>
+        <div class="bottom-footer-2">
+          <a href="#">Accessibility</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Full Screen Search End -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+
+  <script>
+    /*Dropdown Menu*/
+    $(".dropdown4").click(function () {
+      $(this).attr("tabindex", 1).focus();
+      $(this).toggleClass("active");
+      $(this).find(".dropdown-menu4").slideToggle(400);
+    });
+    $(".dropdown4").focusout(function () {
+      $(this).removeClass("active");
+      $(this).find(".dropdown-menu4").slideUp(300);
+    });
+    $(".dropdown4 .dropdown-menu4 li").click(function () {
+      $(this).parents(".dropdown4").find("span").text($(this).text());
+      $(this)
+        .parents(".dropdown4")
+        .find("input")
+        .attr("value", $(this).attr("id"));
+    });
+  </script>
+  <!-- Rating JS -->
+
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script> -->
+
+  <script src="./dist/js/jquery.rating-stars.js"></script>
+  <script>
+    var ratingOptions = {
+      selectors: {
+        starsSelector: '.rating-stars',
+        starSelector: '.rating-star',
+        starActiveClass: 'is--active',
+        starHoverClass: 'is--hover',
+        starNoHoverClass: 'is--no-hover',
+        targetFormElementSelector: '.rating-value'
+      }
+    };
+
+    $(".rating-stars").ratingStars(ratingOptions);
+  </script>
+
+
+  <!-- Rating Js End -->
+
+  <!-- 
+  <script src="reviews.js"></script>
+
+  <script src="read.js"></script> -->
+  <script>
+    $(document).ready(function () {
+      $(".read-more-link2").click(function (e) {
+        e.preventDefault();
+
+        var $text = $(this).prev(".text");
+
+        if ($text.is(":visible")) {
+          $text.slideUp();
+          $(this).text("Show Full Outline [+]");
+        } else {
+          $text.slideDown();
+          $(this).text("Show Full Outline [-]");
+        }
+      });
+    });
+  </script>
+
+  <!-- chart -->
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    const ctx = document.getElementById("myChart2");
+
+    new Chart(ctx, {
+      type: "bar",
+      data: {
+        labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+        datasets: [
+          {
+            label: "# of Votes",
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: "#0B3956",
+          },
+        ],
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+          },
+        },
+      },
+    });
+  </script>
+  <!-- Increasing Number Plugin -->
+
+  <!-- Template Javascript -->
+  <script>
+    window.addEventListener("scroll", function () {
+      var navbar = document.getElementById("navbar");
+      var defaultLogo = document.getElementById("default-logo");
+      var scrollLogo = document.getElementById("scroll-logo");
+
+      // Change the logo when the user scrolls down (adjust the scroll threshold as needed)
+      if (window.scrollY > 40) {
+        navbar.style.backgroundColor = "transparent"; // Change background color on scroll
+        defaultLogo.style.opacity = 0; // Hide default logo
+        scrollLogo.style.opacity = 1; // Show scrolled logo
+      } else {
+        navbar.style.backgroundColor = "transparent"; // Change background color to default
+        defaultLogo.style.opacity = 1; // Show default logo
+        scrollLogo.style.opacity = 0; // Hide scrolled logo
+      }
+    });
+  </script>
+  <script>
+    window.addEventListener("scroll", function () {
+      var navbar = document.getElementById("img-card-stae-img");
+      var defaultLogo = document.getElementById("btn-state-header");
+
+      // Change the logo when the user scrolls down (adjust the scroll threshold as needed)
+      if (window.scrollY > 40) {
+        navbar.style.display = "none"; // Change background color on scroll
+        defaultLogo.style.display = "inline-block"; // Change background color on scroll
+      } else {
+        navbar.style.display = "inline"; // Change background color on scroll
+        defaultLogo.style.display = "none"; // Change background color on scroll
+      }
+    });
+  </script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

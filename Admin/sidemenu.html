@@ -1,0 +1,3684 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Sidebar</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <!-- Boxiocns CDN Link -->
+  <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="jquery.easyswitch.css" />
+
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" />
+  <link rel="stylesheet" href="./css/tabing.css" />
+  <link rel="stylesheet" href="Dashboard.css" />
+</head>
+
+<body>
+  <div class="sidebar close">
+    <div class="logo-details">
+      <i>
+        <img id="logo-sidebar" src="./ezgif.com-webp-to-png.png" alt="" />
+      </i>
+      <span class="logo_name">QuickStart</span>
+    </div>
+
+    <div class="menu-nav-link">
+      <ul class="nav nav-tabs" id="myTabs">
+        <li class="nav-item">
+          <a class="active" data-bs-toggle="tab" href="#tab1">
+            <i class="fa-solid fa-book"></i>
+            <span class="link_name">Overview</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="" data-bs-toggle="tab" href="#tab1">Overview</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="" data-bs-toggle="tab" href="#tab2">
+            <i class="bx bx-book-alt"></i>
+            <span class="link_name">Content</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="" data-bs-toggle="tab" href="#tab2">Content</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="" data-bs-toggle="tab" href="#tab3inst">
+            <i class="bx bx-user"></i>
+            <span class="link_name">Instructors</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="" data-bs-toggle="tab" href="#tab3inst">Instructors</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="" data-bs-toggle="tab" href="#tab4setting">
+            <i class="bx bx-cog"></i>
+            <span class="link_name">Setting</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a data-bs-toggle="tab" href="#tab4setting">Setting</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <div class="iocn-link">
+            <a>
+              <i class="fa-solid fa-download"></i>
+              <span class="link_name">Publishers</span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li>
+              <a class="" data-bs-toggle="tab" href="#tab5pub">Available</a>
+            </li>
+            <li>
+              <a class="" data-bs-toggle="tab" href="#tab6info">Information</a>
+            </li>
+            <li>
+              <a class="" data-bs-toggle="tab" href="#tab7badge">Badge</a>
+            </li>
+            <li>
+              <a class="" data-bs-toggle="tab" href="#tab8publish">Publish Course</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <section class="home-section">
+    <div class="tab-content mt-3">
+      <div class="tab-pane fade show active" id="tab1">
+        <div class="home-content">
+          <i class="bx bx-menu"></i>
+          <div class="container-fluid container-content-sidebar">
+            <div class="row">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item">
+                    <i class="fa-brands fa-microsoft"></i><a href="#">Dashboard</a>
+                  </li>
+                  <li class="breadcrumb-item">
+                    <i class="fa-solid fa-credit-card"></i><a href="#">Create & Auther</a>
+                  </li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    New Online Course
+                  </li>
+                </ol>
+              </nav>
+            </div>
+            <div class="row">
+              <h2 style="border-bottom: 1px solid; padding-bottom: 5px">
+                Course Overview
+              </h2>
+              <p>
+                These are basic questions needed for learners to find you
+                course with ease. Don't worry, you can always change these
+                later.
+              </p>
+              <form action="">
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Enter the title of your course.</label>
+                  <input type="text" class="form-control" id="exampleFormControlInput1"
+                    placeholder="e.g. Learn Linux Fundamentals" />
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Enter the title of your course.</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1"
+                    placeholder="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, amet perferendis. Temporibus dolore a, harum exercitationem nulla iure illo molestias."
+                    rows="3"></textarea>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">In which language will your course be
+                    presented?</label>
+
+                  <select class="form-select" id="inputGroupSelect01">
+                    <option selected>English</option>
+                    <option value="1">Spanish</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">What business unit best describes your
+                    course?</label>
+
+                  <select class="form-select" id="inputGroupSelect01">
+                    <option selected>
+                      Select a technology topic that your course best falls
+                      into
+                    </option>
+                    <option value="1">App Data</option>
+                    <option value="1">Big Data</option>
+                    <option value="1">DevOps</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">What category best describes the topic of
+                    your
+                    course?</label>
+
+                  <select class="form-select" id="inputGroupSelect01">
+                    <option selected>DevOps</option>
+                    <option value="1">App Data</option>
+                    <option value="1">Big Data</option>
+                    <option value="1">DevOps</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Enter a few keywords about your
+                    course.</label>
+                  <input type="text" class="form-control" id="tag-input1" />
+                </div>
+                <button type="submit" class="btn submit">Submit</button>
+                <button class="btn cancel">Cancel</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="tab2">
+        <div class="home-content">
+          <i class="bx bx-menu"></i>
+          <div class="container-fluid container-content-sidebar">
+            <div class="row">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item">
+                    <i class="fa-brands fa-microsoft"></i><a href="#">Dashboard</a>
+                  </li>
+                  <li class="breadcrumb-item">
+                    <i class="fa-solid fa-credit-card"></i><a href="#">Create & Auther</a>
+                  </li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    Web Development (2256183-231002-766)
+                  </li>
+                </ol>
+              </nav>
+            </div>
+            <div class="row">
+              <h2 style="border-bottom: 1px solid; padding-bottom: 5px">
+                Web Development
+              </h2>
+              <ul>
+                <li>
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
+                    <ul class="d-flex gap-2">
+                      <li><i class="fa-solid fa-plus"></i></li>
+                      <li>Add Lesson</li>
+                    </ul>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop4">
+                    <ul class="d-flex gap-2">
+                      <li><i class="fa-solid fa-plus"></i></li>
+                      <li>Add Final Exam</li>
+                    </ul>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="row">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="page">
+                      <div class="pcss3t pcss3t-effect-scale pcss3t-theme-1">
+                        <input type="radio" name="pcss3t" id="tab3" class="tab-content-first" />
+                        <label for="tab3"><i
+                            class="fa-solid fa-gear cource-content-icons"></i><span>Setting</span></label>
+
+                        <input type="radio" checked name="pcss3t" id="tab5" class="tab-content-last" />
+                        <label for="tab5"><i class="fa-solid fa-folder-open cource-content-icons"></i><span>Web
+                            Development</span></label>
+                        <ul>
+                          <li class="tab-content tab-content-first typography">
+                            <div class="modal-body">
+                              <div class="row">
+                                <h2 class="pb-3">Lesson Setup</h2>
+                                <hr />
+                                <div class="col-md-3">
+                                  <h6>Title <span>*</span></h6>
+                                </div>
+                                <div class="col-md-9">
+                                  <input type="text" class="form-control" id="validationCustom01" required />
+                                </div>
+                              </div>
+                              <div class="row mt-3">
+                                <div class="col-md-3">
+                                  <h6 data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                    data-bs-title="Describe what the lesson is about. This is a reference field for you for now, but in the future will be part of the course outline provided to learner and on the storefront">
+                                    Description
+                                  </h6>
+                                </div>
+                                <div class="col-md-9">
+                                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                              </div>
+                              <div class="row mt-3">
+                                <div class="col-md-3">
+                                  <h6 data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                    data-bs-title="Each Learning Objective creates an individual question bank in the Lesson Quiz.  Separate Learning Objectives should define outcomes like knowledge, skills, attitude, or value that the learner will achieve from the content of this lesson.">
+                                    Lesson Learning Objectives
+                                  </h6>
+                                </div>
+                                <div class="col-md-9">
+                                  <p>
+                                    What are the 3-5 key things your learners
+                                    should be able to do at the end of this
+                                    lesson? Add these things as lesson
+                                    learning objective.
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="row mt-3">
+                                <div class="col-md-3">
+                                  <h6 data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                    data-bs-title="Enable Cloud sandbox playground">
+                                    Enable Cloud sandbox playground
+                                  </h6>
+                                </div>
+                                <div class="col-md-9">
+                                  <select class="form-select" aria-label="Default select example">
+                                    <option value="1">Yes</option>
+                                    <option value="2">No</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="row mt-3">
+                                <div class="col-md-3">
+                                  <h6 data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Can">
+                                    Can this lesson be previewed for free?
+                                  </h6>
+                                </div>
+                                <div class="col-md-9">
+                                  <select class="form-select" aria-label="Default select example">
+                                    <option value="1">Yes</option>
+                                    <option value="2">No</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="row mt-3">
+                                <div class="col-md-3"></div>
+                                <div class="col-md-9">
+                                  <div class="inputfield-adding">
+                                    <div class="btn-adding-input-fields d-flex align-items-center gap-2">
+                                      <button id="btn-add2" type="button" class="btn btn-success">
+                                        <i class="fa-solid fa-plus"></i>
+                                      </button>
+                                      <p class="pt-3">
+                                        Click the Add button ( + ) to add a
+                                        learning objective.
+                                      </p>
+                                    </div>
+                                    <div id="form-placeholder2"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li class="tab-content tab-content-last typography">
+                            <div class="typography">
+                              <h1>Lesson Components</h1>
+                              <ul class="adding-content-content d-flex">
+                                <li>
+                                  <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdropslide"><i
+                                      class="fa-solid fa-plus"></i> Add
+                                    Slide</a>
+                                </li>
+                                <li>
+                                  <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdropppt"><i
+                                      class="fa-regular fa-circle-up"></i>
+                                    Import PowerPoint</a>
+                                </li>
+                                <li>
+                                  <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdroppdf"><i
+                                      class="fa-regular fa-circle-up"></i>
+                                    Import PDF</a>
+                                </li>
+                                <li>
+                                  <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdropvideo"><i
+                                      class="fa-regular fa-circle-up"></i>
+                                    Upload Video</a>
+                                </li>
+                              </ul>
+                              <ul class="adding-content-content d-flex">
+                                <li>
+                                  <a href="" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"><i
+                                      class="fa-solid fa-plus"></i> Add
+                                    Support Material</a>
+                                </li>
+                              </ul>
+                              <ul class="adding-content-content d-flex">
+                                <li>
+                                  <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdropquiz"><i
+                                      class="fa-solid fa-plus"></i> Add
+                                    Quiz</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Open / Close Session
+                    </button>
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="tab3inst">
+        <div class="home-content">
+          <i class="bx bx-menu"></i>
+          <div class="container-fluid container-content-sidebar">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <i class="fa-brands fa-microsoft"></i><a href="#">Dashboard</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <i class="fa-solid fa-credit-card"></i><a href="#">Create & Auther</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Instructors
+                </li>
+              </ol>
+            </nav>
+            <div class="row">
+              <h2 style="border-bottom: 1px solid; padding-bottom: 5px">
+                Instructors
+              </h2>
+              <div class="sidemenu-accordion">
+                <div class="accordion p-0 sidemenu-accordion" id="accordionExample"
+                  style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button" style="background-color: #0b3956; color: white" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                        aria-controls="collapseOne">
+                        Manage Instructors
+                      </button>
+                    </h2>
+                    <div id="collapseOne" style="background-color: white" class="accordion-collapse collapse show"
+                      data-bs-parent="#accordionExample">
+                      <div class="table px-4">
+                        <div class="modal-button-table d-flex justify-content-end gap-3">
+                          <button class="btn btn1 fa fa-plus" data-bs-target="#staticBackdropaddtable"
+                            data-bs-toggle="modal"></button>
+                          <button class="btn btn2 fa fa-minus"></button>
+                        </div>
+
+                        <table id="instructor" class="display display-table" style="width: 100%">
+                          <thead>
+                            <tr>
+                              <th class="checkbox-table-width">
+                                <div class="form-check checkbox-table">
+                                  <input class="form-check-input check-all-js" type="checkbox" value=""
+                                    id="flexCheckDefault " />
+                                </div>
+                              </th>
+                              <th>First Name</th>
+                              <th>Last Name</th>
+                              <th>Email Address</th>
+                              <th>Phone Number</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="checkbox-table-width">
+                                <div class="form-check checkbox-table">
+                                  <input class="form-check-input single-check-js" type="checkbox" value=""
+                                    id="flexCheckDefault" />
+                                </div>
+                              </td>
+                              <td>Tiger Nixon</td>
+                              <td>System Architect</td>
+                              <td>Edinburgh</td>
+                              <td>61</td>
+                            </tr>
+                            <tr>
+                              <td class="checkbox-table-width">
+                                <div class="form-check checkbox-table">
+                                  <input class="form-check-input single-check-js" type="checkbox" value=""
+                                    id="flexCheckDefault" />
+                                </div>
+                              </td>
+                              <td>Garrett Winters</td>
+                              <td>Accountant</td>
+                              <td>Tokyo</td>
+                              <td>63</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="tab4setting">
+        <div class="home-content">
+          <i class="bx bx-menu"></i>
+          <div class="container-fluid container-content-sidebar">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <i class="fa-brands fa-microsoft"></i><a href="#">Dashboard</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <i class="fa-solid fa-credit-card"></i><a href="#">Create & Auther</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Muhammad Wasif (2256292-231006-780)
+                </li>
+              </ol>
+            </nav>
+            <h2 style="border-bottom: 1px solid; padding-bottom: 5px">
+              Course Settings
+            </h2>
+            <p>Set course completion settings and course display settings below.</p>
+            <div class="row">
+              <div class="card yesorno-card mx-md-3">
+                <div class="row">
+                  <h6 class="yesorno-heading">
+                    In order for a student to complete this course, they must:
+                  </h6>
+                </div>
+                <div class="row">
+                  <ul class="d-flex justify-content-between" style="border-bottom: 1px solid lightgray">
+                    <li>
+                      <h6 class="yesorno">
+                        Pass all quizzes within the course.
+                      </h6>
+                    </li>
+                    <li class="me-3">
+                      <span class="easyswitch" data-default="1" data-label-on="Yes" data-label-off="No"></span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <ul class="d-flex justify-content-between" style="border-bottom: 1px solid lightgray">
+                    <li>
+                      <h6 class="yesorno">
+                        Attempt the final exam.
+
+                      </h6>
+                    </li>
+                    <li class="me-3">
+                      <span class="easyswitch" data-default="1" data-label-on="Yes" data-label-off="No"></span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <ul class="d-flex justify-content-between" style="border-bottom: 1px solid lightgray">
+                    <li>
+                      <h6 class="yesorno">
+                        Pass the final exam.
+
+                      </h6>
+                    </li>
+                    <li class="me-3">
+                      <span class="easyswitch" data-default="1" data-label-on="Yes" data-label-off="No"></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card yesorno-card mx-md-3">
+                <div class="row">
+                  <h6 class="yesorno-heading">
+                    Course completion text agreement
+                  </h6>
+                </div>
+                <div class="row">
+                  <ul class="d-flex justify-content-between" style="border-bottom: 1px solid lightgray">
+                    <li>
+                      <h6 class="yesorno">
+                        In order to complete this course, a student must agree to the following text.
+                      </h6>
+                    </li>
+                    <li class="me-3">
+                      <span class="easyswitch" data-default="1" data-label-on="Yes" data-label-off="No"></span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <ul class="d-flex justify-content-between" style="border-bottom: 1px solid lightgray">
+                    <li class="w-100">
+                      <textarea class="form-control" id="exampleFormControlTextarea1"
+                        rows="3">I acknowledge that I have received and completed the training associated with this course.</textarea>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card yesorno-card mx-md-3">
+                <div class="row">
+                  <h6 class="yesorno-heading">
+                    Manage the display of elements in the course player
+                  </h6>
+                </div>
+                <div class="row">
+                  <ul class="d-flex justify-content-between" style="border-bottom: 1px solid lightgray">
+                    <li>
+                      <h6 class="yesorno">
+                        Display slide titles in the table of contents.
+                      </h6>
+                    </li>
+                    <li class="me-3">
+                      <span class="easyswitch" data-default="1" data-label-on="Yes" data-label-off="No"></span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <ul class="d-flex justify-content-between" style="border-bottom: 1px solid lightgray">
+                    <li>
+                      <h6 class="yesorno">
+                        Fully enable table of contents.
+
+                      </h6>
+                    </li>
+                    <li class="me-3">
+                      <span class="easyswitch" data-default="1" data-label-on="Yes" data-label-off="No"></span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <ul class="d-flex justify-content-between" style="border-bottom: 1px solid lightgray">
+                    <li>
+                      <h6 class="yesorno">
+                        Show Reports In Player.
+
+                      </h6>
+                    </li>
+                    <li class="me-3">
+                      <span class="easyswitch" data-default="1" data-label-on="Yes" data-label-off="No"></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card yesorno-card mx-md-3">
+                <div class="row">
+                  <h6 class="yesorno-heading">
+                    Miscellaneous Settings
+                  </h6>
+                </div>
+                <div class="row">
+                  <ul class="d-flex justify-content-between" style="border-bottom: 1px solid lightgray">
+                    <li>
+                      <h6 class="yesorno">
+                        Force Manual Completion. <i> (This will neutralize all completion criterias.)</i>
+                      </h6>
+                    </li>
+                    <li class="me-3">
+                      <span class="easyswitch" data-default="1" data-label-on="Yes" data-label-off="No"></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="btn btn-setting">
+              <button class="btn setting-save">Save</button>
+              <button class="btn setting-cancel">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="tab5pub">
+        <div class="home-content">
+          <i class="bx bx-menu"></i>
+          <div class="container-fluid container-content-sidebar">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <i class="fa-brands fa-microsoft"></i><a href="#">Dashboard</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <i class="fa-solid fa-credit-card"></i><a href="#">Create & Auther</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Muhammad Wasif (2256292-231006-780)
+                </li>
+              </ol>
+            </nav>
+            <h2 style="border-bottom: 1px solid; padding-bottom: 5px">
+              Course Availability
+            </h2>
+            <div class="row">
+              <form action="">
+                <div class="sidemenu-accordion2">
+                  <div class="accordion p-0 sidemenu-accordion" id="accordionExample"
+                    style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button" style="background-color: #0b3956; color: white" type="button"
+                          data-bs-toggle="collapse" data-bs-target="#collapseTwo2" aria-expanded="true"
+                          aria-controls="collapseTwo2">
+                          Expiration
+                        </button>
+                      </h2>
+                      <div id="collapseTwo2" class="accordion-collapse collapse show"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <div class="row">
+                            <div class="picker-heading">
+                              <h6>Does your course expire?</h6>
+                            </div>
+                            <div class="input-group datepicker datepicker-1 w-50">
+                              <input type="text" class="form-control"
+                                placeholder="This Is Optional. Leave blank if your course does not expire" data-input
+                                aria-describedby="date1" />
+                              <div class="input-group-append">
+                                <button class="btn btn-secondary" type="button" id="date1" title="toggle" data-toggle>
+                                  <i class="fa-solid fa-calendar-days"></i>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row mt-3">
+                            <h6>
+                              How long does a student have access to this
+                              course? (Days)
+                            </h6>
+                            <div class="box-unlimited">
+                              <input type="text" class="form-control w-50"
+                                placeholder="This Is Optional. Leave blank for Unlimited access." />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sidemenu-accordion3">
+                  <div class="accordion p-0 sidemenu-accordion" id="accordionExample"
+                    style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button" style="background-color: #0b3956; color: white" type="button"
+                          data-bs-toggle="collapse" data-bs-target="#collapseThree3" aria-expanded="true"
+                          aria-controls="collapseThree3">
+                          Availability Settings
+                        </button>
+                      </h2>
+                      <div id="collapseThree3" class="accordion-collapse collapse show"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <div class="card yesorno-card mx-md-3">
+                            <div class="row">
+                              <h6 class="yesorno-heading">
+                                Answer yes or no to the following settings
+                              </h6>
+                            </div>
+                            <div class="row">
+                              <ul class="d-flex justify-content-between" style="border-bottom: 1px solid lightgray">
+                                <li>
+                                  <h6 class="yesorno">
+                                    Is your course compatible with mobile and
+                                    tablet devices? <br />
+                                    <span>This means no use of flash or mobile
+                                      incompatible interactivity.</span>
+                                  </h6>
+                                </li>
+                                <li class="me-3">
+                                  <span class="easyswitch" data-default="1" data-label-on="Yes"
+                                    data-label-off="No"></span>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="row">
+                              <ul class="d-flex justify-content-between" style="border-bottom: 1px solid lightgray">
+                                <li>
+                                  <h6 class="yesorno">
+                                    Can your course be offered for
+                                    distribution in our third party channels?
+                                    <br />
+                                    <span>This can maximize your exposure and
+                                      revenue generation.</span>
+                                  </h6>
+                                </li>
+                                <li class="me-3">
+                                  <span class="easyswitch" data-default="1" data-label-on="Yes"
+                                    data-label-off="No"></span>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="row">
+                              <ul class="d-flex justify-content-between" style="border-bottom: 1px solid lightgray">
+                                <li>
+                                  <h6 class="yesorno">
+                                    Does your course have any physical
+                                    shippable items?<br />
+                                    <span>This includes physical course materials
+                                      like books and electronics.</span>
+                                  </h6>
+                                </li>
+                                <li class="me-3">
+                                  <span class="easyswitch" data-default="1" data-label-on="Yes"
+                                    data-label-off="No"></span>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="row">
+                              <ul class="d-flex justify-content-between" style="border-bottom: 1px solid lightgray">
+                                <li>
+                                  <h6 class="yesorno">
+                                    Can your course be offered as part of a
+                                    subscription package? <br />
+                                    <span>This will allow your course to be
+                                      offered as part of a subscription
+                                      containing other courses.</span>
+                                  </h6>
+                                </li>
+                                <li class="me-3">
+                                  <span class="easyswitch" data-default="1" data-label-on="Yes"
+                                    data-label-off="No"></span>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="row">
+                              <ul class="yesorno-drop">
+                                <h6 class="yesorno2">
+                                  Can your course be offered as part of a
+                                  subscription package? <br />
+                                  <span>This sets the visibility of your course
+                                    on Marketplace or Resaler store. Catalog &
+                                    Search:Your course will be seen anywhere
+                                    within the catalog and categories you
+                                    select and is searchable. Search:Your
+                                    course will not visible in any of the
+                                    categories you have selected. You can only
+                                    find it by searching.Catalog:Your course
+                                    will be visible in categories you have
+                                    selected but will not show up when
+                                    searching.</span>
+                                </h6>
+                                <br />
+                                <select class="form-select" style="height: 60px" aria-label="Default select example">
+                                  <option selected>Search</option>
+                                  <option value="1">
+                                    Not Visible Individually
+                                  </option>
+                                  <option value="2">Search & Catalog</option>
+                                  <option value="3">Catalog</option>
+                                </select>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="forms-btns mt-3">
+                  <button type="button" class="btn" style="background-color: rgb(229, 229, 229)"
+                    data-bs-dismiss="modal">
+                    Cancel
+                  </button>
+                  <button type="button" class="btn" style="background-color: #0b3956; color: white">
+                    Save
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="tab6info">
+        <div class="home-content">
+          <i class="bx bx-menu"></i>
+          <div class="container-fluid container-content-sidebar">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <i class="fa-brands fa-microsoft"></i><a href="#">Dashboard</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <i class="fa-solid fa-credit-card"></i><a href="#">Create & Auther</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Muhammad Wasif (2256292-231006-780)
+                </li>
+              </ol>
+            </nav>
+            <h2 style="border-bottom: 1px solid; padding-bottom: 5px">
+              Course Information
+            </h2>
+            <p>
+              Good branding visuals and content around your course is critical
+              to its success. Use this section to provide detailed information
+              that will grab the student's attention and aid in the enrollment
+              of your course.
+            </p>
+            <div class="sidemenu-accordion2">
+              <div class="accordion p-0 sidemenu-accordion" id="accordionExample"
+                style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" style="background-color: #0b3956; color: white" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="true"
+                      aria-controls="collapse4">
+                      Author / Instructor Information
+                    </button>
+                  </h2>
+                  <div id="collapse4" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div class="row">
+                        <div class="row mt-3">
+                          <h6>Instructor <span class="tag-mul">*</span></h6>
+                          <select class="form-select" aria-label="Instructor">
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sidemenu-accordion2 mt-3">
+              <div class="accordion p-0 sidemenu-accordion" id="accordionExample"
+                style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" style="background-color: #0b3956; color: white" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false"
+                      aria-controls="collapse5">
+                      Course Images
+                    </button>
+                  </h2>
+                  <div id="collapse5" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div class="row">
+                        <h6>Upload a main image for your course</h6>
+                        <p>
+                          Images will be a main anchor on the courses detail
+                          page. Image dimensions should be 730 x 730 pixels.
+                        </p>
+                        <a class="accordion-img" data-bs-toggle="modal" data-bs-target="#exampleModalTogglemodal-img"><i
+                            class="fa-solid fa-paperclip"></i>
+                          Browse</a>
+                        <div class="card p-0 course-hint mt-3">
+                          <div class="course-hint-content">
+                            <div class="course-hint-content-img">
+
+                              <img src="./Images/course-cover-img.png" alt="">
+                            </div>
+                            <div class="course-hint-content-items">
+                              <p> Your image will be used like the example to the left.
+                                Drag and drop an image to upload
+                                or click the Browse button ( <i class="fa-solid fa-paperclip"></i>). File formats: .jpg,
+                                .jpeg, gif, bmp, or .png</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mt-3">
+                        <h6>Upload a thumbnail image for your course</h6>
+                        <p>
+                          Thumbnail images will be used as a small preview throughout the marketplace. Image dimensions
+                          should be 86 x 86 pixels.
+                          460 x 289 pixels.
+                        </p>
+                        <a class="accordion-img" data-bs-toggle="modal" data-bs-target="#modal-thumb"><i
+                            class="fa-solid fa-paperclip"></i>
+                          Browse</a>
+                        <div class="card p-0 course-hint mt-3">
+                          <div class="course-hint-content">
+                            <div class="course-hint-content-img">
+
+                              <img src="./Images/thumbnail-img.png" alt="">
+                            </div>
+                            <div class="course-hint-content-items">
+                              <p> Your image will be used like the example to the left.
+                                Drag and drop an image to upload
+                                or click the Browse button ( <i class="fa-solid fa-paperclip"></i>). File formats: .jpg,
+                                .jpeg, gif, bmp, or .png</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sidemenu-accordion2 mt-3">
+              <div class="accordion p-0 sidemenu-accordion" id="accordionExample"
+                style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" style="background-color: #0b3956; color: white" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="true"
+                      aria-controls="collapse6">
+                      Promotional Video
+                    </button>
+                  </h2>
+                  <div id="collapse6" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div class="row">
+                        <h6>Upload a promotional video</h6>
+                        <p>
+                          Learners are more likely to enroll in courses that have well-made promotional videos.
+                        </p>
+                        <a class="accordion-img" data-bs-toggle="modal" data-bs-target="#modal-video"><i
+                            class="fa-solid fa-paperclip"></i>
+                          Browse</a>
+                        <div class="card p-0 course-hint mt-3">
+                          <div class="course-hint-content">
+                            <div class="course-hint-content-img">
+
+                              <img src="./Images/course-promo-video.png" alt="">
+                            </div>
+                            <div class="course-hint-content-items">
+                              <p> These videos will be seen on the course details page,
+                                and can be featured in other marketing initiatives.
+                                Drag and drop a video to upload
+                                or Click the Browse button ( <i class="fa-solid fa-paperclip"></i>). File format: mp4
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row mt-3">
+                          <h6>Promotional YouTube Video URL</h6>
+                          <input type="url" class="form-control" placeholder="Enter Promotional Youtube Video URL.">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sidemenu-accordion2 mt-3">
+              <div class="accordion p-0 sidemenu-accordion" id="accordionExample"
+                style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" style="background-color: #0b3956; color: white" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="true"
+                      aria-controls="collapse7">
+                      Pricing
+                    </button>
+                  </h2>
+                  <div id="collapse7" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <form action="">
+                        <div class="row mx-2">
+                          <h6>Price</h6>
+                          <input type="number" class="form-control" value="1.00">
+                        </div>
+                        <div class="row mx-2">
+                          <h6>Special price</h6>
+                          <input type="number" class="form-control" placeholder="Special price">
+                        </div>
+                        <div class="row mt-3 mx-0">
+                          <h6>Special price validity from</h6>
+                          <div class="input-group datepicker2 datepicker-1 w-100">
+                            <input type="text" class="form-control" data-input aria-describedby="date1" />
+                            <div class="input-group-append">
+                              <button class="btn btn-secondary" type="button" id="date1" title="toggle" data-toggle>
+                                <i class="fa-solid fa-calendar-days"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row mt-3 mx-0">
+                          <h6>Special price validity end date</h6>
+                          <div class="input-group datepicker2 datepicker-1 w-100">
+                            <input type="text" class="form-control" data-input aria-describedby="date1" />
+                            <div class="input-group-append">
+                              <button class="btn btn-secondary" type="button" id="date1" title="toggle" data-toggle>
+                                <i class="fa-solid fa-calendar-days"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sidemenu-accordion2 mt-3">
+              <div class="accordion p-0 sidemenu-accordion" id="accordionExample"
+                style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" style="background-color: #0b3956; color: white" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="true"
+                      aria-controls="collapse8">
+                      Course Details
+                    </button>
+                  </h2>
+                  <div id="collapse8" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <form action="">
+                        <div class="row">
+                          <h6>Duration</h6>
+                          <div class="inputs-width">
+                            <input type="number" class="form-control " value="56.00">
+                            <select class="form-select " aria-label="Default select example">
+                              <option value="1">Yes </option>
+                              <option value="2">No</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="row mt-3">
+                          <div class="inputs-special">
+                            <h6>Video Transcriptions</h6>
+                            <select class="form-select" aria-label="Default select example">
+                              <option value="1">Yess</option>
+                              <option value="2">No</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="row mt-3">
+                          <div class="inputs-special">
+                            <h6>Spanish Translation</h6>
+                            <select class="form-select" aria-label="Default select example">
+                              <option value="1">Yess</option>
+                              <option value="2">No</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="row mt-3">
+                          <h6>PDF certificate for your course</h6>
+                          <a class="accordion-img" data-bs-toggle="modal" data-bs-target="#modal-certificate"><i
+                              class="fa-solid fa-paperclip"></i>
+                            Browse</a>
+                          <div class="card p-0 course-hint mt-3">
+                            <div class="course-hint-content">
+                              <div class="course-hint-content-img">
+
+                                <img src="./Images/Certificate (1).png" alt="">
+                              </div>
+                              <div class="course-hint-content-items ms-2">
+                                <p>Drag and Drop OR Select a PDF for your course which will be completion certificate of
+                                  your course.
+                                  It will be provided to learner once they complete course.
+                                  Click the Browse button (<i class="fa-solid fa-paperclip"></i> ). File format: pdf
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row mt-3">
+                          <h6>Intended audience</h6>
+                          <script src="https://cdn.ckeditor.com/4.8.0/full-all/ckeditor.js"></script>
+                          <textarea name="" id="editor4" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="row mt-3">
+                          <h6>Prerequisites</h6>
+                          <script src="https://cdn.ckeditor.com/4.8.0/full-all/ckeditor.js"></script>
+                          <textarea name="" id="editor5" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="row mt-3">
+                          <h6>Course Instructions</h6>
+                          <script src="https://cdn.ckeditor.com/4.8.0/full-all/ckeditor.js"></script>
+                          <textarea name="" id="editor6" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="row mt-3">
+                          <h6>Other requirements and end-of-course instructions</h6>
+                          <script src="https://cdn.ckeditor.com/4.8.0/full-all/ckeditor.js"></script>
+                          <textarea name="" id="editor7" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="row mt-3">
+                          <h6>Course Outline</h6>
+                          <script src="https://cdn.ckeditor.com/4.8.0/full-all/ckeditor.js"></script>
+                          <textarea name="" id="editor8" cols="30" rows="10"></textarea>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="btn">
+              <button type="btn" style="background-color: #0b3956; color: #e4eef7;" class="btn">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="tab7badge">
+        <div class="home-content">
+          <i class="bx bx-menu"></i>
+          <div class="container-fluid container-content-sidebar">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <i class="fa-brands fa-microsoft"></i><a href="#">Dashboard</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <i class="fa-solid fa-credit-card"></i><a href="#">Create & Auther</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Muhammad Wasif (2256292-231006-780)
+                </li>
+              </ol>
+            </nav>
+            <h2 style="border-bottom: 1px solid; padding-bottom: 5px">
+              Muhammad Wasif
+            </h2>
+            <div class="row p-5">
+              <h6>Badge Template Details</h6>
+              <div class="col-md-2 mt-3">
+                <label class="text-center mb-5 image-preview-wrapper" for="file-uploader">
+                  <img src="https://via.placeholder.com/300x300/efefef?text=Avatar" alt="image-placehoder"
+                    class="img-thumbnail" data-target="image-preview">
+                  <div class="spinner-wrapper position-absolute" data-target="spinner">
+                    <div class="spinner-border text-secondary" role="status">
+                      <span class="sr-only">Loading...</span>
+                    </div>
+                  </div>
+                </label>
+              </div>
+              <div class="col-md-10 mt-3">
+                <p>Badge Templates must use square images in PNG format, with dimensions of at least 600x600 pixels.</p>
+                <div class="custom-file">
+                  <input multiple="multiple" accept="image/*" type="file" class="custom-file-input"
+                    data-target="file-uploader" id="file-uploader">
+                  <label class="custom-file-label" for="customFile">Upload Image</label>
+                </div>
+              </div>
+            </div>
+            <form action="">
+              <div class="row ps-5">
+                <div class="col-md-8">
+                  <div class="row">
+                    <div class="col-md-3">Badge Name <span class="tag-mul">*</span></div>
+                    <div class="col-md-9">
+                      <input type="text" placeholder="Badge Number" class="form-control">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-8 mt-3">
+                  <div class="row">
+                    <div class="col-md-3">Description <span class="tag-mul">*</span></div>
+                    <div class="col-md-9">
+                      <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Description"
+                        rows="3"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-8 mt-3">
+                  <div class="row search-dropdown">
+                    <div class="col-md-3">Skills <span class="tag-mul">*</span></div>
+                    <div class="col-md-9">
+                      <input id="search" type="text" class="form-control w-100" placeholder="Skills">
+                      <ul class="drop"></ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <hr>
+            <div class="row badge-form">
+              <h5>Badge Criteria <span class="tag-mul">*</span></h5>
+              <form method="post" action="">
+                <div id="formContainer">
+                  <div class="form">
+                    <div class="row px-5">
+                      <div class="col-md-2">
+                        <h6>Activity 1</h6>
+                      </div>
+                      <div class="col-md-6 cards-form-add">
+                        <div class="card pt-4 px-3">
+                          <div class="form-group">
+                            <div class="mb-3">
+                              <label for="exampleFormControlInput1" class="form-label">Type</label>
+                              <select class="form-select" aria-label="Default select example">
+                                <option selected>Choose Type:</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                            </div>
+
+                          </div>
+                          <div class="form-group">
+                            <div class="mb-3">
+                              <label for="exampleFormControlInput1" class="form-label">Description</label>
+                              <textarea class="form-control" name="textarea[]" rows="3"
+                                placeholder="Textarea"></textarea>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <div class="mb-3">
+                              <label for="exampleFormControlInput1" class="form-label">URL to Activity</label>
+                              <input type="url" placeholder="https://" class="form-control">
+                            </div>
+                          </div>
+                          <div class="form-group d-flex justify-content-end">
+                            <button type="button" class="btn btn-danger delete-button" onclick="deleteForm(this)"><i
+                                class="fa-solid fa-trash"></i></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button type="button" class="btn add-activity-form" onclick="addForm()">Add Activity</button>
+              </form>
+            </div>
+            <hr>
+
+            <form action="">
+              <div class="row mt-3 px-5">
+                <div class="col-md-3">
+                  <h5>Attributes <br>
+                    (optional)</h5>
+                </div>
+                <div class="col-md-9">
+                  <p>Select attributes to provide more details about this badge.</p>
+                </div>
+              </div>
+              <div class="row ps-5 mt-3">
+                <div class="col-md-8">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h6>Type</h6>
+                    </div>
+                    <div class="col-md-9">
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-8 mt-3">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h6>Level</h6>
+                    </div>
+                    <div class="col-md-9">
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-8 mt-3">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h6>Time</h6>
+                    </div>
+                    <div class="col-md-9">
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-8 mt-3">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h6>Cost</h6>
+                    </div>
+                    <div class="col-md-9">
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </form>
+            <hr>
+
+            <form action="">
+              <div class="row mt-3 px-5">
+                <h5>Setting</h5>
+                <div class="row">
+                  <div class="col-md-2">
+                    <h6>Template Visibility</h6>
+                  </div>
+                  <div class="col-md-10">
+                    <p>Badge Templates marked Public will be displayed on your organization page.</p>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                      <label class="form-check-label" for="flexRadioDefault1">
+                        Public
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                        checked>
+                      <label class="form-check-label" for="flexRadioDefault2">
+                        Private
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-2">
+                    <h6>Add to Collections</h6>
+                  </div>
+                  <div class="col-md-10">
+                    <p>Add this template to any of your existing badge template collections.</p>
+                    <div class="row search-dropdown">
+                      <input id="search2" type="text" class="form-control w-100" placeholder="">
+                      <ul class="drop"></ul>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-2">
+                    <h6>Duplicates</h6>
+                  </div>
+                  <div class="col-md-10">
+                    <p>Allow earners to receive multiple badges from this template</p>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault3">
+                      <label class="form-check-label" for="flexRadioDefault3">
+                        Yes
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault4"
+                        checked>
+                      <label class="form-check-label" for="flexRadioDefault4">
+                        No
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="btn">
+            <button type="btn" style="background-color: #0b3956; color: #e4eef7;" class="btn">Save</button>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="tab8publish">
+        <div class="home-content">
+          <i class="bx bx-menu"></i>
+          <div class="container-fluid container-content-sidebar">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <i class="fa-brands fa-microsoft"></i><a href="#">Dashboard</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <i class="fa-solid fa-credit-card"></i><a href="#">Create & Auther</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Muhammad Wasif (2256292-231006-780)
+                </li>
+              </ol>
+            </nav>
+            <h2 style="border-bottom: 1px solid; padding-bottom: 5px">
+              Publish Course
+            </h2>
+            <p>Work done on a course prior to publishing it will only be seen in authoring mode. To make a course, or
+              updates on a
+              course, available to learners, you must publish it.</p>
+
+            <div class="row">
+              <div class="sidemenu-accordion2">
+                <div class="accordion p-0 sidemenu-accordion" id="accordionExample"
+                  style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button" style="background-color: #0b3956; color: white" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="true"
+                        aria-controls="collapse9">
+                        Publishing Criteria
+                      </button>
+                    </h2>
+                    <div id="collapse9" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <p>Publishing criteria are derived from Settings & Availability pages. If they are displaying
+                          incorrectly, please review
+                          and modify your selections. requirements. If the red warning icon displays, please review and
+                          modify your settings for
+                          that item.</p>
+                        <ul class="publish-criteria">
+                          <li class="publish-criteria-list">
+                            <ul class="publish-criteria2">
+                              <li>Course has at least 1 lesson folder</li>
+                              <li><i class="fa-solid fa-circle-check"></i></li>
+                            </ul>
+                          </li>
+                          <li class="publish-criteria-list">
+                            <ul class="publish-criteria2">
+                              <li>Each lesson folder has at least 1 slider</li>
+                              <li><i class="fa-solid fa-circle-xmark"></i></li>
+                            </ul>
+                          </li>
+                          <li class="publish-criteria-list">
+                            <ul class="publish-criteria2">
+                              <li>Agreement text is provided.</li>
+                              <li><i class="fa-solid fa-circle-check"></i></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <form action="">
+                <div class="sidemenu-accordion2 mt-3">
+                  <div class="accordion p-0 sidemenu-accordion" id="accordionExample"
+                    style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button" style="background-color: #0b3956; color: white" type="button"
+                          data-bs-toggle="collapse" data-bs-target="#collapse10" aria-expanded="false"
+                          aria-controls="collapse10">
+                          Publishing Settings
+                        </button>
+                      </h2>
+                      <div id="collapse10" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <form action="">
+                            <div class="row">
+                              <p>Release/Update Notes <span class="tag-mul">*</span></p>
+                              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                              <ul class="course-publish-list mt-3">
+                                <li><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> Show
+                                  Release notes to Users</li>
+                                <li>If your course successfully meets the publishing criteria, you can choose to publish
+                                  /
+                                  republish your course.</li>
+                                <li><strong>Publish To Store:</strong> Directly publishes your course onto the
+                                  MarketPlace
+                                  or Branded Resaler Site to offer for others to
+                                  take or enroll in.</li>
+                                <li><strong>Publish To Manager Mode:</strong> If you are a manager, this directly
+                                  publishes your courses to assign and enroll students into
+                                  directly through your manager mode.</li>
+                              </ul>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <div class="btn publish-mode">
+                <button class="btn">Publish to Store</button>
+                <button class="btn">Publish to Manager Mode</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Modal add Lesson-->
+  <div class="modal fade modal-addcourse" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false"
+    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title fs-5 d-flex gap-2 align-items-center" id="staticBackdropLabel">
+            <i class="fa-solid fa-folder-open"></i>
+            <h5 class="pt-2">Add New Lesson</h5>
+          </div>
+        </div>
+
+        <form action="">
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-3">
+                <h6>Title <span>*</span></h6>
+              </div>
+              <div class="col-md-9">
+                <input type="text" class="form-control" id="validationCustom01" required />
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-md-3">
+                <h6 data-bs-toggle="tooltip" data-bs-placement="bottom"
+                  data-bs-title="Describe what the lesson is about. This is a reference field for you for now, but in the future will be part of the course outline provided to learner and on the storefront">
+                  Description
+                </h6>
+              </div>
+              <div class="col-md-9">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-md-3">
+                <h6 data-bs-toggle="tooltip" data-bs-placement="bottom"
+                  data-bs-title="Each Learning Objective creates an individual question bank in the Lesson Quiz.  Separate Learning Objectives should define outcomes like knowledge, skills, attitude, or value that the learner will achieve from the content of this lesson.">
+                  Lesson Learning Objectives
+                </h6>
+              </div>
+              <div class="col-md-9">
+                <p>
+                  What are the 3-5 key things your learners should be able to
+                  do at the end of this lesson? Add these things as lesson
+                  learning objective.
+                </p>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-md-3">
+                <h6 data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enable Cloud sandbox playground">
+                  Enable Cloud sandbox playground
+                </h6>
+              </div>
+              <div class="col-md-9">
+                <select class="form-select" aria-label="Default select example">
+                  <option value="1">Yes</option>
+                  <option value="2">No</option>
+                </select>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-md-3">
+                <h6 data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Can">
+                  Can this lesson be previewed for free?
+                </h6>
+              </div>
+              <div class="col-md-9">
+                <select class="form-select" aria-label="Default select example">
+                  <option value="1">Yes</option>
+                  <option value="2">No</option>
+                </select>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-md-3"></div>
+              <div class="col-md-9">
+                <div class="inputfield-adding">
+                  <div class="btn-adding-input-fields d-flex align-items-center gap-2">
+                    <button id="btn-add" type="button" class="btn btn-success">
+                      <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <p class="pt-3">
+                      Click the Add button ( + ) to add a learning objective.
+                    </p>
+                  </div>
+                  <div id="form-placeholder"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn" style="background-color: rgb(229, 229, 229)" data-bs-dismiss="modal">
+              Cancel
+            </button>
+            <button type="button" class="btn" style="background-color: #0b3956; color: white">
+              Save
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Modal add Exam-->
+  <div class="modal fade modal-addcourse" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false"
+    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title fs-5 d-flex gap-2 align-items-center" id="staticBackdropLabel">
+            <i class="fa-solid fa-folder-open"></i>
+            <h5 class="pt-2">Add Final Exam</h5>
+          </div>
+        </div>
+
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-4">
+              <h6 data-bs-toggle="tooltip" data-bs-placement="bottom"
+                data-bs-title="This number is automatically generated; it is the running total of the number of questions to ask per question bank, of all question banks included in this exam.  Be sure to fill In this value at the bank level!">
+                Number of target questions per exam
+              </h6>
+            </div>
+            <div class="col-md-8">
+              <p class="custom01">
+                <input type="text" size="40" placeholder="60" disabled />
+              </p>
+
+              <p></p>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-md-4">
+              <h6 data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Require Proctoring And Logging">
+                Require Proctoring And Logging
+              </h6>
+            </div>
+            <div class="col-md-8">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+              </div>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-md-4">
+              <h6 data-bs-toggle="tooltip" data-bs-placement="bottom"
+                data-bs-title="Click the checkbox to have the system randomize your questions. Every attempt will present the questions in randomized order.  We recommend this.  ">
+                Randomize questions
+              </h6>
+            </div>
+            <div class="col-md-8">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
+              </div>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-md-4">
+              <h6 data-bs-toggle="tooltip" data-bs-placement="bottom"
+                data-bs-title="Click the checkbox to have the system randomize your answer choices. Every attempt will randomize the order of the answer choices for each question. We recommend this. ">
+                Randomize answers
+              </h6>
+            </div>
+            <div class="col-md-8">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
+              </div>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-md-4">
+              <h6 data-bs-toggle="tooltip" data-bs-placement="bottom"
+                data-bs-title="Enter the number of minutes a learner will have to complete the exam. Once the time is up, the exam will automatically be submitted and counted as an attempt. This makes cheating more difficult, but be sure to give your students enough time to thoughtfully respond">
+                Time permitted for exam (minutes)
+              </h6>
+            </div>
+            <div class="col-md-8">
+              <input type="number" class="form-control" id="validationCustom01" value="60" required />
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-md-4">
+              <h6 data-bs-toggle="tooltip" data-bs-placement="bottom"
+                data-bs-title="Select if you want the system to grade your final exam questions either after each question is answered by the learner, or after the entire exam is submitted. Grading after the exam is submitted is standard">
+                Grade questions
+              </h6>
+            </div>
+            <div class="col-md-8">
+              <select class="form-select" aria-label="Default select example">
+                <option value="1">After Exam is submitted</option>
+                <option value="1">After each qustion is answered</option>
+              </select>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-md-4">
+              <h6 data-bs-toggle="tooltip" data-bs-placement="bottom"
+                data-bs-title="Click the checkbox to allow the learner to review their responses (including correct and incorrect answers) to the final exam questions after the exam is submitted and graded. ">
+                Allow review after grading
+              </h6>
+            </div>
+            <div class="col-md-8">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
+              </div>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-md-4">
+              <h6 data-bs-toggle="tooltip" data-bs-placement="bottom"
+                data-bs-title="Enter the number of minutes a learner will have to complete the exam. Once the time is up, the exam will automatically be submitted and counted as an attempt. This makes cheating more difficult, but be sure to give your students enough time to thoughtfully respond">
+                Score required to pass exam
+              </h6>
+            </div>
+            <div class="col-md-8">
+              <input type="number" class="form-control" id="validationCustom01" value="70" required />
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-md-4">
+              <h6 data-bs-toggle="tooltip" data-bs-placement="bottom"
+                data-bs-title="Enter the number of minutes a learner will have to complete the exam. Once the time is up, the exam will automatically be submitted and counted as an attempt. This makes cheating more difficult, but be sure to give your students enough time to thoughtfully respond">
+                Number of attempts permitted
+              </h6>
+            </div>
+            <div class="col-md-8">
+              <input type="number" class="form-control" id="validationCustom01" value="3" required />
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-md-4">
+              <h6 data-bs-toggle="tooltip" data-bs-placement="bottom"
+                data-bs-title="Select if you want the system to grade your final exam questions either after each question is answered by the learner, or after the entire exam is submitted. Grading after the exam is submitted is standard">
+                Action to take if fail to pass
+              </h6>
+            </div>
+            <div class="col-md-8">
+              <select class="form-select" aria-label="Default select example">
+                <option value="1">Retake Course</option>
+                <option value="1">Lock Course</option>
+                <option value="1">Continue Course</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn" style="background-color: rgb(229, 229, 229)" data-bs-dismiss="modal">
+            Cancel
+          </button>
+          <button type="button" class="btn" style="background-color: #0b3956; color: white">
+            Save
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Add Quiz -->
+  <div class="modal fade modal-addcourse" id="staticBackdropquiz" data-bs-backdrop="static" data-bs-keyboard="false"
+    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title fs-5 d-flex gap-2 align-items-center" id="staticBackdropLabel">
+            <i class="fa-solid fa-square-check"></i>
+            <h5 class="pt-2">Add New Quiz</h5>
+          </div>
+        </div>
+
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-4">
+              <h6 data-bs-toggle="tooltip" data-bs-placement="bottom"
+                data-bs-title="This number is automatically generated; it is the running total of the number of questions to ask per question bank, of all question banks included in this exam.  Be sure to fill In this value at the bank level!">
+                Assessment Instructions Title
+              </h6>
+            </div>
+            <div class="col-md-8">
+              <p class="custom01">
+                <input type="text" size="40" placeholder="Enter value in text" />
+              </p>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-md-4">
+              <h6 data-bs-toggle="tooltip" data-bs-placement="bottom"
+                data-bs-title="Click the checkbox to have the system randomize your questions. Every attempt will present the questions in randomized order.  We recommend this.  ">
+                Use Default
+              </h6>
+            </div>
+            <div class="col-md-8">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
+              </div>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-md-4">
+              <h6 data-bs-toggle="tooltip" data-bs-placement="bottom"
+                data-bs-title="Click the checkbox to have the system randomize your questions. Every attempt will present the questions in randomized order.  We recommend this.  ">
+                Assessment Instructions
+              </h6>
+            </div>
+            <div class="col-md-8">
+              <textarea name="" id="editor" cols="30" rows="10"></textarea>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-md-4">
+              <h6 data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Require Proctoring And Logging">
+                Require Proctoring And Logging
+              </h6>
+            </div>
+            <div class="col-md-8">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+              </div>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-md-4">
+              <h6 data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Require Proctoring And Logging">
+                Show Correct Answer to Student
+              </h6>
+            </div>
+            <div class="col-md-8">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+              </div>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-md-4">
+              <h6 data-bs-toggle="tooltip" data-bs-placement="bottom"
+                data-bs-title="Click the checkbox to have the system randomize your questions. Every attempt will present the questions in randomized order.  We recommend this.  ">
+                Randomize questions
+              </h6>
+            </div>
+            <div class="col-md-8">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
+              </div>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-md-4">
+              <h6 data-bs-toggle="tooltip" data-bs-placement="bottom"
+                data-bs-title="Click the checkbox to have the system randomize your answer choices. Every attempt will randomize the order of the answer choices for each question. We recommend this. ">
+                Randomize answers
+              </h6>
+            </div>
+            <div class="col-md-8">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
+              </div>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-md-4">
+              <h6 data-bs-toggle="tooltip" data-bs-placement="bottom"
+                data-bs-title="Enter the number of minutes a learner will have to complete the exam. Once the time is up, the exam will automatically be submitted and counted as an attempt. This makes cheating more difficult, but be sure to give your students enough time to thoughtfully respond">
+                Time permitted for quiz (minutes)
+              </h6>
+            </div>
+            <div class="col-md-8">
+              <input type="number" class="form-control" id="validationCustom01" value="15" required />
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-md-4">
+              <h6 data-bs-toggle="tooltip" data-bs-placement="bottom"
+                data-bs-title="Select if you want the system to grade your final exam questions either after each question is answered by the learner, or after the entire exam is submitted. Grading after the exam is submitted is standard">
+                Grade questions
+              </h6>
+            </div>
+            <div class="col-md-8">
+              <select class="form-select" aria-label="Default select example">
+                <option value="1">After Quiz is submitted</option>
+                <option value="2">After each qustion is answered</option>
+                <option value="3">Never</option>
+              </select>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-md-4">
+              <h6 data-bs-toggle="tooltip" data-bs-placement="bottom"
+                data-bs-title="Click the checkbox to allow the learner to review their responses (including correct and incorrect answers) to the final exam questions after the exam is submitted and graded. ">
+                Allow review after grading
+              </h6>
+            </div>
+            <div class="col-md-8">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
+              </div>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-md-4">
+              <h6 data-bs-toggle="tooltip" data-bs-placement="bottom"
+                data-bs-title="Enter the number of minutes a learner will have to complete the exam. Once the time is up, the exam will automatically be submitted and counted as an attempt. This makes cheating more difficult, but be sure to give your students enough time to thoughtfully respond">
+                Score required to pass Quiz
+              </h6>
+            </div>
+            <div class="col-md-8">
+              <input type="number" class="form-control" id="validationCustom01" value="70" required />
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-md-4">
+              <h6 data-bs-toggle="tooltip" data-bs-placement="bottom"
+                data-bs-title="Enter the number of minutes a learner will have to complete the exam. Once the time is up, the exam will automatically be submitted and counted as an attempt. This makes cheating more difficult, but be sure to give your students enough time to thoughtfully respond">
+                Number of attempts permitted
+              </h6>
+            </div>
+            <div class="col-md-8">
+              <input type="number" class="form-control" id="validationCustom01" value="3" required />
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-md-4">
+              <h6 data-bs-toggle="tooltip" data-bs-placement="bottom"
+                data-bs-title="Select if you want the system to grade your final exam questions either after each question is answered by the learner, or after the entire exam is submitted. Grading after the exam is submitted is standard">
+                Action to take if fail to pass
+              </h6>
+            </div>
+            <div class="col-md-8">
+              <select class="form-select" aria-label="Default select example">
+                <option value="1">Retake Course</option>
+                <option value="1">Lock Course</option>
+                <option value="1">Continue Course</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn" style="background-color: rgb(229, 229, 229)" data-bs-dismiss="modal">
+            Cancel
+          </button>
+          <button type="button" class="btn" style="background-color: #0b3956; color: white">
+            Save
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Add Slide -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdropslide" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title fs-5 d-flex gap-2 align-items-center" id="staticBackdropLabel">
+            <i class="fa-solid fa-plus"></i>
+            <h5 class="pt-2">Add Final Exam</h5>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-2">
+              <h6 data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Title">
+                Title
+              </h6>
+            </div>
+            <div class="col-md-10">
+              <script src="https://cdn.ckeditor.com/4.8.0/full-all/ckeditor.js"></script>
+              <textarea name="" id="editor1" cols="30" rows="10"></textarea>
+            </div>
+          </div>
+          <div class="row pt-4">
+            <div class="col-md-2">
+              <h6 data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Title">
+                Duration (seconds)
+              </h6>
+            </div>
+            <div class="col-md-10">
+              <input type="number" class="form-control" value="0" />
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn" style="background-color: rgb(229, 229, 229)" data-bs-dismiss="modal">
+            Cancel
+          </button>
+          <button type="button" class="btn" style="background-color: #0b3956; color: white">
+            Save
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="staticBackdropppt" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title fs-5 d-flex gap-2 align-items-center" id="staticBackdropLabel">
+            <i class="fa-regular fa-circle-up"></i>
+            <h5 class="pt-2">Upload PowerPoint Slide</h5>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-2">
+              <h6 data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Title">
+                Asset Type
+              </h6>
+            </div>
+            <div class="col-md-10">
+              <p>ppt/pptx</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-2">
+              <h6 data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Title">
+                File Path
+              </h6>
+            </div>
+            <div class="col-md-10">
+              <button class="btn btn-ppt-sub">
+                <i class="fa-solid fa-paperclip"></i>
+                <input type="file" accept=".pptx,.ppt" name="file1" id="file1" onchange="uploadFile()" />
+              </button>
+              <progress id="progressBar" value="0" max="100" style="width: 300px"></progress>
+              <p id="loaded_n_total"></p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn" style="background-color: rgb(229, 229, 229)" data-bs-dismiss="modal">
+            Cancel
+          </button>
+          <button type="button" class="btn" style="background-color: #0b3956; color: white">
+            Save
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="staticBackdroppdf" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title fs-5 d-flex gap-2 align-items-center" id="staticBackdropLabel">
+            <i class="fa-regular fa-circle-up"></i>
+            <h5 class="pt-2">Upload Pdf</h5>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-2">
+              <h6 data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Title">
+                Asset Type
+              </h6>
+            </div>
+            <div class="col-md-10">
+              <p>PDF</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-2">
+              <h6 data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Title">
+                File Path
+              </h6>
+            </div>
+            <div class="col-md-10">
+              <button class="btn btn-ppt-sub">
+                <i class="fa-solid fa-paperclip"></i>
+                <input type="file" accept=".pdf" name="file1" id="file1" onchange="uploadFile()" />
+              </button>
+              <progress id="progressBar" value="0" max="100" style="width: 300px"></progress>
+              <p id="loaded_n_total"></p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn" style="background-color: rgb(229, 229, 229)" data-bs-dismiss="modal">
+            Cancel
+          </button>
+          <button type="button" class="btn" style="background-color: #0b3956; color: white">
+            Save
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="staticBackdropvideo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title fs-5 d-flex gap-2 align-items-center" id="staticBackdropLabel">
+            <i class="fa-regular fa-circle-up"></i>
+            <h5 class="pt-2">Upload Video</h5>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-2">
+              <h6 data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Title">
+                Asset Type
+              </h6>
+            </div>
+            <div class="col-md-10">
+              <p>PDF</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-2">
+              <h6 data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Title">
+                File Path
+              </h6>
+            </div>
+            <div class="col-md-10">
+              <button class="btn btn-ppt-sub">
+                <i class="fa-solid fa-paperclip"></i>
+                <input type="file" accept=".mp4" name="file3" id="file3" onchange="uploadFile()" />
+              </button>
+              <progress id="progressBar" value="0" max="100" style="width: 300px"></progress>
+              <p id="loaded_n_total"></p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn" style="background-color: rgb(229, 229, 229)" data-bs-dismiss="modal">
+            Cancel
+          </button>
+          <button type="button" class="btn" style="background-color: #0b3956; color: white">
+            Save
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+    tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title fs-5 d-flex gap-2 align-items-center" id="staticBackdropLabel">
+            <i class="fa-solid fa-file-arrow-up"></i>
+            <h5 class="pt-2">Add Support Material</h5>
+          </div>
+        </div>
+        <div class="modal-body double-modal-body m-auto px-5">
+          <div class="btn-support-modal1">
+            <button class="btn" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+              <div class="card double-modal py-3 px-1">
+                <div class="icons-svgm-auto">
+                  <img src="./Images/plus.png" alt="" />
+                </div>
+                <div class="content-para pt-3">
+                  <p id="para1">Create</p>
+                  <p id="para2">
+                    Click here to create support material and attach to
+                    lesson.
+                  </p>
+                </div>
+              </div>
+            </button>
+          </div>
+          <div class="btn-support-modal2">
+            <button class="btn" data-bs-target="#exampleModalToggle3" data-bs-toggle="modal">
+              <div class="card double-modal py-3 px-1">
+                <div class="icons-svgm-auto">
+                  <img src="./Images/magnifying-glass.png" alt="" />
+                </div>
+                <div class="content-para pt-3">
+                  <p id="para1">Find</p>
+                  <p id="para2">
+                    Click here to find support material and attach to lesson.
+                  </p>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn" style="background-color: rgb(229, 229, 229)" data-bs-dismiss="modal">
+            Cancel
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+    tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title fs-5 d-flex gap-2 align-items-center" id="staticBackdropLabel">
+            <i class="fa-solid fa-file-arrow-up"></i>
+            <h5 class="pt-2">Upload Support Material and Attach to Lesson</h5>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-3">
+              <h6>Asset Name <span>*</span></h6>
+            </div>
+            <div class="col-md-9">
+              <input type="text" class="form-control" id="validationCustom01" required />
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-md-3">
+              <h6>Keywords <span>*</span></h6>
+            </div>
+            <div class="col-md-9">
+              <input type="text" class="form-control" id="tag-input2" />
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-md-3">
+              <h6 data-bs-toggle="tooltip" data-bs-placement="bottom"
+                data-bs-title="Describe what the lesson is about. This is a reference field for you for now, but in the future will be part of the course outline provided to learner and on the storefront">
+                Description
+              </h6>
+            </div>
+            <div class="col-md-9">
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-md-3">
+              <h6 data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Title">
+                Asset Type
+              </h6>
+            </div>
+            <div class="col-md-9">
+              <p>
+                Document / Image <br />
+                ( .doc / .docx / .pdf / .ppt / .pptx / .xls / .xlsx / .png /
+                .jpeg / .gif )
+              </p>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-md-3">
+              <h6 data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Title">
+                File Path
+              </h6>
+            </div>
+            <div class="col-md-9">
+              <button class="btn btn-ppt-sub">
+                <i class="fa-solid fa-paperclip"></i>
+                <input type="file" accept=".doc , .docx, .pdf , .ppt , .pptx , .xls , .xlsx , .png , .jpeg , .gif"
+                  name="file3" id="file3" onchange="uploadFile()" />
+              </button>
+              <progress id="progressBar" value="0" max="100" style="width: 300px"></progress>
+              <p id="loaded_n_total"></p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn" style="background-color: rgb(229, 229, 229)" data-bs-target=" #exampleModalToggle"
+            data-bs-toggle="modal">
+            Back
+          </button>
+          <button type="button" class="btn" style="background-color: rgb(229, 229, 229)" data-bs-dismiss="modal">
+            Cancel
+          </button>
+          <button type="button" class="btn" style="background-color: #0b3956; color: white">
+            Save
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel3"
+    tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title fs-5 d-flex gap-2 align-items-center" id="staticBackdropLabel">
+            <i class="fa-solid fa-file-arrow-up"></i>
+            <h5 class="pt-2">Find Support Material and Attach to Lesson</h5>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="search-bar-table-double-modal d-flex justify-content-end py-3">
+            <form class="d-flex w-50" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+              <button class="btn btn-search-bar-table-double-modal" style="width: 100px" type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i> Find
+              </button>
+            </form>
+          </div>
+
+          <table class="table table-hover table-bordered">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Asset Name</th>
+                <th scope="col">Type</th>
+                <th scope="col">Dimension</th>
+                <th scope="col">Size</th>
+                <th scope="col">Version</th>
+                <th scope="col">Description</th>
+                <th scope="col">Preview</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                </th>
+                <td>Web Development</td>
+                <td>Image</td>
+                <td>730 x 730</td>
+                <td>N/A</td>
+                <td>1</td>
+                <td>what is web development</td>
+                <td class="img-table">
+                  <img src="./image/profile.jpg" alt="" />
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                </th>
+                <td>Web Development</td>
+                <td>Image</td>
+                <td>730 x 730</td>
+                <td>N/A</td>
+                <td>1</td>
+                <td>what is web development</td>
+                <td class="img-table">
+                  <img src="./image/profile.jpg" alt="" />
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                </th>
+                <td>Web Development</td>
+                <td>Image</td>
+                <td>730 x 730</td>
+                <td>N/A</td>
+                <td>1</td>
+                <td>what is web development</td>
+                <td class="img-table">
+                  <img src="./image/profile.jpg" alt="" />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="modal-footer">
+          <button class="btn" style="background-color: rgb(229, 229, 229)" data-bs-target=" #exampleModalToggle"
+            data-bs-toggle="modal">
+            Back
+          </button>
+          <button type="button" class="btn" style="background-color: rgb(229, 229, 229)" data-bs-dismiss="modal">
+            Cancel
+          </button>
+          <button type="button" class="btn" style="background-color: #0b3956; color: white">
+            Save
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="staticBackdropaddtable" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title fs-5 d-flex gap-2 align-items-center" id="staticBackdropLabel">
+            <i class="fa-solid fa-plus"></i>
+            <h5 class="pt-2">Add Final Exam</h5>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-12">
+              <h6 data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Title">
+                First Name <span class="tag-mul">*</span>
+              </h6>
+              <input type="text" required class="form-control" />
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-md-12">
+              <h6 data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Title">
+                Last Name <span class="tag-mul">*</span>
+              </h6>
+              <input type="text" required class="form-control" />
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-md-12">
+              <h6 data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Title">
+                Email address <span class="tag-mul">*</span>
+              </h6>
+              <input type="text" required class="form-control" />
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-md-12">
+              <h6 data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Title">
+                Phone number <span class="tag-mul">*</span>
+              </h6>
+              <input type="text" required class="form-control" />
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-md-12">
+              <h6 data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Title">
+                Enter a short bio on this author or instructor
+                <span class="tag-mul">*</span>
+              </h6>
+              <script src="https://cdn.ckeditor.com/4.8.0/full-all/ckeditor.js"></script>
+              <textarea name="" id="editor3" cols="30" rows="10"></textarea>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-md-12">
+              <h6 data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Title">
+                Upload a thumbnail image of the author or instructor
+                <span class="tag-mul">*</span>
+              </h6>
+              <a href="" type="file" class="btn-1-browse" data-bs-target="#exampleModalToggleadd"
+                data-bs-toggle="modal"><i class="fa-solid fa-paperclip"></i> Browse</a>
+              <!-- <button class="btn btn-ppt-sub"><i class="fa-solid fa-paperclip"></i> <input type="file"
+                    accept=".png , .jpeg , .gif" name="file3" id="file3" onchange="uploadFile()"></button> -->
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn" style="background-color: rgb(229, 229, 229)" data-bs-dismiss="modal">
+            Cancel
+          </button>
+          <button type="button" class="btn" style="background-color: #0b3956; color: white">
+            Save
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModalToggleadd" aria-hidden="true" aria-labelledby="exampleModalToggleLabeladd"
+    tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title fs-5 d-flex gap-2 align-items-center" id="staticBackdropLabel">
+            <i class="fa-solid fa-file-arrow-up"></i>
+            <h5 class="pt-2">Add Support Material</h5>
+          </div>
+        </div>
+        <div class="modal-body d-flex justify-content-center gap-3">
+          <div class="btn-support-moda">
+            <div class="drop-zone">
+              <span class="drop-zone__prompt">Drop file here or click to upload</span>
+              <input type="file" name="myFile" accept=".jpg,.jpeg,.png" class="drop-zone__input" />
+            </div>
+          </div>
+          <div class="btn-support-moda">
+            <div class="drop-zone2">
+              <button class="btn" data-bs-target="#exampleModalToggle13" data-bs-toggle="modal">
+                <div class="icons-svgm-auto">
+                  <img src="./Images/magnifying-glass.png" alt="" />
+                </div>
+                <div class="content-para">
+                  <p id="para1">Find</p>
+                  <p id="para2">
+                    Click here to find support material and attach to lesson.
+                  </p>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn" style="background-color: rgb(229, 229, 229)" data-bs-dismiss="modal">
+            Cancel
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModalToggle13" aria-hidden="true" aria-labelledby="exampleModalToggleLabel3"
+    tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title fs-5 d-flex gap-2 align-items-center" id="staticBackdropLabel">
+            <i class="fa-solid fa-file-arrow-up"></i>
+            <h5 class="pt-2">Find Support Material and Attach to Lesson</h5>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="search-bar-table-double-modal d-flex justify-content-end py-3">
+            <form class="d-flex w-50" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+              <button class="btn btn-search-bar-table-double-modal" style="width: 100px" type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i> Find
+              </button>
+            </form>
+          </div>
+
+          <table class="table table-hover table-bordered">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Asset Name</th>
+                <th scope="col">Type</th>
+                <th scope="col">Dimension</th>
+                <th scope="col">Size</th>
+                <th scope="col">Version</th>
+                <th scope="col">Description</th>
+                <th scope="col">Preview</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                </th>
+                <td>Web Development</td>
+                <td>Image</td>
+                <td>730 x 730</td>
+                <td>N/A</td>
+                <td>1</td>
+                <td>what is web development</td>
+                <td class="img-table">
+                  <img src="./image/profile.jpg" alt="" />
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                </th>
+                <td>Web Development</td>
+                <td>Image</td>
+                <td>730 x 730</td>
+                <td>N/A</td>
+                <td>1</td>
+                <td>what is web development</td>
+                <td class="img-table">
+                  <img src="./image/profile.jpg" alt="" />
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                </th>
+                <td>Web Development</td>
+                <td>Image</td>
+                <td>730 x 730</td>
+                <td>N/A</td>
+                <td>1</td>
+                <td>what is web development</td>
+                <td class="img-table">
+                  <img src="./image/profile.jpg" alt="" />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="modal-footer">
+          <button class="btn" style="background-color: rgb(229, 229, 229)" data-bs-target=" #exampleModalToggleadd"
+            data-bs-toggle="modal">
+            Back
+          </button>
+          <button type="button" class="btn" style="background-color: rgb(229, 229, 229)" data-bs-dismiss="modal">
+            Cancel
+          </button>
+          <button type="button" class="btn" style="background-color: #0b3956; color: white">
+            Save
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Image Cover then Modal -->
+  <div class="modal fade" id="exampleModalTogglemodal-img" aria-hidden="true"
+    aria-labelledby="exampleModalToggleLabelmodal-img" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title fs-5 d-flex gap-2 align-items-center" id="staticBackdropLabel">
+            <i class="fa-solid fa-file-arrow-up"></i>
+            <h5 class="pt-2">Course Cover Image</h5>
+          </div>
+        </div>
+        <div class="modal-body d-flex justify-content-center gap-3">
+          <div class="btn-support-moda">
+            <div class="accordion-img drop-zone" onclick="document.getElementById('imageInput').click()">
+              <span class="drop-zone__prompt">Drop file here or click to upload</span>
+              <input type="file" id="imageInput" style="display: none" accept="jpg,.jpeg,.gif,.bmp,.png" />
+
+              <!-- <a class="accordion-img" onclick="document.getElementById('imageInput').click()">
+                  <i class="fa-solid fa-paperclip"></i>
+                  Browse
+                </a> -->
+            </div>
+          </div>
+          <div class="btn-support-moda">
+            <div class="drop-zone2 d-flex" data-bs-target="#find-thumb" data-bs-toggle="modal">
+              <div class="icons-svgm-auto">
+                <img src="./Images/magnifying-glass.png" alt="" />
+              </div>
+              <div class="content-para">
+                <p id="para1">Find</p>
+                <p id="para2">
+                  Click here to find support material and attach to lesson.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn" style="background-color: rgb(229, 229, 229)" data-bs-dismiss="modal">
+            Cancel
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="imageModal" aria-hidden="true" aria-labelledby="imageModalLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="imageModalLabel">Upload and Attach Image to Course</h5>
+        </div>
+        <div class="modal-body px-5" id="selectedImage">
+          <div class="row">
+            <h6>Asset Name <span class="tag-mul">*</span></h6>
+            <input type="text" placeholder="Asset Name" class="form-control">
+          </div>
+          <div class="row mt-3">
+            <h6>Keywords</h6>
+            <input type="text" class="form-control" id="tag-input3" placeholder="Enter Keywords" />
+          </div>
+          <div class="row mt-3">
+            <h6>Description</h6>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+
+          </div>
+          <!-- <img id="selectedImage" src="#" alt="Selected Image" style="max-width: 100%" /> -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn" style="background-color: rgb(229, 229, 229)" data-bs-dismiss="modal">
+            Cancel
+          </button>
+          <button type="button" class="btn" style="background-color: #0b3956; color: white">
+            Save
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="find-img" aria-hidden="true" aria-labelledby="find-img" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title fs-5 d-flex gap-2 align-items-center" id="find-img">
+            <i class="fa-solid fa-file-arrow-up"></i>
+            <h5 class="pt-2">Find and Attach Cover Image to Course</h5>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="search-bar-table-double-modal d-flex justify-content-end py-3">
+            <form class="d-flex w-50" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+              <button class="btn btn-search-bar-table-double-modal" style="width: 100px" type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i> Find
+              </button>
+            </form>
+          </div>
+
+          <table class="table table-hover table-bordered">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Asset Name</th>
+                <th scope="col">Type</th>
+                <th scope="col">Dimension</th>
+                <th scope="col">Size</th>
+                <th scope="col">Version</th>
+                <th scope="col">Description</th>
+                <th scope="col">Preview</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                </th>
+                <td>Web Development</td>
+                <td>Image</td>
+                <td>730 x 730</td>
+                <td>N/A</td>
+                <td>1</td>
+                <td>what is web development</td>
+                <td class="img-table">
+                  <img src="./image/profile.jpg" alt="" />
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                </th>
+                <td>Web Development</td>
+                <td>Image</td>
+                <td>730 x 730</td>
+                <td>N/A</td>
+                <td>1</td>
+                <td>what is web development</td>
+                <td class="img-table">
+                  <img src="./image/profile.jpg" alt="" />
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                </th>
+                <td>Web Development</td>
+                <td>Image</td>
+                <td>730 x 730</td>
+                <td>N/A</td>
+                <td>1</td>
+                <td>what is web development</td>
+                <td class="img-table">
+                  <img src="./image/profile.jpg" alt="" />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="modal-footer">
+          <button class="btn" style="background-color: rgb(229, 229, 229)" data-bs-target=" #exampleModalToggleadd"
+            data-bs-toggle="modal">
+            Back
+          </button>
+          <button type="button" class="btn" style="background-color: rgb(229, 229, 229)" data-bs-dismiss="modal">
+            Cancel
+          </button>
+          <button type="button" class="btn" style="background-color: #0b3956; color: white">
+            Save
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Image Thumbnail then Modal -->
+  <div class="modal fade" id="modal-thumb" aria-hidden="true" aria-labelledby="modal-thumb" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title fs-5 d-flex gap-2 align-items-center" id="modal-thumb">
+            <i class="fa-solid fa-file-arrow-up"></i>
+            <h5 class="pt-2">Course Thumbnail Image</h5>
+          </div>
+        </div>
+        <div class="modal-body d-flex justify-content-center gap-3">
+          <div class="btn-support-moda">
+            <div class="accordion-img drop-zone" onclick="document.getElementById('imageInputthumb').click()">
+              <span class="drop-zone__prompt">Drop file here or click to upload</span>
+              <input type="file" id="imageInputthumb" style="display: none" accept="jpg,.jpeg,.gif,.bmp,.png" />
+
+              <!-- <a class="accordion-img" onclick="document.getElementById('imageInput').click()">
+                  <i class="fa-solid fa-paperclip"></i>
+                  Browse
+                </a> -->
+            </div>
+          </div>
+          <div class="btn-support-moda">
+            <div class="drop-zone2 d-flex" data-bs-target="#find-thumb" data-bs-toggle="modal">
+              <div class="icons-svgm-auto">
+                <img src="./Images/magnifying-glass.png" alt="" />
+              </div>
+              <div class="content-para">
+                <p id="para1">Find</p>
+                <p id="para2">
+                  Click here to find support material and attach to lesson.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn" style="background-color: rgb(229, 229, 229)" data-bs-dismiss="modal">
+            Cancel
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="imageModalthumb" aria-hidden="true" aria-labelledby="imageModalLabelthumb" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="imageModalLabelthumb">Upload and Attach Image to Course</h5>
+        </div>
+        <div class="modal-body px-5" id="selectedImage">
+          <div class="row">
+            <h6>Asset Name <span class="tag-mul">*</span></h6>
+            <input type="text" placeholder="Asset Name" class="form-control">
+          </div>
+          <div class="row mt-3">
+            <h6>Keywords</h6>
+            <input type="text" class="form-control" id="tag-input3" placeholder="Enter Keywords" />
+          </div>
+          <div class="row mt-3">
+            <h6>Description</h6>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+
+          </div>
+          <!-- <img id="selectedImage" src="#" alt="Selected Image" style="max-width: 100%" /> -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn" style="background-color: rgb(229, 229, 229)" data-bs-dismiss="modal">
+            Cancel
+          </button>
+          <button type="button" class="btn" style="background-color: #0b3956; color: white">
+            Save
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="find-thumb" aria-hidden="true" aria-labelledby="find-thumb" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title fs-5 d-flex gap-2 align-items-center" id="find-thumb>
+            <i class=" fa-solid fa-file-arrow-up"></i>
+            <h5 class="pt-2">Find and Attach Thumbnail Image to Course
+            </h5>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="search-bar-table-double-modal d-flex justify-content-end py-3">
+            <form class="d-flex w-50" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+              <button class="btn btn-search-bar-table-double-modal" style="width: 100px" type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i> Find
+              </button>
+            </form>
+          </div>
+
+          <table class="table table-hover table-bordered">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Asset Name</th>
+                <th scope="col">Type</th>
+                <th scope="col">Dimension</th>
+                <th scope="col">Size</th>
+                <th scope="col">Version</th>
+                <th scope="col">Description</th>
+                <th scope="col">Preview</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                </th>
+                <td>Web Development</td>
+                <td>Image</td>
+                <td>730 x 730</td>
+                <td>N/A</td>
+                <td>1</td>
+                <td>what is web development</td>
+                <td class="img-table">
+                  <img src="./image/profile.jpg" alt="" />
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                </th>
+                <td>Web Development</td>
+                <td>Image</td>
+                <td>730 x 730</td>
+                <td>N/A</td>
+                <td>1</td>
+                <td>what is web development</td>
+                <td class="img-table">
+                  <img src="./image/profile.jpg" alt="" />
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                </th>
+                <td>Web Development</td>
+                <td>Image</td>
+                <td>730 x 730</td>
+                <td>N/A</td>
+                <td>1</td>
+                <td>what is web development</td>
+                <td class="img-table">
+                  <img src="./image/profile.jpg" alt="" />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="modal-footer">
+          <button class="btn" style="background-color: rgb(229, 229, 229)" data-bs-target=" #exampleModalToggleadd"
+            data-bs-toggle="modal">
+            Back
+          </button>
+          <button type="button" class="btn" style="background-color: rgb(229, 229, 229)" data-bs-dismiss="modal">
+            Cancel
+          </button>
+          <button type="button" class="btn" style="background-color: #0b3956; color: white">
+            Save
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Video Modal -->
+  <div class="modal fade" id="modal-video" aria-hidden="true" aria-labelledby="modal-video" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title fs-5 d-flex gap-2 align-items-center" id="modal-video">
+            <i class="fa-solid fa-file-arrow-up"></i>
+            <h5 class="pt-2">Course Promotional Video</h5>
+          </div>
+        </div>
+        <div class="modal-body d-flex justify-content-center gap-3">
+          <div class="btn-support-moda">
+            <div class="accordion-img drop-zone" onclick="document.getElementById('Inputvideo').click()">
+              <span class="drop-zone__prompt">Drop file here or click to upload</span>
+              <input type="file" id="Inputvideo" style="display: none" accept=".mp4" />
+
+              <!-- <a class="accordion-img" onclick="document.getElementById('imageInput').click()">
+                  <i class="fa-solid fa-paperclip"></i>
+                  Browse
+                </a> -->
+            </div>
+          </div>
+          <div class="btn-support-moda">
+            <div class="drop-zone2 d-flex" data-bs-target="#find-video" data-bs-toggle="modal">
+              <div class="icons-svgm-auto">
+                <img src="./Images/magnifying-glass.png" alt="" />
+              </div>
+              <div class="content-para">
+                <p id="para1">Find</p>
+                <p id="para2">
+                  Click here to find support material and attach to lesson.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn" style="background-color: rgb(229, 229, 229)" data-bs-dismiss="modal">
+            Cancel
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="Modalvideo" aria-hidden="true" aria-labelledby="ModalLabelvideo" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ModalLabelvideo">Upload and Attach Video to Course</h5>
+        </div>
+        <div class="modal-body px-5" id="selectedvideo">
+          <div class="row">
+            <h6>Asset Name <span class="tag-mul">*</span></h6>
+            <input type="text" placeholder="Asset Name" class="form-control">
+          </div>
+          <div class="row mt-3">
+            <h6>Keywords</h6>
+            <input type="text" class="form-control" id="tag-input4" placeholder="Enter Keywords" />
+          </div>
+          <div class="row mt-3">
+            <h6>Description</h6>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+
+          </div>
+          <!-- <img id="selectedImage" src="#" alt="Selected Image" style="max-width: 100%" /> -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn" style="background-color: rgb(229, 229, 229)" data-bs-dismiss="modal">
+            Cancel
+          </button>
+          <button type="button" class="btn" style="background-color: #0b3956; color: white">
+            Save
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="find-video" aria-hidden="true" aria-labelledby="find-video" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title fs-5 d-flex gap-2 align-items-center" id="find-video">
+            <i class=" fa-solid fa-file-arrow-up"></i>
+            <h5 class="pt-2">Find and Attach Promotional Video to Course
+            </h5>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="search-bar-table-double-modal d-flex justify-content-end py-3">
+            <form class="d-flex w-50" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+              <button class="btn btn-search-bar-table-double-modal" style="width: 100px" type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i> Find
+              </button>
+            </form>
+          </div>
+
+          <table class="table table-hover table-bordered">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Asset Name</th>
+                <th scope="col">Type</th>
+                <th scope="col">Dimension</th>
+                <th scope="col">Size</th>
+                <th scope="col">Version</th>
+                <th scope="col">Description</th>
+                <th scope="col">Preview</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                </th>
+                <td>Web Development</td>
+                <td>Image</td>
+                <td>730 x 730</td>
+                <td>N/A</td>
+                <td>1</td>
+                <td>what is web development</td>
+                <td class="img-table">
+                  <img src="./image/profile.jpg" alt="" />
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                </th>
+                <td>Web Development</td>
+                <td>Image</td>
+                <td>730 x 730</td>
+                <td>N/A</td>
+                <td>1</td>
+                <td>what is web development</td>
+                <td class="img-table">
+                  <img src="./image/profile.jpg" alt="" />
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                </th>
+                <td>Web Development</td>
+                <td>Image</td>
+                <td>730 x 730</td>
+                <td>N/A</td>
+                <td>1</td>
+                <td>what is web development</td>
+                <td class="img-table">
+                  <img src="./image/profile.jpg" alt="" />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="modal-footer">
+          <button class="btn" style="background-color: rgb(229, 229, 229)" data-bs-target=" #exampleModalToggleadd"
+            data-bs-toggle="modal">
+            Back
+          </button>
+          <button type="button" class="btn" style="background-color: rgb(229, 229, 229)" data-bs-dismiss="modal">
+            Cancel
+          </button>
+          <button type="button" class="btn" style="background-color: #0b3956; color: white">
+            Save
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Certificate Modal -->
+  <div class="modal fade" id="modal-certificate" aria-hidden="true" aria-labelledby="modal-certificate" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title fs-5 d-flex gap-2 align-items-center" id="modal-certificate">
+            <i class="fa-solid fa-file-arrow-up"></i>
+            <h5 class="pt-2">Course Certificates</h5>
+          </div>
+        </div>
+        <div class="modal-body d-flex justify-content-center gap-3">
+          <div class="btn-support-moda">
+            <div class="accordion-img drop-zone" onclick="document.getElementById('Inputcertificate').click()">
+              <span class="drop-zone__prompt">Drop file here or click to upload</span>
+              <input type="file" id="Inputcertificate" style="display: none" accept=".pdf" />
+            </div>
+          </div>
+          <div class="btn-support-moda">
+            <div class="drop-zone2 d-flex" data-bs-target="#find-certificate" data-bs-toggle="modal">
+              <div class="icons-svgm-auto">
+                <img src="./Images/magnifying-glass.png" alt="" />
+              </div>
+              <div class="content-para">
+                <p id="para1">Find</p>
+                <p id="para2">
+                  Click here to find support material and attach to lesson.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn" style="background-color: rgb(229, 229, 229)" data-bs-dismiss="modal">
+            Cancel
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="Modalcertificate" aria-hidden="true" aria-labelledby="ModalLabelcertificate"
+    tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ModalLabelcertificate">Upload and Attach Image to Course</h5>
+        </div>
+        <div class="modal-body px-5" id="selectedcertificate">
+          <div class="row">
+            <h6>Asset Name <span class="tag-mul">*</span></h6>
+            <input type="text" placeholder="Asset Name" class="form-control">
+          </div>
+          <div class="row mt-3">
+            <h6>Keywords</h6>
+            <input type="text" class="form-control" id="tag-input5" placeholder="Enter Keywords" />
+          </div>
+          <div class="row mt-3">
+            <h6>Description</h6>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+
+          </div>
+          <!-- <img id="selectedImage" src="#" alt="Selected Image" style="max-width: 100%" /> -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn" style="background-color: rgb(229, 229, 229)" data-bs-dismiss="modal">
+            Cancel
+          </button>
+          <button type="button" class="btn" style="background-color: #0b3956; color: white">
+            Save
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="find-certificate" aria-hidden="true" aria-labelledby="find-certificate" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title fs-5 d-flex gap-2 align-items-center" id="find-video">
+            <i class=" fa-solid fa-file-arrow-up"></i>
+            <h5 class="pt-2">Find and Attach Promotional Video to Course
+            </h5>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="search-bar-table-double-modal d-flex justify-content-end py-3">
+            <form class="d-flex w-50" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+              <button class="btn btn-search-bar-table-double-modal" style="width: 100px" type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i> Find
+              </button>
+            </form>
+          </div>
+
+          <table class="table table-hover table-bordered">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Asset Name</th>
+                <th scope="col">Type</th>
+                <th scope="col">Dimension</th>
+                <th scope="col">Size</th>
+                <th scope="col">Version</th>
+                <th scope="col">Description</th>
+                <th scope="col">Preview</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                </th>
+                <td>Web Development</td>
+                <td>Image</td>
+                <td>730 x 730</td>
+                <td>N/A</td>
+                <td>1</td>
+                <td>what is web development</td>
+                <td class="img-table">
+                  <img src="./image/profile.jpg" alt="" />
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                </th>
+                <td>Web Development</td>
+                <td>Image</td>
+                <td>730 x 730</td>
+                <td>N/A</td>
+                <td>1</td>
+                <td>what is web development</td>
+                <td class="img-table">
+                  <img src="./image/profile.jpg" alt="" />
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                </th>
+                <td>Web Development</td>
+                <td>Image</td>
+                <td>730 x 730</td>
+                <td>N/A</td>
+                <td>1</td>
+                <td>what is web development</td>
+                <td class="img-table">
+                  <img src="./image/profile.jpg" alt="" />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="modal-footer">
+          <button class="btn" style="background-color: rgb(229, 229, 229)" data-bs-target=" #exampleModalToggleadd"
+            data-bs-toggle="modal">
+            Back
+          </button>
+          <button type="button" class="btn" style="background-color: rgb(229, 229, 229)" data-bs-dismiss="modal">
+            Cancel
+          </button>
+          <button type="button" class="btn" style="background-color: #0b3956; color: white">
+            Save
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <script src="https://code.jquery.com/jquery-3.7.0.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+  <script src="./jquery.easyswitch.js"></script>
+  <script>
+    $(".easyswitch").easyswitch();
+
+    function onSwitch(value, obj) {
+      alert(value);
+    }
+  </script>
+  <script>
+    var formCount = 1;
+
+    function addForm() {
+      formCount++;
+
+      var formContainer = document.getElementById("formContainer");
+
+      var newForm = document.createElement("div");
+      newForm.className = "form";
+      newForm.innerHTML = '<div class="row mt-3">' +
+        '<div class="col-md-2 px-5">' +
+        '<h6>Activity ' + formCount + '</h6>' +
+        '</div>' +
+        '<div class="col-md-8 ms-4">' +
+        '<div class="card pt-4 px-3 cards-form-add2">' +
+        '<div class="form-group">' +
+        '<div class="mb-3">' +
+        '<label for="exampleFormControlInput1" class="form-label">Type</label>' +
+        '<select class="form-select" aria-label="Default select example">' +
+        '<option selected>Choose Type:</option>' +
+        '<option value="1">One</option>' +
+        '<option value="2">Two</option>' +
+        '<option value="3">Three</option>' +
+        '</select>' +
+        '</div>' +
+        '</div>' +
+        '<div class="form-group">' +
+        '<div class="mb-3">' +
+        '<label for="exampleFormControlInput1" class="form-label">Description</label>' +
+        '<textarea class="form-control" name="textarea[]" rows="3" placeholder="Textarea"></textarea>' +
+        '</div>' +
+        '</div>' +
+        '<div class="form-group">' +
+        '<div class="mb-3">' +
+        '<label for="exampleFormControlInput1" class="form-label">URL to Activity</label>' +
+        '<input type="url" placeholder="https://" class="form-control">' +
+        '</div>' +
+        '</div>' +
+        '<div class="form-group d-flex justify-content-end">' +
+        '<button type="button" class="btn btn-danger delete-button" onclick="deleteForm(this)"><i class="fa-solid fa-trash"></i></button>' +
+        '</div>' +
+        '</div>' +
+        '</div>' +
+        '</div>';
+
+      formContainer.appendChild(newForm);
+
+      // Update form numbers
+      updateFormNumbers();
+    }
+
+    function deleteForm(button) {
+      var formContainer = button.closest(".form");
+      formContainer.remove();
+
+      // Update form numbers
+      updateFormNumbers();
+    }
+
+    function updateFormNumbers() {
+      var formContainers = document.querySelectorAll(".form");
+      for (var i = 0; i < formContainers.length; i++) {
+        var activityNumber = i + 1;
+        formContainers[i].querySelector("h6").textContent = "Activity " + activityNumber;
+      }
+    }
+  </script>
+
+
+  <!-- image then Modal -->
+  <script>
+    // Function to handle file input change
+    document
+      .getElementById("imageInput")
+      .addEventListener("change", function () {
+        var selectedFile = this.files[0];
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+          // Set the source of the image in the modal
+          document.getElementById("selectedImage").src = e.target.result;
+          // Show the modal
+          $("#imageModal").modal("show");
+        };
+
+        reader.readAsDataURL(selectedFile);
+      });
+  </script>
+  <script>
+    // Function to handle file input change
+    document
+      .getElementById("imageInputthumb")
+      .addEventListener("change", function () {
+        var selectedFile = this.files[0];
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+          // Set the source of the image in the modal
+          document.getElementById("selectedImage").src = e.target.result;
+          // Show the modal
+          $("#imageModalthumb").modal("show");
+        };
+
+        reader.readAsDataURL(selectedFile);
+      });
+  </script>
+  <script>
+    // Function to handle file input change
+    document
+      .getElementById("Inputvideo")
+      .addEventListener("change", function () {
+        var selectedFile = this.files[0];
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+          // Set the source of the image in the modal
+          document.getElementById("selectedvideo").src = e.target.result;
+          // Show the modal
+          $("#Modalvideo").modal("show");
+        };
+
+        reader.readAsDataURL(selectedFile);
+      });
+  </script>
+  <script>
+    // Function to handle file input change
+    document
+      .getElementById("Inputcertificate")
+      .addEventListener("change", function () {
+        var selectedFile = this.files[0];
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+          // Set the source of the image in the modal
+          document.getElementById("selectedcertificate").src = e.target.result;
+          // Show the modal
+          $("#Modalcertificate").modal("show");
+        };
+
+        reader.readAsDataURL(selectedFile);
+      });
+  </script>
+
+  <script>
+    function appendUserRow(id, user) {
+      var html =
+        '<div id="opt-row.' +
+        id +
+        '" class="form-group row">\n' +
+        '            <div class="col-3">\n' +
+        '                <input required type="text" class="form-control add-input-from" placeholder="Enter Learning Objective Name" id="opt-type.' +
+        id +
+        '" name="opt-type.' +
+        id +
+        '" placeholder="Type" value="' +
+        user.type +
+        '">' +
+        "            </div>" +
+        '             <button type="button" onclick="delRow(' +
+        id +
+        ')" class="btn btn-danger trash-adding"><i class="fa-solid fa-trash"></i></button>\n' +
+        "        </div>";
+      $("#form-placeholder").append(html);
+    }
+    function appendUserRow2(id, user) {
+      var html =
+        '<div id="opt-row.' +
+        id +
+        '" class="form-group row">\n' +
+        '            <div class="col-3">\n' +
+        '                <input required type="text" class="form-control add-input-from" placeholder="Enter Learning Objective Name" id="opt-type.' +
+        id +
+        '" name="opt-type.' +
+        id +
+        '" placeholder="Type" value="' +
+        user.type +
+        '">' +
+        "            </div>" +
+        '             <button type="button" onclick="delRow(' +
+        id +
+        ')" class="btn btn-danger trash-adding"><i class="fa-solid fa-trash"></i></button>\n' +
+        "        </div>";
+      $("#form-placeholder2").append(html);
+    }
+
+    function delRow(id) {
+      var element = document.getElementById("opt-row." + id);
+      element.parentNode.removeChild(element);
+    }
+
+    $(document).ready(function () {
+      var count = 0;
+      $("#btn-add").click(function () {
+        appendUserRow(count++, {
+          type: "",
+        });
+      });
+    });
+
+    $(document).ready(function () {
+      var count = 0;
+      $("#btn-add2").click(function () {
+        appendUserRow2(count++, {
+          type: "",
+        });
+      });
+    });
+  </script>
+  <script>
+    const words = ["suppose end get", "boy warrant general", "natural. delightful", "met sufficient projection ask.", "decisively everything", "principles if preference", "do", "impression", "of. preserved oh so", "difficult repulsive on", "in household. in what", "do", "miss time be. valley", "as be", "appear", "cannot so", "by.", "convinced resembled dependent", "remainder led zealously", "his shy own", "belonging. always length", "letter", "adieus", "add number moment she.", "promise few", "compass six several old", "offices removal parties", "fat. concluded", "rapturous it intention", "perfectly daughters", "is as.", "behaviour we", "improving at something", "to. evil true", "high lady roof men", "had open.", "to projection considered it", "precaution an", "melancholy or.", "wound young", "you thing", "worse along being ham.", "dissimilar of favourable solicitude", "if sympathize middletons", "at. forfeited", "up if disposing", "perfectly in an", "eagerness perceived necessary.", "belonging sir", "curiosity discovery", "extremity yet", "forfeited prevailed", "own off.", "travelling by", "introduced of", "mr terminated. knew as", "miss", "my high hope quit. in", "curiosity shameless dependent", "knowledge up.", "literature admiration", "frequently indulgence announcing", "are who you", "her. was", "least quick after", "six. so", "it yourself repeated", "together", "cheerful. neither it cordial so", "painful picture studied if.", "sex", "him position doubtful", "resolved boy expenses.", "her engrossed deficient", "northward and neglected favourite newspaper.", "but", "use peculiar", "produced concerns ten. maids", "table how", "learn", "drift", "but purse", "stand yet", "set. music me", "house could", "among oh", "as their. piqued", "our", "sister shy nature almost", "his", "wicket.", "hand dear", "so we hour", "to. he", "we be", "hastily", "offence effects", "he service. sympathize", "it projection", "ye insipidity celebrated"]
+
+    const searchBars = document.querySelectorAll('.search-dropdown input');
+    const dropDowns = document.querySelectorAll('.search-dropdown .drop');
+
+    function formHandler(e) {
+      const userInput = e.target.value.toLowerCase();
+      const dropEl = e.target.nextElementSibling; // Get the next sibling (the UL for suggestions)
+
+      if (userInput.length === 0) {
+        dropEl.style.height = 0;
+        return (dropEl.innerHTML = '');
+      }
+
+      const filteredWords = words.filter((word) =>
+        word.toLowerCase().includes(userInput)
+      ).sort().splice(0, 5);
+
+      dropEl.innerHTML = '';
+      filteredWords.forEach((item) => {
+        const listEl = document.createElement('li');
+        listEl.textContent = item;
+        if (item === userInput) {
+          listEl.classList.add('match');
+        }
+        dropEl.appendChild(listEl);
+      });
+
+      if (dropEl.children[0] === undefined) {
+        return (dropEl.style.height = 0);
+      }
+
+      let totalChildrenHeight = dropEl.children[0].offsetHeight * filteredWords.length;
+      dropEl.style.height = totalChildrenHeight + 'px';
+    }
+
+    searchBars.forEach((searchBar, index) => {
+      searchBar.addEventListener('input', formHandler);
+    });
+  </script>
+
+  <script>
+    jQuery(function () {
+      initDatePicker();
+      initDatePicker2();
+    });
+    const today = new Date();
+    function initDatePicker() {
+      const fp = jQuery(".datepicker").flatpickr({
+        wrap: true,
+        altInput: true,
+        allowInput: false, // if doesn't need - disable it.
+        altFormat: "F j, Y",
+        dateFormat: "Y-m-d",
+      });
+    }
+    function initDatePicker2() {
+      const fp = jQuery(".datepicker2").flatpickr({
+        wrap: true,
+        altInput: true,
+        allowInput: false, // if doesn't need - disable it.
+        altFormat: "F j, Y",
+        dateFormat: "Y-m-d",
+        defaultDate: today,
+      });
+    }
+  </script>
+
+  <script>
+    function _(el) {
+      return document.getElementById(el);
+    }
+    document.querySelectorAll(".drop-zone__input").forEach((inputElement) => {
+      const dropZoneElement = inputElement.closest(".drop-zone");
+
+      dropZoneElement.addEventListener("click", (e) => {
+        inputElement.click();
+      });
+
+      inputElement.addEventListener("change", (e) => {
+        if (inputElement.files.length) {
+          updateThumbnail(dropZoneElement, inputElement.files[0]);
+        }
+      });
+
+      dropZoneElement.addEventListener("dragover", (e) => {
+        e.preventDefault();
+        dropZoneElement.classList.add("drop-zone--over");
+      });
+
+      ["dragleave", "dragend"].forEach((type) => {
+        dropZoneElement.addEventListener(type, (e) => {
+          dropZoneElement.classList.remove("drop-zone--over");
+        });
+      });
+
+      dropZoneElement.addEventListener("drop", (e) => {
+        e.preventDefault();
+
+        if (e.dataTransfer.files.length) {
+          inputElement.files = e.dataTransfer.files;
+          updateThumbnail(dropZoneElement, e.dataTransfer.files[0]);
+        }
+
+        dropZoneElement.classList.remove("drop-zone--over");
+      });
+    });
+
+    /**
+     * Updates the thumbnail on a drop zone element.
+     *
+     * @param {HTMLElement} dropZoneElement
+     * @param {File} file
+     */
+    function updateThumbnail(dropZoneElement, file) {
+      let thumbnailElement =
+        dropZoneElement.querySelector(".drop-zone__thumb");
+
+      // First time - remove the prompt
+      if (dropZoneElement.querySelector(".drop-zone__prompt")) {
+        dropZoneElement.querySelector(".drop-zone__prompt").remove();
+      }
+
+      // First time - there is no thumbnail element, so lets create it
+      if (!thumbnailElement) {
+        thumbnailElement = document.createElement("div");
+        thumbnailElement.classList.add("drop-zone__thumb");
+        dropZoneElement.appendChild(thumbnailElement);
+      }
+
+      thumbnailElement.dataset.label = file.name;
+
+      // Show thumbnail for image files
+      if (file.type.startsWith("image/")) {
+        const reader = new FileReader();
+
+        reader.readAsDataURL(file);
+        reader.onload = () => {
+          thumbnailElement.style.backgroundImage = `url('${reader.result}')`;
+        };
+      } else {
+        thumbnailElement.style.backgroundImage = null;
+      }
+    }
+  </script>
+
+  <script src="uploading.js"></script>
+  <script src="Tag.js"></script>
+  <script src="./jquery-stu.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

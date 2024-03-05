@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>zeynepjs: Mobile-first Navigation Demo</title>
+    <link href="custom.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css" />
+    <style>
+      body {
+        overflow-x: hidden;
+        background-color: #fafafa;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="zeynep zeynep-opened">
+      <ul>
+        <li>
+          <h6>CompTIA IT Fundamentals ITF+ (FCO-U61)</h6>
+        </li>
+
+        <li class="has-submenu">
+          <a href="#" data-submenu="stores">Course Outline</a>
+
+          <div id="stores" class="submenu">
+            <div class="submenu-header" data-submenu-close="stores">
+              <a href="#">Main Menu</a>
+            </div>
+
+            <label>Stores</label>
+
+            <ul>
+              <li>
+                <a href="#">Istanbul</a>
+              </li>
+
+              <li>
+                <a href="#">Mardin</a>
+              </li>
+
+              <li>
+                <a href="#">Amed</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="has-submenu">
+          <a href="#" data-submenu="categories">Categories</a>
+
+          <div id="categories" class="submenu">
+            <div class="submenu-header" data-submenu-close="categories">
+              <a href="#">Main Menu</a>
+            </div>
+
+            <label>Categories</label>
+
+            <ul>
+              <li class="has-submenu">
+                <a href="#" data-submenu="electronics">Electronics</a>
+
+                <div id="electronics" class="submenu">
+                  <div class="submenu-header" data-submenu-close="electronics">
+                    <a href="#">Categories</a>
+                  </div>
+
+                  <label>Electronics</label>
+
+                  <ul>
+                    <li>
+                      <a href="#">Camera & Photo</a>
+                    </li>
+
+                    <li>
+                      <a href="#">Home Audio</a>
+                    </li>
+
+                    <li>
+                      <a href="#">Tv & Video</a>
+                    </li>
+
+                    <li>
+                      <a href="#">Computers & Accessories</a>
+                    </li>
+
+                    <li>
+                      <a href="#">Car & Vehicle Electronics</a>
+                    </li>
+
+                    <li>
+                      <a href="#">Portable Audio & Video</a>
+                    </li>
+
+                    <li>
+                      <a href="#">Headphones</a>
+                    </li>
+
+                    <li>
+                      <a href="#">Accessories & Supplies</a>
+                    </li>
+
+                    <li>
+                      <a href="#">Video Projectors</a>
+                    </li>
+
+                    <li>
+                      <a href="#">Office Electronics</a>
+                    </li>
+
+                    <li>
+                      <a href="#">Wearable Technology</a>
+                    </li>
+
+                    <li>
+                      <a href="#">Service Plans</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li>
+                <a href="#">Books</a>
+              </li>
+
+              <li>
+                <a href="#">Video Games</a>
+              </li>
+
+              <li>
+                <a href="#">Computers</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li>
+          <a href="#">Contact</a>
+        </li>
+
+        <li>
+          <a href="#">About</a>
+        </li>
+      </ul>
+    </div>
+
+    <nav class="navbar">
+      <button
+        class="navbar-toggler custom-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarsExampleDefault"
+        aria-controls="navbarsExampleDefault"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icons hamburger-icon"
+          ><i class="fa-solid fa-chevron-left"></i
+        ></span>
+        <span class="cross-icon d-none"><i class="fa-solid fa-bars"></i></span>
+      </button>
+    </nav>
+    <section class="">
+      <div class="container-fluid p-0">
+        <div class="row">
+          <video
+            controls
+            crossorigin
+            playsinline
+            data-poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg"
+            class="js-player"
+          >
+            <!-- Video files -->
+            <!-- <source
+        src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4"
+        type="video/mp4"
+        size="576"
+      /> -->
+            <source
+              src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4"
+              type="video/mp4"
+              size="720"
+            />
+            <!-- <source
+        src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1080p.mp4"
+        type="video/mp4"
+        size="1080"
+      /> -->
+          </video>
+        </div>
+      </div>
+    </section>
+    <div class="zeynep-overlay d-inline"></div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="zen.js"></script>
+    <script src="https://cdn.plyr.io/3.6.8/plyr.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const controls = [
+          "play-large", // The large play button in the center
+          "restart", // Restart playback
+          "rewind", // Rewind by the seek time (default 10 seconds)
+          "play", // Play/pause playback
+          "fast-forward", // Fast forward by the seek time (default 10 seconds)
+          "progress", // The progress bar and scrubber for playback and buffering
+          "current-time", // The current time of playback
+          "duration", // The full duration of the media
+          "mute", // Toggle mute
+          "volume", // Volume control
+          "captions", // Toggle captions
+          "settings", // Settings menu
+          "pip", // Picture-in-picture (currently Safari only)
+          "airplay", // Airplay (currently Safari only)
+          "download", // Show a download button with a link to either the current source or a custom URL you specify in your options
+          "fullscreen", // Toggle fullscreen
+        ];
+
+        const player = Plyr.setup(".js-player", { controls });
+      });
+    </script>
+    <script>
+      $(function () {
+        // init zeynepjs
+        var zeynep = $(".zeynep").zeynep({
+          onClosed: function () {
+            // enable main wrapper element clicks on any its children element
+            $("body main").attr("style", "");
+
+            console.log("the side menu is closed.");
+          },
+          onOpened: function () {
+            // disable main wrapper element clicks on any its children element
+            $("body main").attr("style", "pointer-events: none;");
+
+            console.log("the side menu is opened.");
+          },
+        });
+
+        // handle zeynep overlay click
+        $(".zeynep-overlay").click(function () {
+          zeynep.close();
+          toggleIcons();
+        });
+
+        // open side menu if hamburger menu is clicked
+        zeynep.open();
+        $("nav .navbar-toggler").click(function () {
+          if ($("navbar").hasClass("zeynep-opened")) {
+            zeynep.close();
+          } else {
+            zeynep.open();
+          }
+          toggleIcons();
+        });
+
+        function toggleIcons() {
+          $(".navbar-toggler .hamburger-icon").toggleClass("d-none");
+          $(".navbar-toggler .cross-icon").toggleClass("d-none");
+        }
+      });
+    </script>
+  </body>
+</html>

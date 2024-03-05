@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<!-- YouTube or Website - CodingLab -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sidebar Menu for Admin Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Fontawesome CDN Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <nav class="sidebar">
+      <div class="menu-sidebar">
+        <div
+          class="nav nav-pills me-3 h-100"
+          id="v-pills-tab"
+          role="tablist"
+          aria-orientation="vertical"
+        >
+          <a href="#" class="logo"
+            ><img src="./images/quickstart-logo-white-1.webp" alt="" />
+          </a>
+
+          <div class="menu-content">
+            <ul class="menu-items">
+              <li class="item pb-1">
+                <div class="submenu-item">
+                  <span>Course Content</span>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
+
+                <ul class="menu-items submenu">
+                  <div class="item">
+                    <div class="menu-title">
+                      <i class="fa-solid fa-chevron-left"></i>
+                      <span> Course Introduction</span>
+                    </div>
+                  </div>
+                  <li class="item">
+                    <a
+                      class="nav-link active"
+                      id="v-pills-home-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-home"
+                      role="tab"
+                      type="button"
+                      aria-controls="v-pills-home"
+                      aria-selected="true"
+                      >Module-1: Using Computers</a
+                    >
+                  </li>
+                  <li class="item">
+                    <a
+                      class="nav-link"
+                      id="v-pills-home2-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-home2"
+                      role="tab"
+                      type="button"
+                      aria-controls="v-pills-home2"
+                      aria-selected="true"
+                      >Module-2: Using Apps and Databases</a
+                    >
+                  </li>
+                  <li class="item">
+                    <a
+                      class="nav-link"
+                      id="v-pills-home2-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-home2"
+                      role="tab"
+                      type="button"
+                      aria-controls="v-pills-home2"
+                      aria-selected="true"
+                      >Module-3: Using Computer Hardware</a
+                    >
+                  </li>
+                  <li class="item">
+                    <a
+                      class="nav-link"
+                      id="v-pills-home2-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#v-pills-home2"
+                      role="tab"
+                      type="button"
+                      aria-controls="v-pills-home2"
+                      aria-selected="true"
+                      >Module-4: Using Networks</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item item">
+                <a
+                  type="button"
+                  class="nav-link"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  >Recommendations</a
+                >
+              </li>
+              <li class="nav-item item" role="presentation">
+                <a
+                  type="button"
+                  class="nav-link"
+                  data-bs-toggle="modal"
+                  data-bs-target="#ReportModal"
+                  >Reports</a
+                >
+              </li>
+              <li class="nav-item item" role="presentation">
+                <a
+                  type="button"
+                  class="nav-link"
+                  data-bs-toggle="modal"
+                  data-bs-target="#SupportModal"
+                  >Support</a
+                >
+              </li>
+              <li class="nav-item item" role="presentation">
+                <a
+                  type="button"
+                  class="nav-link"
+                  data-bs-toggle="modal"
+                  data-bs-target="#AccessModal"
+                  >Accessibility</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="navbar">
+      <i class="fa-solid fa-chevron-left" id="sidebar-toggle"></i>
+      <i class="fa-solid fa-bars-staggered" id="sidebar-close"></i>
+    </nav>
+    <main class="main">
+      <div class="tab-content" id="myTabContent">
+        <div
+          class="tab-pane fade show active"
+          id="v-pills-home"
+          role="tabpanel"
+          aria-labelledby="v-pills-home-tab"
+          tabindex="0"
+        >
+          <div class="container-content-preview-all d-flex">
+            <div class="video-div">
+              <h4 class="text-center py-4 upper-content-video-p">
+                CompTIA IT Fundamentals ITF+ (FCO-U61)
+              </h4>
+              <video
+                controls
+                crossorigin
+                playsinline
+                data-poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg"
+                class="js-player"
+              >
+                <source
+                  src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4"
+                  type="video/mp4"
+                  size="576"
+                />
+                <source
+                  src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4"
+                  type="video/mp4"
+                  size="720"
+                />
+                <source
+                  src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1080p.mp4"
+                  type="video/mp4"
+                  size="1080"
+                />
+              </video>
+              <div
+                class="next-prev d-flex justify-content-between align-items-center"
+              >
+                <div class="para1">
+                  <i class="fa-solid fa-caret-left"></i>
+                  <h6>Prev</h6>
+                </div>
+
+                <div class="progress">
+                  <div class="progress-value"></div>
+                </div>
+                <div class="para1">
+                  <i class="fa-solid fa-caret-right"></i>
+                  <h6>Next</h6>
+                </div>
+              </div>
+            </div>
+            <div class="content-preview">
+              <h4 class="text-center py-4 upper-content-video-p">Module-1</h4>
+              <div class="content-orevire-p">
+                <p class="">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Neque itaque eius, ea error aperiam libero eligendi nulla ab
+                  vero eaque illo suscipit ut, veritatis nostrum ratione, optio
+                  autem! Id asperiores, eveniet fuga velit voluptatibus
+                  accusamus, nam tempore ullam ratione eius aliquam est? Ducimus
+                  dolorem iste aspernatur maiores beatae dignissimos
+                  exercitationem maxime nemo impedit et deleniti autem eaque
+                  nostrum, error ea sit fugit! Hic asperiores pariatur ullam
+                  facere impedit reprehenderit. Libero, officiis dolor,
+                  asperiores repudiandae optio aut, consequuntur molestiae
+                  ducimus eligendi hic officia veniam sit animi deserunt eaque
+                  expedita earum suscipit magni. blanditiis rerum repellat illum
+                  magni ipsam magnam dolore deserunt, eius libero in, quam dolor
+                  sunt doloremque totam, quidem officia eligendi error labore
+                  amet aliquam ducimus laudantium et voluptas. Quis harum ullam
+                  doloribus cumque pariatur sed dolores consequuntur, voluptatum
+                  ducimus eaque rem commodi vel facere voluptas error est
+                  explicabo accusamus doloremque libero iure officia qui quas
+                  ratione omnis! Dolorem laboriosam quaerat, laudantium
+                  voluptatibus architecto, minima perspiciatis fuga iure
+                  reprehenderit impedit ab sint. Blanditiis maiores distinctio
+                  molestias est dicta iure quaerat sequi repellat nemo
+                  inventore, maxime pariatur consequuntur, quam fuga veniam aut
+                  dolores itaque dolorum dignissimos atque alias ab numquam
+                  mollitia! Consequatur amet corrupti voluptates doloremque!
+                  Quaerat, totam explicabo?
+                </p>
+              </div>
+              <div class="btn-submit-subtitle d-flex ps-5 pt-3">
+                <button class="btn">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="v-pills-home2"
+          role="tabpanel"
+          aria-labelledby="v-pills-home2-tab"
+          tabindex="0"
+        >
+          <div class="container-content-preview-all d-flex">
+            <div class="video-div">
+              <h4 class="text-center py-4 upper-content-video-p">
+                Using Apps and Databases
+              </h4>
+              <video
+                controls
+                crossorigin
+                playsinline
+                data-poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg"
+                class="js-player"
+              >
+                <source
+                  src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4"
+                  type="video/mp4"
+                  size="576"
+                />
+                <source
+                  src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4"
+                  type="video/mp4"
+                  size="720"
+                />
+                <source
+                  src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1080p.mp4"
+                  type="video/mp4"
+                  size="1080"
+                />
+              </video>
+              <div
+                class="next-prev d-flex justify-content-between align-items-center"
+              >
+                <div class="para1">
+                  <i class="fa-solid fa-caret-left"></i>
+                  <h6>Prev</h6>
+                </div>
+
+                <div class="progress">
+                  <div class="progress-value"></div>
+                </div>
+                <div class="para1">
+                  <i class="fa-solid fa-caret-right"></i>
+                  <h6>Next</h6>
+                </div>
+              </div>
+            </div>
+            <div class="content-preview">
+              <h4 class="text-center py-4 upper-content-video-p">Module-2</h4>
+              <div class="content-orevire-p">
+                <p class="">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Neque itaque eius, ea error aperiam libero eligendi nulla ab
+                  vero eaque illo suscipit ut, veritatis nostrum ratione, optio
+                  autem! Id asperiores, eveniet fuga velit voluptatibus
+                  accusamus, nam tempore ullam ratione eius aliquam est? Ducimus
+                  dolorem iste aspernatur maiores beatae dignissimos
+                  exercitationem maxime nemo impedit et deleniti autem eaque
+                  nostrum, error ea sit fugit! Hic asperiores pariatur ullam
+                  facere impedit reprehenderit. Libero, officiis dolor,
+                  asperiores repudiandae optio aut, consequuntur molestiae
+                  ducimus eligendi hic officia veniam sit animi deserunt eaque
+                  expedita earum suscipit magni. blanditiis rerum repellat illum
+                  magni ipsam magnam dolore deserunt, eius libero in, quam dolor
+                  sunt doloremque totam, quidem officia eligendi error labore
+                  amet aliquam ducimus laudantium et voluptas. Quis harum ullam
+                  doloribus cumque pariatur sed dolores consequuntur, voluptatum
+                  ducimus eaque rem commodi vel facere voluptas error est
+                  explicabo accusamus doloremque libero iure officia qui quas
+                  ratione omnis! Dolorem laboriosam quaerat, laudantium
+                  voluptatibus architecto, minima perspiciatis fuga iure
+                  reprehenderit impedit ab sint. Blanditiis maiores distinctio
+                  molestias est dicta iure quaerat sequi repellat nemo
+                  inventore, maxime pariatur consequuntur, quam fuga veniam aut
+                  dolores itaque dolorum dignissimos atque alias ab numquam
+                  mollitia! Consequatur amet corrupti voluptates doloremque!
+                  Quaerat, totam explicabo?
+                </p>
+              </div>
+              <div class="btn-submit-subtitle d-flex ps-5 pt-3">
+                <button class="btn">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="profile"
+          role="tabpanel"
+          aria-labelledby="profile-tab"
+        ></div>
+
+        <div
+          class="tab-pane fade"
+          id="course"
+          role="tabpanel"
+          aria-labelledby="course-tab"
+        >
+          <div class="container-content-preview-all d-flex">
+            <div class="video-div">
+              <video
+                controls
+                crossorigin
+                playsinline
+                data-poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg"
+                class="js-player"
+              >
+                <source
+                  src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4"
+                  type="video/mp4"
+                  size="576"
+                />
+                <source
+                  src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4"
+                  type="video/mp4"
+                  size="720"
+                />
+                <source
+                  src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1080p.mp4"
+                  type="video/mp4"
+                  size="1080"
+                />
+              </video>
+            </div>
+            <div class="content-preview">
+              <div class="content-orevire-p">
+                <p class="">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+                  aperiam quas fugiat repellat quos voluptatum tempora fugit
+                  iusto sint ab, inventore, saepe dolores id nulla. Repellendus
+                  sequi modi sapiente nostrum!
+                </p>
+              </div>
+              <button class="btn">Submit</button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="contact"
+          role="tabpanel"
+          aria-labelledby="contact-tab"
+        >
+          ...
+        </div>
+      </div>
+    </main>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content animate__animated animate__fadeInUp">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <h1 class="pb-4 ps-5">Recommendations</h1>
+            <h3 class="ps-5">Comming Soon</h3>
+            <hr />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="ReportModal"
+      tabindex="-1"
+      aria-labelledby="ReportModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content animate__animated animate__fadeInUp">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <h1 class="pb-4 ps-5">Reports</h1>
+            <h3 class="ps-5">Completion Criteria</h3>
+            <hr />
+            <div class="card ms-5">
+              <div class="card-content-side-menu">
+                <h6>You must view every scene in the course.</h6>
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
+            </div>
+            <div class="card ms-5">
+              <div class="card-content-side-menu">
+                <h6>You must accept embedded acknowledgement..</h6>
+                <i class="fa-solid fa-circle-xmark"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="SupportModal"
+      tabindex="-1"
+      aria-labelledby="SupportModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content animate__animated animate__fadeInUp">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <h1 class="pb-4 ps-5">Support</h1>
+            <h3 class="ps-5">
+              For immediate assistance with support related issues or inquiries
+            </h3>
+            <hr />
+            <div class="card2 ms-5">
+              <h5>Support Contact Details -</h5>
+              <ul>
+                <li>8am – 5pm (Monday to Friday) Central Standard time</li>
+                <li>Phone: (855) 800-8240</li>
+                <li>E-mail: <a href="">support@quickstart.com</a></li>
+                <li>Live Chat: <a href="">https://www.quickstart.com</a></li>
+              </ul>
+              <h6>
+                For assistance after business hours, please submit a support
+                ticket at <a href="">support@quickstart.com</a> and we will
+                reach you with a response within 24 hours.
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="AccessModal"
+      tabindex="-1"
+      aria-labelledby="AccessModalLabel"
+      aria-hidden="true" >
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content animate__animated animate__fadeInUp">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <h1 class="pb-4 ps-5">Accessibility</h1>
+
+            <hr />
+            <div class="content-modal-access w-75 pt-3 ps-5">
+              <h6>
+                We are committed to ensuring digital accessibility for people
+                with disabilities. We are continually improving the user
+                experience for everyone, and applying the relevant accessibility
+                standards.
+              </h6>
+              <br />
+              <h6>
+                Despite our best efforts to ensure accessibility of this course,
+                there may be some limitations due to the content within this
+                course, and the technical aspect of how we have to reference
+                activities and examples for students.
+              </h6>
+              <br />
+              <h6>
+                Due to these limitations, we encourage you to use the following
+                solutions below for additional assistance which will allow us
+                the ability to provide you with appropriate accommodations.
+              </h6>
+              <br />
+              <h5>Accessibility Specialist / Support</h5>
+              <br />
+              <h6>Phone: +1 (855) 800-8240</h6>
+              <h6>Email: <a href="">accessibility@quickstart.com</a></h6>
+              <h6>Hours of Operation: Mon-Fri 9am to 6pm Central Time</h6>
+              <br />
+              <div class="btn-playerlms">
+                <button class="btn">More About Accessibility</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.plyr.io/3.6.8/plyr.js"></script>
+
+    <script src="script.js"></script>
+    <script>
+      AOS.init({
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 120, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 3000, // values from 0 to 3000, with step 50ms
+        easing: "ease", // default easing for AOS animations
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const controls = [
+          "play-large", // The large play button in the center
+          "restart", // Restart playback
+          "rewind", // Rewind by the seek time (default 10 seconds)
+          "play", // Play/pause playback
+          "fast-forward", // Fast forward by the seek time (default 10 seconds)
+          "progress", // The progress bar and scrubber for playback and buffering
+          "current-time", // The current time of playback
+          "duration", // The full duration of the media
+          "mute", // Toggle mute
+          "volume", // Volume control
+          "captions", // Toggle captions
+          "settings", // Settings menu
+          "pip", // Picture-in-picture (currently Safari only)
+          "airplay", // Airplay (currently Safari only)
+          "fullscreen", // Toggle fullscreen
+        ];
+
+        const player = Plyr.setup(".js-player", {
+          controls,
+        });
+      });
+    </script>
+  </body>
+</html>

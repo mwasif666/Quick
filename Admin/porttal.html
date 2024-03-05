@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font awesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="Dashboard.css" />
+  </head>
+  <body>
+    <section class="login">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row login-card">
+            <div class="card">
+              <div class="img">
+                <img src="./quickstart-logo-new-theme.png" />
+              </div>
+              <form>
+                <div class="input-fields">
+                  <div class="input-field1">
+                    <input type="email" placeholder="E-Mail" required />
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <div class="input-field2">
+                    <input type="password" placeholder="Password" required />
+                    <i class="fa-solid fa-lock"></i>
+                  </div>
+                </div>
+                <button class="btn">Login</button>
+              </form>
+              <div class="check-box d-flex">
+                <input type="checkbox" name="" id="" />
+                <p>I agree with the <a href="">Terms And Conditions.</a></p>
+              </div>
+              <a href="#" class="forget">Forgot Your Password?</a>
+              <p>
+                New to QuickStart?
+                <a href="#" class="register">Register Here</a>
+              </p>
+              <hr />
+              <h5 class="text-center login-text">OR LOGIN WITH</h5>
+              <ul class="socials d-flex gap-4">
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    data-name="Ebene 1"
+                    viewBox="0 0 1024 1024"
+                    id="facebook-logo-2019"
+                  >
+                    <path
+                      fill="#1877f2"
+                      d="M1024,512C1024,229.23016,794.76978,0,512,0S0,229.23016,0,512c0,255.554,187.231,467.37012,432,505.77777V660H302V512H432V399.2C432,270.87982,508.43854,200,625.38922,200,681.40765,200,740,210,740,210V336H675.43713C611.83508,336,592,375.46667,592,415.95728V512H734L711.3,660H592v357.77777C836.769,979.37012,1024,767.554,1024,512Z"
+                    ></path>
+                    <path
+                      fill="#fff"
+                      d="M711.3,660,734,512H592V415.95728C592,375.46667,611.83508,336,675.43713,336H740V210s-58.59235-10-114.61078-10C508.43854,200,432,270.87982,432,399.2V512H302V660H432v357.77777a517.39619,517.39619,0,0,0,160,0V660Z"
+                    ></path>
+                  </svg>
+                </li>
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    viewBox="7.025 7.025 497.951 497.95"
+                    id="linkedin"
+                  >
+                    <linearGradient
+                      id="a"
+                      x1="-974.482"
+                      x2="-622.378"
+                      y1="1306.773"
+                      y2="1658.877"
+                      gradientTransform="translate(1054.43 -1226.825)"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop offset="0" stop-color="#2489be"></stop>
+                      <stop offset="1" stop-color="#0575b3"></stop>
+                    </linearGradient>
+                    <path
+                      fill="url(#a)"
+                      d="M256 7.025C118.494 7.025 7.025 118.494 7.025 256S118.494 504.975 256 504.975 504.976 393.506 504.976 256C504.975 118.494 393.504 7.025 256 7.025zm-66.427 369.343h-54.665V199.761h54.665v176.607zM161.98 176.633c-17.853 0-32.326-14.591-32.326-32.587 0-17.998 14.475-32.588 32.326-32.588s32.324 14.59 32.324 32.588c.001 17.997-14.472 32.587-32.324 32.587zm232.45 199.735h-54.4v-92.704c0-25.426-9.658-39.619-29.763-39.619-21.881 0-33.312 14.782-33.312 39.619v92.704h-52.43V199.761h52.43v23.786s15.771-29.173 53.219-29.173c37.449 0 64.257 22.866 64.257 70.169l-.001 111.825z"
+                    ></path>
+                  </svg>
+                </li>
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    preserveAspectRatio="xMidYMid"
+                    viewBox="0 0 256 262"
+                    id="google"
+                  >
+                    <path
+                      fill="#4285F4"
+                      d="M255.878 133.451c0-10.734-.871-18.567-2.756-26.69H130.55v48.448h71.947c-1.45 12.04-9.283 30.172-26.69 42.356l-.244 1.622 38.755 30.023 2.685.268c24.659-22.774 38.875-56.282 38.875-96.027"
+                    ></path>
+                    <path
+                      fill="#34A853"
+                      d="M130.55 261.1c35.248 0 64.839-11.605 86.453-31.622l-41.196-31.913c-11.024 7.688-25.82 13.055-45.257 13.055-34.523 0-63.824-22.773-74.269-54.25l-1.531.13-40.298 31.187-.527 1.465C35.393 231.798 79.49 261.1 130.55 261.1"
+                    ></path>
+                    <path
+                      fill="#FBBC05"
+                      d="M56.281 156.37c-2.756-8.123-4.351-16.827-4.351-25.82 0-8.994 1.595-17.697 4.206-25.82l-.073-1.73L15.26 71.312l-1.335.635C5.077 89.644 0 109.517 0 130.55s5.077 40.905 13.925 58.602l42.356-32.782"
+                    ></path>
+                    <path
+                      fill="#EB4335"
+                      d="M130.55 50.479c24.514 0 41.05 10.589 50.479 19.438l36.844-35.974C195.245 12.91 165.798 0 130.55 0 79.49 0 35.393 29.301 13.925 71.947l42.211 32.783c10.59-31.477 39.891-54.251 74.414-54.251"
+                    ></path>
+                  </svg>
+                </li>
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    id="microsoft"
+                    width="30"
+                    height="30"
+                  >
+                    <path
+                      fill="#4CAF50"
+                      d="M8.5 7.5H16v-7a.5.5 0 0 0-.5-.5h-7v7.5z"
+                    ></path>
+                    <path
+                      fill="#F44336"
+                      d="M7.5 7.5V0h-7a.5.5 0 0 0-.5.5v7h7.5z"
+                    ></path>
+                    <path
+                      fill="#2196F3"
+                      d="M7.5 8.5H0v7a.5.5 0 0 0 .5.5h7V8.5z"
+                    ></path>
+                    <path
+                      fill="#FFC107"
+                      d="M8.5 8.5V16h7a.5.5 0 0 0 .5-.5v-7H8.5z"
+                    ></path>
+                  </svg>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- UIkit CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/css/uikit.min.css"
+    />
+    <!-- UIkit JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit-icons.min.js"></script>
+    <!-- cropzee.js -->
+    <script
+      src="https://cdn.jsdelivr.net/gh/BossBele/cropzee@v2.0/dist/cropzee.js"
+      defer
+    ></script>
+    <!-- google code-prettify -->
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/google/code-prettify@master/styles/sunburst.css"
+    />
+    <!-- fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Reenie+Beanie"
+    />
+    <!-- jQuery throttle-debounce -->
+    <script
+      src="https://cdn.jsdelivr.net/gh/cowboy/jquery-throttle-debounce/jquery.ba-throttle-debounce.js"
+      defer
+    ></script>
+    <!-- sanitize.css -->
+    <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Font awesome Pro -->
+    <link
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- Side bar -->
+    <link
+      href="https://www.jqueryscript.net/css/jquerysctipttop.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Google icon -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0"
+    />
+
+    <!-- Bootstrap -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <!-- Table -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.datatables.net/buttons/1.5.6/css/buttons.dataTables.min.css"
+    />
+
+    <link rel="stylesheet" href="./Dashboard.css" />
+  </head>
+
+  <body>
+    <section class="dasboard-home bg-blue">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3 p-0">
+            <div class="img-dasboard">
+              <img
+                src="./Images/quickstart-logo-white-1.webp"
+                class="logo-dashboard"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="col-md-9 p-0">
+            <nav class="navbar-bell d-flex justify-content-end">
+              <i class="fa-solid fa-bell"></i>
+              <div
+                class="menu-btn fas fa-bars"
+                tabindex="0"
+                title="Open Menu"
+                id="menu-button"
+              ></div>
+            </nav>
+
+            <div class="menu close">
+              <ul class="menu-ul">
+                <li><a href="#">Learn</a></li>
+                <li class="close">
+                  <span>Insights</span>
+                  <ul>
+                    <li><a href="">Learner Insights</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Create Author</a></li>
+                <li><a href="#">Profile</a></li>
+                <li class="close">
+                  <span>Settings</span>
+                  <ul>
+                    <li><a href="./Addressbook.html">Address Book</a></li>
+                    <li><a href="./course_review.html">Course Review</a></li>
+                    <li><a href="./Order.html">Orders</a></li>
+                    <li><a href="./Emailmarketing.html">Email Marketing</a></li>
+                    <li><a href="./subcription.html">Subscription</a></li>
+                    <li><a href="./cardsave.html">Saved Credits Cards</a></li>
+                  </ul>
+                </li>
+                <li class="close">
+                  <span>Support</span>
+                  <ul>
+                    <li>
+                      <a id="myAccountManager" href="#">My Account Manager</a>
+                    </li>
+                    <li><a target="_blank" href="">Contact Us</a></li>
+                  </ul>
+                </li>
+                <li><a title="Logout Menu" href="">Logout</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="page-titless">
+      <div class="container">
+        <div class="row py-2">
+          <div class="col-md-9">
+            <div class="title-wrap d-flex align-items-center">
+              <div class="col-md-2">
+                <div class="uk-container">
+                  <div class="image-editor p-0 m-0">
+                    <label
+                      for="input"
+                      class="image-previewer"
+                      data-cropzee="input"
+                      ><img src="./image/avatar-icon.png" alt="" />
+                      <input id="input" type="file" accept="image/*" />
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="content-insight">
+                  <h1>
+                    <span class="base" data-ui-id="page-title-wrapper"
+                      >Add New Address</span
+                    >
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="my-5">
+      <div class="container-fluid">
+        <div class="container">
+          <div
+            class="row px-5 py-3"
+            style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px"
+          >
+            <form class="row g-3 needs-validation" novalidate>
+              <div class="col-md-6 position-relative">
+                <label for="validationTooltip01" class="form-label"
+                  >First name <span class="tag-mul">*</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationTooltip01"
+                  required
+                />
+              </div>
+              <div class="col-md-6 position-relative">
+                <label for="validationTooltip02" class="form-label"
+                  >Last name <span class="tag-mul">*</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationTooltip02"
+                  required
+                />
+              </div>
+              <div class="col-md-6 position-relative">
+                <label for="validationTooltip01" class="form-label"
+                  >Company</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationTooltip01"
+                  required
+                />
+              </div>
+              <div class="col-md-6 position-relative">
+                <label for="validationTooltip02" class="form-label"
+                  >Phone Number <span class="tag-mul">*</span></label
+                >
+                <input
+                  type="number"
+                  class="form-control"
+                  id="validationTooltip02"
+                  required
+                />
+              </div>
+              <div class="col-md-12 position-relative">
+                <label for="validationTooltip02" class="form-label"
+                  >Street Address <span class="tag-mul">*</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationTooltip02"
+                  required
+                />
+              </div>
+              <div class="col-md-4 position-relative">
+                <label for="validationTooltip02" class="form-label"
+                  >Fax <span class="tag-mul">*</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationTooltip02"
+                  required
+                />
+              </div>
+              <div class="col-md-4 position-relative">
+                <label for="validationTooltip02" class="form-label"
+                  >City <span class="tag-mul">*</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationTooltip02"
+                  required
+                />
+              </div>
+              <div class="col-md-4 position-relative">
+                <label for="validationTooltip02" class="form-label"
+                  >State/Province <span class="tag-mul">*</span></label
+                >
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Open this select menu</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="col-md-4 position-relative">
+                <label for="validationTooltip02" class="form-label"
+                  >Zip/Postal Code <span class="tag-mul">*</span></label
+                >
+                <input
+                  type="number"
+                  class="form-control"
+                  id="validationTooltip02"
+                  required
+                />
+              </div>
+              <div class="col-md-4 position-relative">
+                <label for="validationTooltip02" class="form-label"
+                  >Country <span class="tag-mul">*</span></label
+                >
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Open this select menu</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  style="border-color: black"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  <h6>Use as my default shipping address</h6>
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  style="border-color: black"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  <h6>Use as my default billing address</h6>
+                </label>
+              </div>
+
+              <div class="col-12 d-flex justify-content-end">
+                <button
+                  class="btn btn-primary"
+                  style="background-color: #002d4a; color: white; border: none"
+                  type="submit"
+                >
+                  Submit form
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Graph cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+      var chartData = {
+        labels: ["January", "February", "March", "April", "May", "June"],
+        datasets: [
+          {
+            fillColor: "#79D1CF",
+            strokeColor: "#79D1CF",
+            data: [60, 80, 81, 56, 55, 40],
+          },
+        ],
+      };
+
+      var data = {
+        labels: ["Internal", "External"],
+        datasets: [
+          {
+            data: [40, 60],
+            backgroundColor: ["#FF6384", "#36A2EB"],
+            hoverBorderColor: ["#eee", "#eee"],
+          },
+        ],
+      };
+      var piectx = document.getElementById("piechart").getContext("2d");
+      var pieChart = new Chart(piectx, {
+        type: "pie",
+        data: data,
+        options: {
+          showAllTooltips: true,
+          animation: {
+            animateRotate: true,
+            animateScale: true,
+          },
+          elements: {
+            arc: {
+              borderColor: "#fff",
+            },
+          },
+          title: {
+            display: true,
+            text: "Custom Chart Title",
+            fontSize: 18,
+            padding: 20,
+            fontColor: "#999",
+            fontStyle: "Normal",
+            fontFamily: "Montserrat",
+            fullWidth: true,
+          },
+          legend: {
+            display: true,
+            position: "bottom",
+            labels: {
+              boxWidth: 30,
+              fontColor: "#999",
+              fontFamily: "Montserrat",
+              fullWidth: true,
+            },
+          },
+          tooltips: {
+            enabled: false,
+            bodyFontColor: "#efefef",
+            fontStyle: "Normal",
+            bodyFontFamily: "Montserrat",
+            cornerRadius: 2,
+            backgroundColor: "#333",
+            xPadding: 7,
+            yPadding: 7,
+            caretSize: 5,
+            bodySpacing: 10,
+          },
+        },
+      });
+    </script>
+
+    <script>
+      const ctx = document.getElementById("myChart");
+
+      new Chart(ctx, {
+        type: "bar",
+        data: {
+          labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+          datasets: [
+            {
+              label: "# of Votes",
+              data: [12, 19, 3, 5, 2, 3],
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+          },
+        },
+      });
+    </script>
+    <script>
+      const ctx1 = document.getElementById("myChart1");
+
+      new Chart(ctx1, {
+        type: "bar",
+        data: {
+          labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+          datasets: [
+            {
+              label: "# of Votes",
+              data: [12, 19, 3, 5, 2, 3],
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+          },
+        },
+      });
+    </script>
+    <script>
+      const ctx2 = document.getElementById("myChart2");
+
+      new Chart(ctx2, {
+        type: "bar",
+        data: {
+          labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+          datasets: [
+            {
+              label: "# of Votes",
+              data: [12, 19, 3, 5, 2, 3],
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+          },
+        },
+      });
+    </script>
+    <script>
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]'
+      );
+      const tooltipList = [...tooltipTriggerList].map(
+        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+      );
+    </script>
+
+    <!-- Table -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script
+      type="text/javascript"
+      language="javascript"
+      src="https://cdn.datatables.net/buttons/1.5.6/js/dataTables.buttons.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      language="javascript"
+      src="https://cdn.datatables.net/buttons/1.5.6/js/buttons.html5.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      language="javascript"
+      src="https://cdn.datatables.net/buttons/1.5.6/js/buttons.print.min.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+
+    <script src="./script.js"></script>
+    <script src="./jquery_dashboard.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Handle the click event on the menu button
+        $("#menu-button").click(function () {
+          $(".menu").toggleClass("close"); // Toggle 'close' class on menu
+          $(this).toggleClass("fa-bars fa-times"); // Toggle icons
+        });
+
+        $(".menu li.close").click(function () {
+          // Toggle the "close" and "open" classes on the clicked element
+          $(this).toggleClass("close open");
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $("#input").cropzee();
+        $.each($("input[name='enable']"), function () {
+          if ($(this).is(":checked")) {
+            $(this)
+              .closest("div.uk-position-relative")
+              .find("textarea")
+              .removeAttr("disabled");
+          } else {
+            $(this)
+              .closest("div.uk-position-relative")
+              .find("textarea")
+              .attr("disabled", "disabled");
+          }
+        });
+        $("input, select, textarea").on(
+          "keyup change",
+          $.debounce(300, function () {
+            destroyPlugin($("#input"));
+            $.each($("input[name='enable']"), function () {
+              if ($(this).is(":checked")) {
+                $(this)
+                  .closest("div.uk-position-relative")
+                  .find("textarea")
+                  .removeAttr("disabled");
+              } else {
+                $(this)
+                  .closest("div.uk-position-relative")
+                  .find("textarea")
+                  .attr("disabled", "disabled");
+              }
+            });
+            var aspectRatio = "";
+            $.each($("input[name='aspectRatio']"), function () {
+              aspectRatio += $(this).val();
+            });
+            var maxSize = [];
+            $.each(
+              $("input[name='maxSize'], select[name='maxSize']"),
+              function () {
+                maxSize.push($(this).val());
+              }
+            );
+            var minSize = [];
+            $.each(
+              $("input[name='minSize'], select[name='minSize']"),
+              function () {
+                minSize.push($(this).val());
+              }
+            );
+            var startSize = [];
+            $.each(
+              $("input[name='startSize'], select[name='startSize']"),
+              function () {
+                startSize.push($(this).val());
+              }
+            );
+            var allowedInputs = [];
+            $.each($("input[name='allowedInputs']:checked"), function () {
+              allowedInputs.push($(this).val());
+            });
+            var imageExtension = "";
+            $.each($("input[name='imageExtension']:checked"), function () {
+              imageExtension += $(this).val();
+            });
+            var returnImageMode = "";
+            $.each($("input[name='returnImageMode']:checked"), function () {
+              returnImageMode += $(this).val();
+            });
+            var modalAnimation = "";
+            $.each($("select[name='modalAnimation']"), function () {
+              modalAnimation += $(this).val();
+            });
+            var onCropStart = null;
+            $.each($("textarea[name='onCropStart']"), function () {
+              if (!$(this).is(":disabled")) {
+                onCropStart = $(this).val();
+              }
+            });
+            var onCropMove = null;
+            $.each($("textarea[name='onCropMove']"), function () {
+              if (!$(this).is(":disabled")) {
+                onCropMove = $(this).val();
+              }
+            });
+            var onCropEnd = null;
+            $.each($("textarea[name='onCropEnd']"), function () {
+              if (!$(this).is(":disabled")) {
+                onCropEnd = $(this).val();
+              }
+            });
+            var onInitialize = null;
+            $.each($("textarea[name='onInitialize']"), function () {
+              if (!$(this).is(":disabled")) {
+                onInitialize = $(this).val();
+              }
+            });
+            window.options = {
+              aspectRatio: aspectRatio,
+              maxSize: maxSize,
+              minSize: minSize,
+              startSize: startSize,
+              onCropStart: onCropStart,
+              onCropMove: onCropMove,
+              onCropEnd: onCropEnd,
+              onInitialize: onInitialize,
+              modalAnimation: modalAnimation,
+              allowedInputs: allowedInputs,
+              imageExtension: imageExtension,
+              returnImageMode: returnImageMode,
+            };
+            // alert(JSON.stringify(options));
+            $("#input").cropzee(options);
+          })
+        );
+      });
+      var destroyPlugin = function ($elem, eventNamespace) {
+        var isInstantiated = !!$.data($elem.get(0));
+        if (isInstantiated) {
+          $.removeData($elem.get(0));
+          $elem.off(eventNamespace);
+          $elem.unbind("." + eventNamespace);
+        }
+      };
+    </script>
+  </body>
+</html>

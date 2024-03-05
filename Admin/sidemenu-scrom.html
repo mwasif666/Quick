@@ -1,0 +1,2312 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Sidebar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <!-- Boxiocns CDN Link -->
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="jquery.easyswitch.css" />
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" href="./css/tabing.css" />
+    <link rel="stylesheet" href="Dashboard.css" />
+</head>
+
+<body>
+    <div class="sidebar close">
+        <div class="logo-details">
+            <i>
+                <img id="logo-sidebar" src="./ezgif.com-webp-to-png.png" alt="" />
+            </i>
+            <span class="logo_name">QuickStart</span>
+        </div>
+
+        <div class="menu-nav-link">
+            <ul class="nav nav-tabs" id="myTabs">
+                <li class="nav-item">
+                    <a class="active" data-bs-toggle="tab" href="#tab1">
+                        <i class="fa-solid fa-book"></i>
+                        <span class="link_name">Overview</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="" data-bs-toggle="tab" href="#tab1">Overview</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="" data-bs-toggle="tab" href="#tab2">
+                        <i class="bx bx-book-alt"></i>
+                        <span class="link_name">Content</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="" data-bs-toggle="tab" href="#tab2">Content</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <div class="iocn-link">
+                        <a>
+                            <i class="fa-solid fa-download"></i>
+                            <span class="link_name">Publishers</span>
+                        </a>
+                        <i class="bx bxs-chevron-down arrow"></i>
+                    </div>
+                    <ul class="sub-menu">
+                        <li>
+                            <a class="" data-bs-toggle="tab" href="#tab5pub">Available</a>
+                        </li>
+                        <li>
+                            <a class="" data-bs-toggle="tab" href="#tab6info">Information</a>
+                        </li>
+                        <li>
+                            <a class="" data-bs-toggle="tab" href="#tab7badge">Badge</a>
+                        </li>
+                        <li>
+                            <a class="" data-bs-toggle="tab" href="#tab8publish">Publish Course</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <section class="home-section">
+        <div class="tab-content mt-3">
+            <div class="tab-pane fade show active" id="tab1">
+                <div class="home-content">
+                    <i class="bx bx-menu"></i>
+                    <div class="container-fluid container-content-sidebar">
+                        <div class="row">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item">
+                                        <i class="fa-brands fa-microsoft"></i><a href="#">Dashboard</a>
+                                    </li>
+                                    <li class="breadcrumb-item">
+                                        <i class="fa-solid fa-credit-card"></i><a href="#">Create & Auther</a>
+                                    </li>
+                                    <li class="breadcrumb-item active" aria-current="page">
+                                        New Online Course
+                                    </li>
+                                </ol>
+                            </nav>
+                        </div>
+                        <div class="row">
+                            <h2 style="border-bottom: 1px solid; padding-bottom: 5px">
+                                Course Overview
+                            </h2>
+                            <p>
+                                These are basic questions needed for learners to find you
+                                course with ease. Don't worry, you can always change these
+                                later.
+                            </p>
+                            <form action="">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Enter the title of your
+                                        course.</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="e.g. Learn Linux Fundamentals" />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Enter the title of your
+                                        course.</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1"
+                                        placeholder="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, amet perferendis. Temporibus dolore a, harum exercitationem nulla iure illo molestias."
+                                        rows="3"></textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">In which language will your
+                                        course be
+                                        presented?</label>
+
+                                    <select class="form-select" id="inputGroupSelect01">
+                                        <option selected>English</option>
+                                        <option value="1">Spanish</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">What business unit best
+                                        describes your
+                                        course?</label>
+
+                                    <select class="form-select" id="inputGroupSelect01">
+                                        <option selected>
+                                            Select a technology topic that your course best falls
+                                            into
+                                        </option>
+                                        <option value="1">App Data</option>
+                                        <option value="1">Big Data</option>
+                                        <option value="1">DevOps</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">What category best
+                                        describes the topic of
+                                        your
+                                        course?</label>
+
+                                    <select class="form-select" id="inputGroupSelect01">
+                                        <option selected>DevOps</option>
+                                        <option value="1">App Data</option>
+                                        <option value="1">Big Data</option>
+                                        <option value="1">DevOps</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Enter a few keywords about
+                                        your
+                                        course.</label>
+                                    <input type="text" class="form-control" id="tag-input1" />
+                                </div>
+                                <button type="submit" class="btn submit">Submit</button>
+                                <button class="btn cancel">Cancel</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="tab2">
+                <div class="home-content">
+                    <i class="bx bx-menu"></i>
+                    <div class="container-fluid container-content-sidebar">
+                        <div class="row">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item">
+                                        <i class="fa-brands fa-microsoft"></i><a href="#">Dashboard</a>
+                                    </li>
+                                    <li class="breadcrumb-item">
+                                        <i class="fa-solid fa-credit-card"></i><a href="#">Create & Auther</a>
+                                    </li>
+                                    <li class="breadcrumb-item active" aria-current="page">
+                                        Web Development (2256183-231002-766)
+                                    </li>
+                                </ol>
+                            </nav>
+                        </div>
+                        <h2 style="border-bottom: 1px solid; padding-bottom: 5px">
+                            Web Development
+                        </h2>
+                        <div class="row scrom-modal">
+                            <a data-bs-toggle="modal" data-bs-target="#scrom">
+                                <i class="fa-solid fa-plus"></i>
+                                Import SCORM Package
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="tab5pub">
+                <div class="home-content">
+                    <i class="bx bx-menu"></i>
+                    <div class="container-fluid container-content-sidebar">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">
+                                    <i class="fa-brands fa-microsoft"></i><a href="#">Dashboard</a>
+                                </li>
+                                <li class="breadcrumb-item">
+                                    <i class="fa-solid fa-credit-card"></i><a href="#">Create & Auther</a>
+                                </li>
+                                <li class="breadcrumb-item active" aria-current="page">
+                                    Muhammad Wasif (2256292-231006-780)
+                                </li>
+                            </ol>
+                        </nav>
+                        <h2 style="border-bottom: 1px solid; padding-bottom: 5px">
+                            Course Availability
+                        </h2>
+                        <div class="row">
+                            <form action="">
+                                <div class="sidemenu-accordion2">
+                                    <div class="accordion p-0 sidemenu-accordion" id="accordionExample"
+                                        style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button"
+                                                    style="background-color: #0b3956; color: white" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo2"
+                                                    aria-expanded="true" aria-controls="collapseTwo2">
+                                                    Expiration
+                                                </button>
+                                            </h2>
+                                            <div id="collapseTwo2" class="accordion-collapse collapse show"
+                                                data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <div class="row">
+                                                        <div class="picker-heading">
+                                                            <h6>Does your course expire?</h6>
+                                                        </div>
+                                                        <div class="input-group datepicker datepicker-1 w-50">
+                                                            <input type="text" class="form-control"
+                                                                placeholder="This Is Optional. Leave blank if your course does not expire"
+                                                                data-input aria-describedby="date1" />
+                                                            <div class="input-group-append">
+                                                                <button class="btn btn-secondary" type="button"
+                                                                    id="date1" title="toggle" data-toggle>
+                                                                    <i class="fa-solid fa-calendar-days"></i>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-3">
+                                                        <h6>
+                                                            How long does a student have access to this
+                                                            course? (Days)
+                                                        </h6>
+                                                        <div class="box-unlimited">
+                                                            <input type="text" class="form-control w-50"
+                                                                placeholder="This Is Optional. Leave blank for Unlimited access." />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sidemenu-accordion3">
+                                    <div class="accordion p-0 sidemenu-accordion" id="accordionExample"
+                                        style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button"
+                                                    style="background-color: #0b3956; color: white" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseThree3"
+                                                    aria-expanded="true" aria-controls="collapseThree3">
+                                                    Availability Settings
+                                                </button>
+                                            </h2>
+                                            <div id="collapseThree3" class="accordion-collapse collapse show"
+                                                data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <div class="card yesorno-card mx-md-3">
+                                                        <div class="row">
+                                                            <h6 class="yesorno-heading">
+                                                                Answer yes or no to the following settings
+                                                            </h6>
+                                                        </div>
+                                                        <div class="row">
+                                                            <ul class="d-flex justify-content-between"
+                                                                style="border-bottom: 1px solid lightgray">
+                                                                <li>
+                                                                    <h6 class="yesorno">
+                                                                        Is your course compatible with mobile and
+                                                                        tablet devices? <br />
+                                                                        <span>This means no use of flash or mobile
+                                                                            incompatible interactivity.</span>
+                                                                    </h6>
+                                                                </li>
+                                                                <li class="me-3">
+                                                                    <span class="easyswitch" data-default="1"
+                                                                        data-label-on="Yes" data-label-off="No"></span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="row">
+                                                            <ul class="d-flex justify-content-between"
+                                                                style="border-bottom: 1px solid lightgray">
+                                                                <li>
+                                                                    <h6 class="yesorno">
+                                                                        Can your course be offered for
+                                                                        distribution in our third party channels?
+                                                                        <br />
+                                                                        <span>This can maximize your exposure and
+                                                                            revenue generation.</span>
+                                                                    </h6>
+                                                                </li>
+                                                                <li class="me-3">
+                                                                    <span class="easyswitch" data-default="1"
+                                                                        data-label-on="Yes" data-label-off="No"></span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="row">
+                                                            <ul class="d-flex justify-content-between"
+                                                                style="border-bottom: 1px solid lightgray">
+                                                                <li>
+                                                                    <h6 class="yesorno">
+                                                                        Does your course have any physical
+                                                                        shippable items?<br />
+                                                                        <span>This includes physical course materials
+                                                                            like books and electronics.</span>
+                                                                    </h6>
+                                                                </li>
+                                                                <li class="me-3">
+                                                                    <span class="easyswitch" data-default="1"
+                                                                        data-label-on="Yes" data-label-off="No"></span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="row">
+                                                            <ul class="d-flex justify-content-between"
+                                                                style="border-bottom: 1px solid lightgray">
+                                                                <li>
+                                                                    <h6 class="yesorno">
+                                                                        Can your course be offered as part of a
+                                                                        subscription package? <br />
+                                                                        <span>This will allow your course to be
+                                                                            offered as part of a subscription
+                                                                            containing other courses.</span>
+                                                                    </h6>
+                                                                </li>
+                                                                <li class="me-3">
+                                                                    <span class="easyswitch" data-default="1"
+                                                                        data-label-on="Yes" data-label-off="No"></span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="row">
+                                                            <ul class="yesorno-drop">
+                                                                <h6 class="yesorno2">
+                                                                    Can your course be offered as part of a
+                                                                    subscription package? <br />
+                                                                    <span>This sets the visibility of your course
+                                                                        on Marketplace or Resaler store. Catalog &
+                                                                        Search:Your course will be seen anywhere
+                                                                        within the catalog and categories you
+                                                                        select and is searchable. Search:Your
+                                                                        course will not visible in any of the
+                                                                        categories you have selected. You can only
+                                                                        find it by searching.Catalog:Your course
+                                                                        will be visible in categories you have
+                                                                        selected but will not show up when
+                                                                        searching.</span>
+                                                                </h6>
+                                                                <br />
+                                                                <select class="form-select" style="height: 60px"
+                                                                    aria-label="Default select example">
+                                                                    <option selected>Search</option>
+                                                                    <option value="1">
+                                                                        Not Visible Individually
+                                                                    </option>
+                                                                    <option value="2">Search & Catalog</option>
+                                                                    <option value="3">Catalog</option>
+                                                                </select>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="forms-btns mt-3">
+                                    <button type="button" class="btn" style="background-color: rgb(229, 229, 229)"
+                                        data-bs-dismiss="modal">
+                                        Cancel
+                                    </button>
+                                    <button type="button" class="btn" style="background-color: #0b3956; color: white">
+                                        Save
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="tab6info">
+                <div class="home-content">
+                    <i class="bx bx-menu"></i>
+                    <div class="container-fluid container-content-sidebar">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">
+                                    <i class="fa-brands fa-microsoft"></i><a href="#">Dashboard</a>
+                                </li>
+                                <li class="breadcrumb-item">
+                                    <i class="fa-solid fa-credit-card"></i><a href="#">Create & Auther</a>
+                                </li>
+                                <li class="breadcrumb-item active" aria-current="page">
+                                    Muhammad Wasif (2256292-231006-780)
+                                </li>
+                            </ol>
+                        </nav>
+                        <h2 style="border-bottom: 1px solid; padding-bottom: 5px">
+                            Course Information
+                        </h2>
+                        <p>
+                            Good branding visuals and content around your course is critical
+                            to its success. Use this section to provide detailed information
+                            that will grab the student's attention and aid in the enrollment
+                            of your course.
+                        </p>
+                        <div class="sidemenu-accordion2">
+                            <div class="accordion p-0 sidemenu-accordion" id="accordionExample"
+                                style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" style="background-color: #0b3956; color: white"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapse4"
+                                            aria-expanded="true" aria-controls="collapse4">
+                                            Author / Instructor Information
+                                        </button>
+                                    </h2>
+                                    <div id="collapse4" class="accordion-collapse collapse show"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="row">
+                                                <div class="row mt-3">
+                                                    <h6>Instructor <span class="tag-mul">*</span></h6>
+                                                    <select class="form-select" aria-label="Instructor">
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sidemenu-accordion2 mt-3">
+                            <div class="accordion p-0 sidemenu-accordion" id="accordionExample"
+                                style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" style="background-color: #0b3956; color: white"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapse5"
+                                            aria-expanded="false" aria-controls="collapse5">
+                                            Course Images
+                                        </button>
+                                    </h2>
+                                    <div id="collapse5" class="accordion-collapse collapse show"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="row">
+                                                <h6>Upload a main image for your course</h6>
+                                                <p>
+                                                    Images will be a main anchor on the courses detail
+                                                    page. Image dimensions should be 730 x 730 pixels.
+                                                </p>
+                                                <a class="accordion-img" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModalTogglemodal-img"><i
+                                                        class="fa-solid fa-paperclip"></i>
+                                                    Browse</a>
+                                                <div class="card p-0 course-hint mt-3">
+                                                    <div class="course-hint-content">
+                                                        <div class="course-hint-content-img">
+
+                                                            <img src="./Images/course-cover-img.png" alt="">
+                                                        </div>
+                                                        <div class="course-hint-content-items">
+                                                            <p> Your image will be used like the example to the left.
+                                                                Drag and drop an image to upload
+                                                                or click the Browse button ( <i
+                                                                    class="fa-solid fa-paperclip"></i>). File formats:
+                                                                .jpg,
+                                                                .jpeg, gif, bmp, or .png</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-3">
+                                                <h6>Upload a thumbnail image for your course</h6>
+                                                <p>
+                                                    Thumbnail images will be used as a small preview throughout the
+                                                    marketplace. Image dimensions
+                                                    should be 86 x 86 pixels.
+                                                    460 x 289 pixels.
+                                                </p>
+                                                <a class="accordion-img" data-bs-toggle="modal"
+                                                    data-bs-target="#modal-thumb"><i class="fa-solid fa-paperclip"></i>
+                                                    Browse</a>
+                                                <div class="card p-0 course-hint mt-3">
+                                                    <div class="course-hint-content">
+                                                        <div class="course-hint-content-img">
+
+                                                            <img src="./Images/thumbnail-img.png" alt="">
+                                                        </div>
+                                                        <div class="course-hint-content-items">
+                                                            <p> Your image will be used like the example to the left.
+                                                                Drag and drop an image to upload
+                                                                or click the Browse button ( <i
+                                                                    class="fa-solid fa-paperclip"></i>). File formats:
+                                                                .jpg,
+                                                                .jpeg, gif, bmp, or .png</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sidemenu-accordion2 mt-3">
+                            <div class="accordion p-0 sidemenu-accordion" id="accordionExample"
+                                style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" style="background-color: #0b3956; color: white"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapse6"
+                                            aria-expanded="true" aria-controls="collapse6">
+                                            Promotional Video
+                                        </button>
+                                    </h2>
+                                    <div id="collapse6" class="accordion-collapse collapse show"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="row">
+                                                <h6>Upload a promotional video</h6>
+                                                <p>
+                                                    Learners are more likely to enroll in courses that have well-made
+                                                    promotional videos.
+                                                </p>
+                                                <a class="accordion-img" data-bs-toggle="modal"
+                                                    data-bs-target="#modal-video"><i class="fa-solid fa-paperclip"></i>
+                                                    Browse</a>
+                                                <div class="card p-0 course-hint mt-3">
+                                                    <div class="course-hint-content">
+                                                        <div class="course-hint-content-img">
+
+                                                            <img src="./Images/course-promo-video.png" alt="">
+                                                        </div>
+                                                        <div class="course-hint-content-items">
+                                                            <p> These videos will be seen on the course details page,
+                                                                and can be featured in other marketing initiatives.
+                                                                Drag and drop a video to upload
+                                                                or Click the Browse button ( <i
+                                                                    class="fa-solid fa-paperclip"></i>). File format:
+                                                                mp4
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-3">
+                                                    <h6>Promotional YouTube Video URL</h6>
+                                                    <input type="url" class="form-control"
+                                                        placeholder="Enter Promotional Youtube Video URL.">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sidemenu-accordion2 mt-3">
+                            <div class="accordion p-0 sidemenu-accordion" id="accordionExample"
+                                style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" style="background-color: #0b3956; color: white"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapse7"
+                                            aria-expanded="true" aria-controls="collapse7">
+                                            Pricing
+                                        </button>
+                                    </h2>
+                                    <div id="collapse7" class="accordion-collapse collapse show"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <form action="">
+                                                <div class="row mx-2">
+                                                    <h6>Price</h6>
+                                                    <input type="number" class="form-control" value="1.00">
+                                                </div>
+                                                <div class="row mx-2">
+                                                    <h6>Special price</h6>
+                                                    <input type="number" class="form-control"
+                                                        placeholder="Special price">
+                                                </div>
+                                                <div class="row mt-3 mx-0">
+                                                    <h6>Special price validity from</h6>
+                                                    <div class="input-group datepicker2 datepicker-1 w-100">
+                                                        <input type="text" class="form-control" data-input
+                                                            aria-describedby="date1" />
+                                                        <div class="input-group-append">
+                                                            <button class="btn btn-secondary" type="button" id="date1"
+                                                                title="toggle" data-toggle>
+                                                                <i class="fa-solid fa-calendar-days"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-3 mx-0">
+                                                    <h6>Special price validity end date</h6>
+                                                    <div class="input-group datepicker2 datepicker-1 w-100">
+                                                        <input type="text" class="form-control" data-input
+                                                            aria-describedby="date1" />
+                                                        <div class="input-group-append">
+                                                            <button class="btn btn-secondary" type="button" id="date1"
+                                                                title="toggle" data-toggle>
+                                                                <i class="fa-solid fa-calendar-days"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sidemenu-accordion2 mt-3">
+                            <div class="accordion p-0 sidemenu-accordion" id="accordionExample"
+                                style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" style="background-color: #0b3956; color: white"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapse8"
+                                            aria-expanded="true" aria-controls="collapse8">
+                                            Course Details
+                                        </button>
+                                    </h2>
+                                    <div id="collapse8" class="accordion-collapse collapse show"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <form action="">
+                                                <div class="row">
+                                                    <h6>Duration</h6>
+                                                    <div class="inputs-width">
+                                                        <input type="number" class="form-control " value="56.00">
+                                                        <select class="form-select "
+                                                            aria-label="Default select example">
+                                                            <option value="1">Yes </option>
+                                                            <option value="2">No</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-3">
+                                                    <div class="inputs-special">
+                                                        <h6>Video Transcriptions</h6>
+                                                        <select class="form-select" aria-label="Default select example">
+                                                            <option value="1">Yess</option>
+                                                            <option value="2">No</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-3">
+                                                    <div class="inputs-special">
+                                                        <h6>Spanish Translation</h6>
+                                                        <select class="form-select" aria-label="Default select example">
+                                                            <option value="1">Yess</option>
+                                                            <option value="2">No</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-3">
+                                                    <h6>PDF certificate for your course</h6>
+                                                    <a class="accordion-img" data-bs-toggle="modal"
+                                                        data-bs-target="#modal-certificate"><i
+                                                            class="fa-solid fa-paperclip"></i>
+                                                        Browse</a>
+                                                    <div class="card p-0 course-hint mt-3">
+                                                        <div class="course-hint-content">
+                                                            <div class="course-hint-content-img">
+
+                                                                <img src="./Images/Certificate (1).png" alt="">
+                                                            </div>
+                                                            <div class="course-hint-content-items ms-2">
+                                                                <p>Drag and Drop OR Select a PDF for your course which
+                                                                    will be completion certificate of
+                                                                    your course.
+                                                                    It will be provided to learner once they complete
+                                                                    course.
+                                                                    Click the Browse button (<i
+                                                                        class="fa-solid fa-paperclip"></i> ). File
+                                                                    format: pdf
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-3">
+                                                    <h6>Intended audience</h6>
+                                                    <script
+                                                        src="https://cdn.ckeditor.com/4.8.0/full-all/ckeditor.js"></script>
+                                                    <textarea name="" id="editor9" cols="30" rows="10"></textarea>
+                                                </div>
+                                                <div class="row mt-3">
+                                                    <h6>Prerequisites</h6>
+                                                    <script
+                                                        src="https://cdn.ckeditor.com/4.8.0/full-all/ckeditor.js"></script>
+                                                    <textarea name="" id="editor10" cols="30" rows="10"></textarea>
+                                                </div>
+                                                <div class="row mt-3">
+                                                    <h6>Course Instructions</h6>
+                                                    <script
+                                                        src="https://cdn.ckeditor.com/4.8.0/full-all/ckeditor.js"></script>
+                                                    <textarea name="" id="editor11" cols="30" rows="10"></textarea>
+                                                </div>
+                                                <div class="row mt-3">
+                                                    <h6>Other requirements and end-of-course instructions</h6>
+                                                    <script
+                                                        src="https://cdn.ckeditor.com/4.8.0/full-all/ckeditor.js"></script>
+                                                    <textarea name="" id="editor7" cols="30" rows="10"></textarea>
+                                                </div>
+                                                <div class="row mt-3">
+                                                    <h6>Course Outline</h6>
+                                                    <script
+                                                        src="https://cdn.ckeditor.com/4.8.0/full-all/ckeditor.js"></script>
+                                                    <textarea name="" id="editor8" cols="30" rows="10"></textarea>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn">
+                            <button type="btn" style="background-color: #0b3956; color: #e4eef7;"
+                                class="btn">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="tab7badge">
+                <div class="home-content">
+                    <i class="bx bx-menu"></i>
+                    <div class="container-fluid container-content-sidebar">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">
+                                    <i class="fa-brands fa-microsoft"></i><a href="#">Dashboard</a>
+                                </li>
+                                <li class="breadcrumb-item">
+                                    <i class="fa-solid fa-credit-card"></i><a href="#">Create & Auther</a>
+                                </li>
+                                <li class="breadcrumb-item active" aria-current="page">
+                                    Muhammad Wasif (2256292-231006-780)
+                                </li>
+                            </ol>
+                        </nav>
+                        <h2 style="border-bottom: 1px solid; padding-bottom: 5px">
+                            Muhammad Wasif
+                        </h2>
+<div class="row p-5">
+    <h6>Badge Template Details</h6>
+    <div class="col-md-2 mt-3">
+        <label class="text-center mb-5 image-preview-wrapper" for="file-uploader">
+            <img src="https://via.placeholder.com/300x300/efefef?text=Avatar"
+                alt="image-placeholder" class="img-thumbnail" data-target="image-preview">
+            <div class="spinner-wrapper position-absolute" data-target="spinner">
+                <div class="spinner-border text-secondary" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+        </label>
+    </div>
+    <div class="col-md-10 mt-3">
+        <p>Badge Templates must use square images in PNG format, with dimensions of at least
+            600x600 pixels.</p>
+        <div class="custom-file">
+            <input multiple="multiple" accept="image/*" type="file" class="custom-file-input"
+                data-target="file-uploader" id="file-uploader">
+            <label class="custom-file-label" for="customFile">Upload Image</label>
+        </div>
+    </div>
+</div>
+
+                        <form action="">
+                            <div class="row ps-5">
+                                <div class="col-md-8">
+                                    <div class="row">
+                                        <div class="col-md-3">Badge Name <span class="tag-mul">*</span></div>
+                                        <div class="col-md-9">
+                                            <input type="text" placeholder="Badge Number" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 mt-3">
+                                    <div class="row">
+                                        <div class="col-md-3">Description <span class="tag-mul">*</span></div>
+                                        <div class="col-md-9">
+                                            <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                placeholder="Description" rows="3"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 mt-3">
+                                    <div class="row search-dropdown">
+                                        <div class="col-md-3">Skills <span class="tag-mul">*</span></div>
+                                        <div class="col-md-9">
+                                            <input id="search" type="text" class="form-control w-100"
+                                                placeholder="Skills">
+                                            <ul class="drop"></ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <hr>
+                        <div class="row badge-form">
+                            <h5>Badge Criteria <span class="tag-mul">*</span></h5>
+                            <form method="post" action="">
+                                <div id="formContainer">
+                                    <div class="form">
+                                        <div class="row px-5">
+                                            <div class="col-md-2">
+                                                <h6>Activity 1</h6>
+                                            </div>
+                                            <div class="col-md-6 cards-form-add">
+                                                <div class="card pt-4 px-3">
+                                                    <div class="form-group">
+                                                        <div class="mb-3">
+                                                            <label for="exampleFormControlInput1"
+                                                                class="form-label">Type</label>
+                                                            <select class="form-select"
+                                                                aria-label="Default select example">
+                                                                <option selected>Choose Type:</option>
+                                                                <option value="1">One</option>
+                                                                <option value="2">Two</option>
+                                                                <option value="3">Three</option>
+                                                            </select>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="mb-3">
+                                                            <label for="exampleFormControlInput1"
+                                                                class="form-label">Description</label>
+                                                            <textarea class="form-control" name="textarea[]" rows="3"
+                                                                placeholder="Textarea"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="mb-3">
+                                                            <label for="exampleFormControlInput1" class="form-label">URL
+                                                                to Activity</label>
+                                                            <input type="url" placeholder="https://"
+                                                                class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group d-flex justify-content-end">
+                                                        <button type="button" class="btn btn-danger delete-button"
+                                                            onclick="deleteForm(this)"><i
+                                                                class="fa-solid fa-trash"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn add-activity-form" onclick="addForm()">Add
+                                    Activity</button>
+                            </form>
+                        </div>
+                        <hr>
+
+                        <form action="">
+                            <div class="row mt-3 px-5">
+                                <div class="col-md-3">
+                                    <h5>Attributes <br>
+                                        (optional)</h5>
+                                </div>
+                                <div class="col-md-9">
+                                    <p>Select attributes to provide more details about this badge.</p>
+                                </div>
+                            </div>
+                            <div class="row ps-5 mt-3">
+                                <div class="col-md-8">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <h6>Type</h6>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>Open this select menu</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 mt-3">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <h6>Level</h6>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>Open this select menu</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 mt-3">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <h6>Time</h6>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>Open this select menu</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 mt-3">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <h6>Cost</h6>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>Open this select menu</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+                        <hr>
+
+                        <form action="">
+                            <div class="row mt-3 px-5">
+                                <h5>Setting</h5>
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <h6>Template Visibility</h6>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <p>Badge Templates marked Public will be displayed on your organization page.
+                                        </p>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="flexRadioDefault1">
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                Public
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="flexRadioDefault2" checked>
+                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                Private
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <h6>Add to Collections</h6>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <p>Add this template to any of your existing badge template collections.</p>
+                                        <div class="row search-dropdown">
+                                            <input id="search2" type="text" class="form-control w-100" placeholder="">
+                                            <ul class="drop"></ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <h6>Duplicates</h6>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <p>Allow earners to receive multiple badges from this template</p>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault1"
+                                                id="flexRadioDefault3">
+                                            <label class="form-check-label" for="flexRadioDefault3">
+                                                Yes
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault1"
+                                                id="flexRadioDefault4" checked>
+                                            <label class="form-check-label" for="flexRadioDefault4">
+                                                No
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="btn">
+                        <button type="btn" style="background-color: #0b3956; color: #e4eef7;" class="btn">Save</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="tab8publish">
+                <div class="home-content">
+                    <i class="bx bx-menu"></i>
+                    <div class="container-fluid container-content-sidebar">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">
+                                    <i class="fa-brands fa-microsoft"></i><a href="#">Dashboard</a>
+                                </li>
+                                <li class="breadcrumb-item">
+                                    <i class="fa-solid fa-credit-card"></i><a href="#">Create & Auther</a>
+                                </li>
+                                <li class="breadcrumb-item active" aria-current="page">
+                                    Muhammad Wasif (2256292-231006-780)
+                                </li>
+                            </ol>
+                        </nav>
+                        <h2 style="border-bottom: 1px solid; padding-bottom: 5px">
+                            Publish Course
+                        </h2>
+                        <p>Work done on a course prior to publishing it will only be seen in authoring mode. To make a
+                            course, or
+                            updates on a
+                            course, available to learners, you must publish it.</p>
+
+                        <div class="row">
+                            <div class="sidemenu-accordion2">
+                                <div class="accordion p-0 sidemenu-accordion" id="accordionExample"
+                                    style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button"
+                                                style="background-color: #0b3956; color: white" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapse9"
+                                                aria-expanded="true" aria-controls="collapse9">
+                                                Publishing Criteria
+                                            </button>
+                                        </h2>
+                                        <div id="collapse9" class="accordion-collapse collapse show"
+                                            data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <p>Publishing criteria are derived from Settings & Availability pages.
+                                                    If they are displaying
+                                                    incorrectly, please review
+                                                    and modify your selections. requirements. If the red warning icon
+                                                    displays, please review and
+                                                    modify your settings for
+                                                    that item.</p>
+                                                <ul class="publish-criteria">
+                                                    <li class="publish-criteria-list">
+                                                        <ul class="publish-criteria2">
+                                                            <li>Course has at least 1 lesson folder</li>
+                                                            <li><i class="fa-solid fa-circle-check"></i></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="publish-criteria-list">
+                                                        <ul class="publish-criteria2">
+                                                            <li>Each lesson folder has at least 1 slider</li>
+                                                            <li><i class="fa-solid fa-circle-xmark"></i></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="publish-criteria-list">
+                                                        <ul class="publish-criteria2">
+                                                            <li>Agreement text is provided.</li>
+                                                            <li><i class="fa-solid fa-circle-check"></i></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <form action="">
+                                <div class="sidemenu-accordion2 mt-3">
+                                    <div class="accordion p-0 sidemenu-accordion" id="accordionExample"
+                                        style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button"
+                                                    style="background-color: #0b3956; color: white" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapse10"
+                                                    aria-expanded="false" aria-controls="collapse10">
+                                                    Publishing Settings
+                                                </button>
+                                            </h2>
+                                            <div id="collapse10" class="accordion-collapse collapse show"
+                                                data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <form action="">
+                                                        <div class="row">
+                                                            <p>Release/Update Notes <span class="tag-mul">*</span></p>
+                                                            <textarea class="form-control"
+                                                                id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                            <ul class="course-publish-list mt-3">
+                                                                <li><input class="form-check-input" type="checkbox"
+                                                                        value="" id="flexCheckDefault"> Show
+                                                                    Release notes to Users</li>
+                                                                <li>If your course successfully meets the publishing
+                                                                    criteria, you can choose to publish
+                                                                    /
+                                                                    republish your course.</li>
+                                                                <li><strong>Publish To Store:</strong> Directly
+                                                                    publishes your course onto the
+                                                                    MarketPlace
+                                                                    or Branded Resaler Site to offer for others to
+                                                                    take or enroll in.</li>
+                                                                <li><strong>Publish To Manager Mode:</strong> If you are
+                                                                    a manager, this directly
+                                                                    publishes your courses to assign and enroll students
+                                                                    into
+                                                                    directly through your manager mode.</li>
+                                                            </ul>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="btn publish-mode">
+                                <button class="btn">Publish to Store</button>
+                                <button class="btn">Publish to Manager Mode</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- IMport scrum Modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="scrom" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="scromLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="scromLabel">Upload SCORM 1.2 and SCORM 2004 files only.</h1>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <h6>File Path <span>*</span></h6>
+                        </div>
+                        <div class="col-md-8">
+                            <input type="file" id="uploader1" class="form-control d-none">
+                            <label for="uploader1" class="btn uploader-btn-scrom"><i class="fa-solid fa-paperclip"></i>
+                                Select
+                                File</label>
+                            <button class="btn btn-success upload-button" data-uploader="uploader1">Upload</button>
+                            <div id="progress1" class="progress mt-2" style="display: none;">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                    style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Image Cover then Modal -->
+    <div class="modal fade" id="exampleModalTogglemodal-img" aria-hidden="true"
+        aria-labelledby="exampleModalToggleLabelmodal-img" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title fs-5 d-flex gap-2 align-items-center" id="staticBackdropLabel">
+                        <i class="fa-solid fa-file-arrow-up"></i>
+                        <h5 class="pt-2">Course Cover Image</h5>
+                    </div>
+                </div>
+                <div class="modal-body d-flex justify-content-center gap-3">
+                    <div class="btn-support-moda">
+                        <div class="accordion-img drop-zone" onclick="document.getElementById('imageInput').click()">
+                            <span class="drop-zone__prompt">Drop file here or click to upload</span>
+                            <input type="file" id="imageInput" style="display: none"
+                                accept="jpg,.jpeg,.gif,.bmp,.png" />
+
+                            <!-- <a class="accordion-img" onclick="document.getElementById('imageInput').click()">
+                  <i class="fa-solid fa-paperclip"></i>
+                  Browse
+                </a> -->
+                        </div>
+                    </div>
+                    <div class="btn-support-moda">
+                        <div class="drop-zone2 d-flex" data-bs-target="#find-thumb" data-bs-toggle="modal">
+                            <div class="icons-svgm-auto">
+                                <img src="./Images/magnifying-glass.png" alt="" />
+                            </div>
+                            <div class="content-para">
+                                <p id="para1">Find</p>
+                                <p id="para2">
+                                    Click here to find support material and attach to lesson.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" style="background-color: rgb(229, 229, 229)"
+                        data-bs-dismiss="modal">
+                        Cancel
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="imageModal" aria-hidden="true" aria-labelledby="imageModalLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imageModalLabel">Upload and Attach Image to Course</h5>
+                </div>
+                <div class="modal-body px-5" id="selectedImage">
+                    <div class="row">
+                        <h6>Asset Name <span class="tag-mul">*</span></h6>
+                        <input type="text" placeholder="Asset Name" class="form-control">
+                    </div>
+                    <div class="row mt-3">
+                        <h6>Keywords</h6>
+                        <input type="text" class="form-control" id="tag-input3" placeholder="Enter Keywords" />
+                    </div>
+                    <div class="row mt-3">
+                        <h6>Description</h6>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+
+                    </div>
+                    <!-- <img id="selectedImage" src="#" alt="Selected Image" style="max-width: 100%" /> -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" style="background-color: rgb(229, 229, 229)"
+                        data-bs-dismiss="modal">
+                        Cancel
+                    </button>
+                    <button type="button" class="btn" style="background-color: #0b3956; color: white">
+                        Save
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="find-img" aria-hidden="true" aria-labelledby="find-img" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title fs-5 d-flex gap-2 align-items-center" id="find-img">
+                        <i class="fa-solid fa-file-arrow-up"></i>
+                        <h5 class="pt-2">Find and Attach Cover Image to Course</h5>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="search-bar-table-double-modal d-flex justify-content-end py-3">
+                        <form class="d-flex w-50" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                            <button class="btn btn-search-bar-table-double-modal" style="width: 100px" type="submit">
+                                <i class="fa-solid fa-magnifying-glass"></i> Find
+                            </button>
+                        </form>
+                    </div>
+
+                    <table class="table table-hover table-bordered">
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Asset Name</th>
+                                <th scope="col">Type</th>
+                                <th scope="col">Dimension</th>
+                                <th scope="col">Size</th>
+                                <th scope="col">Version</th>
+                                <th scope="col">Description</th>
+                                <th scope="col">Preview</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1" />
+                                </th>
+                                <td>Web Development</td>
+                                <td>Image</td>
+                                <td>730 x 730</td>
+                                <td>N/A</td>
+                                <td>1</td>
+                                <td>what is web development</td>
+                                <td class="img-table">
+                                    <img src="./image/profile.jpg" alt="" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1" />
+                                </th>
+                                <td>Web Development</td>
+                                <td>Image</td>
+                                <td>730 x 730</td>
+                                <td>N/A</td>
+                                <td>1</td>
+                                <td>what is web development</td>
+                                <td class="img-table">
+                                    <img src="./image/profile.jpg" alt="" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1" />
+                                </th>
+                                <td>Web Development</td>
+                                <td>Image</td>
+                                <td>730 x 730</td>
+                                <td>N/A</td>
+                                <td>1</td>
+                                <td>what is web development</td>
+                                <td class="img-table">
+                                    <img src="./image/profile.jpg" alt="" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn" style="background-color: rgb(229, 229, 229)"
+                        data-bs-target=" #exampleModalToggleadd" data-bs-toggle="modal">
+                        Back
+                    </button>
+                    <button type="button" class="btn" style="background-color: rgb(229, 229, 229)"
+                        data-bs-dismiss="modal">
+                        Cancel
+                    </button>
+                    <button type="button" class="btn" style="background-color: #0b3956; color: white">
+                        Save
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Image Thumbnail then Modal -->
+    <div class="modal fade" id="modal-thumb" aria-hidden="true" aria-labelledby="modal-thumb" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title fs-5 d-flex gap-2 align-items-center" id="modal-thumb">
+                        <i class="fa-solid fa-file-arrow-up"></i>
+                        <h5 class="pt-2">Course Thumbnail Image</h5>
+                    </div>
+                </div>
+                <div class="modal-body d-flex justify-content-center gap-3">
+                    <div class="btn-support-moda">
+                        <div class="accordion-img drop-zone"
+                            onclick="document.getElementById('imageInputthumb').click()">
+                            <span class="drop-zone__prompt">Drop file here or click to upload</span>
+                            <input type="file" id="imageInputthumb" style="display: none"
+                                accept="jpg,.jpeg,.gif,.bmp,.png" />
+
+                            <!-- <a class="accordion-img" onclick="document.getElementById('imageInput').click()">
+                  <i class="fa-solid fa-paperclip"></i>
+                  Browse
+                </a> -->
+                        </div>
+                    </div>
+                    <div class="btn-support-moda">
+                        <div class="drop-zone2 d-flex" data-bs-target="#find-thumb" data-bs-toggle="modal">
+                            <div class="icons-svgm-auto">
+                                <img src="./Images/magnifying-glass.png" alt="" />
+                            </div>
+                            <div class="content-para">
+                                <p id="para1">Find</p>
+                                <p id="para2">
+                                    Click here to find support material and attach to lesson.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" style="background-color: rgb(229, 229, 229)"
+                        data-bs-dismiss="modal">
+                        Cancel
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="imageModalthumb" aria-hidden="true" aria-labelledby="imageModalLabelthumb"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imageModalLabelthumb">Upload and Attach Image to Course</h5>
+                </div>
+                <div class="modal-body px-5" id="selectedImage">
+                    <div class="row">
+                        <h6>Asset Name <span class="tag-mul">*</span></h6>
+                        <input type="text" placeholder="Asset Name" class="form-control">
+                    </div>
+                    <div class="row mt-3">
+                        <h6>Keywords</h6>
+                        <input type="text" class="form-control" id="tag-input3" placeholder="Enter Keywords" />
+                    </div>
+                    <div class="row mt-3">
+                        <h6>Description</h6>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+
+                    </div>
+                    <!-- <img id="selectedImage" src="#" alt="Selected Image" style="max-width: 100%" /> -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" style="background-color: rgb(229, 229, 229)"
+                        data-bs-dismiss="modal">
+                        Cancel
+                    </button>
+                    <button type="button" class="btn" style="background-color: #0b3956; color: white">
+                        Save
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="find-thumb" aria-hidden="true" aria-labelledby="find-thumb" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title fs-5 d-flex gap-2 align-items-center" id="find-thumb>
+            <i class=" fa-solid fa-file-arrow-up"></i>
+                        <h5 class="pt-2">Find and Attach Thumbnail Image to Course
+                        </h5>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="search-bar-table-double-modal d-flex justify-content-end py-3">
+                        <form class="d-flex w-50" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                            <button class="btn btn-search-bar-table-double-modal" style="width: 100px" type="submit">
+                                <i class="fa-solid fa-magnifying-glass"></i> Find
+                            </button>
+                        </form>
+                    </div>
+
+                    <table class="table table-hover table-bordered">
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Asset Name</th>
+                                <th scope="col">Type</th>
+                                <th scope="col">Dimension</th>
+                                <th scope="col">Size</th>
+                                <th scope="col">Version</th>
+                                <th scope="col">Description</th>
+                                <th scope="col">Preview</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1" />
+                                </th>
+                                <td>Web Development</td>
+                                <td>Image</td>
+                                <td>730 x 730</td>
+                                <td>N/A</td>
+                                <td>1</td>
+                                <td>what is web development</td>
+                                <td class="img-table">
+                                    <img src="./image/profile.jpg" alt="" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1" />
+                                </th>
+                                <td>Web Development</td>
+                                <td>Image</td>
+                                <td>730 x 730</td>
+                                <td>N/A</td>
+                                <td>1</td>
+                                <td>what is web development</td>
+                                <td class="img-table">
+                                    <img src="./image/profile.jpg" alt="" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1" />
+                                </th>
+                                <td>Web Development</td>
+                                <td>Image</td>
+                                <td>730 x 730</td>
+                                <td>N/A</td>
+                                <td>1</td>
+                                <td>what is web development</td>
+                                <td class="img-table">
+                                    <img src="./image/profile.jpg" alt="" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn" style="background-color: rgb(229, 229, 229)"
+                        data-bs-target=" #exampleModalToggleadd" data-bs-toggle="modal">
+                        Back
+                    </button>
+                    <button type="button" class="btn" style="background-color: rgb(229, 229, 229)"
+                        data-bs-dismiss="modal">
+                        Cancel
+                    </button>
+                    <button type="button" class="btn" style="background-color: #0b3956; color: white">
+                        Save
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video Modal -->
+    <div class="modal fade" id="modal-video" aria-hidden="true" aria-labelledby="modal-video" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title fs-5 d-flex gap-2 align-items-center" id="modal-video">
+                        <i class="fa-solid fa-file-arrow-up"></i>
+                        <h5 class="pt-2">Course Promotional Video</h5>
+                    </div>
+                </div>
+                <div class="modal-body d-flex justify-content-center gap-3">
+                    <div class="btn-support-moda">
+                        <div class="accordion-img drop-zone" onclick="document.getElementById('Inputvideo').click()">
+                            <span class="drop-zone__prompt">Drop file here or click to upload</span>
+                            <input type="file" id="Inputvideo" style="display: none" accept=".mp4" />
+
+                            <!-- <a class="accordion-img" onclick="document.getElementById('imageInput').click()">
+                  <i class="fa-solid fa-paperclip"></i>
+                  Browse
+                </a> -->
+                        </div>
+                    </div>
+                    <div class="btn-support-moda">
+                        <div class="drop-zone2 d-flex" data-bs-target="#find-video" data-bs-toggle="modal">
+                            <div class="icons-svgm-auto">
+                                <img src="./Images/magnifying-glass.png" alt="" />
+                            </div>
+                            <div class="content-para">
+                                <p id="para1">Find</p>
+                                <p id="para2">
+                                    Click here to find support material and attach to lesson.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" style="background-color: rgb(229, 229, 229)"
+                        data-bs-dismiss="modal">
+                        Cancel
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="Modalvideo" aria-hidden="true" aria-labelledby="ModalLabelvideo" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ModalLabelvideo">Upload and Attach Video to Course</h5>
+                </div>
+                <div class="modal-body px-5" id="selectedvideo">
+                    <div class="row">
+                        <h6>Asset Name <span class="tag-mul">*</span></h6>
+                        <input type="text" placeholder="Asset Name" class="form-control">
+                    </div>
+                    <div class="row mt-3">
+                        <h6>Keywords</h6>
+                        <input type="text" class="form-control" id="tag-input4" placeholder="Enter Keywords" />
+                    </div>
+                    <div class="row mt-3">
+                        <h6>Description</h6>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+
+                    </div>
+                    <!-- <img id="selectedImage" src="#" alt="Selected Image" style="max-width: 100%" /> -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" style="background-color: rgb(229, 229, 229)"
+                        data-bs-dismiss="modal">
+                        Cancel
+                    </button>
+                    <button type="button" class="btn" style="background-color: #0b3956; color: white">
+                        Save
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="find-video" aria-hidden="true" aria-labelledby="find-video" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title fs-5 d-flex gap-2 align-items-center" id="find-video">
+                        <i class=" fa-solid fa-file-arrow-up"></i>
+                        <h5 class="pt-2">Find and Attach Promotional Video to Course
+                        </h5>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="search-bar-table-double-modal d-flex justify-content-end py-3">
+                        <form class="d-flex w-50" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                            <button class="btn btn-search-bar-table-double-modal" style="width: 100px" type="submit">
+                                <i class="fa-solid fa-magnifying-glass"></i> Find
+                            </button>
+                        </form>
+                    </div>
+
+                    <table class="table table-hover table-bordered">
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Asset Name</th>
+                                <th scope="col">Type</th>
+                                <th scope="col">Dimension</th>
+                                <th scope="col">Size</th>
+                                <th scope="col">Version</th>
+                                <th scope="col">Description</th>
+                                <th scope="col">Preview</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1" />
+                                </th>
+                                <td>Web Development</td>
+                                <td>Image</td>
+                                <td>730 x 730</td>
+                                <td>N/A</td>
+                                <td>1</td>
+                                <td>what is web development</td>
+                                <td class="img-table">
+                                    <img src="./image/profile.jpg" alt="" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1" />
+                                </th>
+                                <td>Web Development</td>
+                                <td>Image</td>
+                                <td>730 x 730</td>
+                                <td>N/A</td>
+                                <td>1</td>
+                                <td>what is web development</td>
+                                <td class="img-table">
+                                    <img src="./image/profile.jpg" alt="" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1" />
+                                </th>
+                                <td>Web Development</td>
+                                <td>Image</td>
+                                <td>730 x 730</td>
+                                <td>N/A</td>
+                                <td>1</td>
+                                <td>what is web development</td>
+                                <td class="img-table">
+                                    <img src="./image/profile.jpg" alt="" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn" style="background-color: rgb(229, 229, 229)"
+                        data-bs-target=" #exampleModalToggleadd" data-bs-toggle="modal">
+                        Back
+                    </button>
+                    <button type="button" class="btn" style="background-color: rgb(229, 229, 229)"
+                        data-bs-dismiss="modal">
+                        Cancel
+                    </button>
+                    <button type="button" class="btn" style="background-color: #0b3956; color: white">
+                        Save
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Certificate Modal -->
+    <div class="modal fade" id="modal-certificate" aria-hidden="true" aria-labelledby="modal-certificate" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title fs-5 d-flex gap-2 align-items-center" id="modal-certificate">
+                        <i class="fa-solid fa-file-arrow-up"></i>
+                        <h5 class="pt-2">Course Certificates</h5>
+                    </div>
+                </div>
+                <div class="modal-body d-flex justify-content-center gap-3">
+                    <div class="btn-support-moda">
+                        <div class="accordion-img drop-zone"
+                            onclick="document.getElementById('Inputcertificate').click()">
+                            <span class="drop-zone__prompt">Drop file here or click to upload</span>
+                            <input type="file" id="Inputcertificate" style="display: none" accept=".pdf" />
+                        </div>
+                    </div>
+                    <div class="btn-support-moda">
+                        <div class="drop-zone2 d-flex" data-bs-target="#find-certificate" data-bs-toggle="modal">
+                            <div class="icons-svgm-auto">
+                                <img src="./Images/magnifying-glass.png" alt="" />
+                            </div>
+                            <div class="content-para">
+                                <p id="para1">Find</p>
+                                <p id="para2">
+                                    Click here to find support material and attach to lesson.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" style="background-color: rgb(229, 229, 229)"
+                        data-bs-dismiss="modal">
+                        Cancel
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="Modalcertificate" aria-hidden="true" aria-labelledby="ModalLabelcertificate"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ModalLabelcertificate">Upload and Attach Image to Course</h5>
+                </div>
+                <div class="modal-body px-5" id="selectedcertificate">
+                    <div class="row">
+                        <h6>Asset Name <span class="tag-mul">*</span></h6>
+                        <input type="text" placeholder="Asset Name" class="form-control">
+                    </div>
+                    <div class="row mt-3">
+                        <h6>Keywords</h6>
+                        <input type="text" class="form-control" id="tag-input5" placeholder="Enter Keywords" />
+                    </div>
+                    <div class="row mt-3">
+                        <h6>Description</h6>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+
+                    </div>
+                    <!-- <img id="selectedImage" src="#" alt="Selected Image" style="max-width: 100%" /> -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" style="background-color: rgb(229, 229, 229)"
+                        data-bs-dismiss="modal">
+                        Cancel
+                    </button>
+                    <button type="button" class="btn" style="background-color: #0b3956; color: white">
+                        Save
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="find-certificate" aria-hidden="true" aria-labelledby="find-certificate" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title fs-5 d-flex gap-2 align-items-center" id="find-video">
+                        <i class=" fa-solid fa-file-arrow-up"></i>
+                        <h5 class="pt-2">Find and Attach Promotional Video to Course
+                        </h5>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="search-bar-table-double-modal d-flex justify-content-end py-3">
+                        <form class="d-flex w-50" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                            <button class="btn btn-search-bar-table-double-modal" style="width: 100px" type="submit">
+                                <i class="fa-solid fa-magnifying-glass"></i> Find
+                            </button>
+                        </form>
+                    </div>
+
+                    <table class="table table-hover table-bordered">
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Asset Name</th>
+                                <th scope="col">Type</th>
+                                <th scope="col">Dimension</th>
+                                <th scope="col">Size</th>
+                                <th scope="col">Version</th>
+                                <th scope="col">Description</th>
+                                <th scope="col">Preview</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1" />
+                                </th>
+                                <td>Web Development</td>
+                                <td>Image</td>
+                                <td>730 x 730</td>
+                                <td>N/A</td>
+                                <td>1</td>
+                                <td>what is web development</td>
+                                <td class="img-table">
+                                    <img src="./image/profile.jpg" alt="" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1" />
+                                </th>
+                                <td>Web Development</td>
+                                <td>Image</td>
+                                <td>730 x 730</td>
+                                <td>N/A</td>
+                                <td>1</td>
+                                <td>what is web development</td>
+                                <td class="img-table">
+                                    <img src="./image/profile.jpg" alt="" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1" />
+                                </th>
+                                <td>Web Development</td>
+                                <td>Image</td>
+                                <td>730 x 730</td>
+                                <td>N/A</td>
+                                <td>1</td>
+                                <td>what is web development</td>
+                                <td class="img-table">
+                                    <img src="./image/profile.jpg" alt="" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn" style="background-color: rgb(229, 229, 229)"
+                        data-bs-target=" #exampleModalToggleadd" data-bs-toggle="modal">
+                        Back
+                    </button>
+                    <button type="button" class="btn" style="background-color: rgb(229, 229, 229)"
+                        data-bs-dismiss="modal">
+                        Cancel
+                    </button>
+                    <button type="button" class="btn" style="background-color: #0b3956; color: white">
+                        Save
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="https://code.jquery.com/jquery-3.7.0.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="./jquery.easyswitch.js"></script>
+    <script>
+        $(".easyswitch").easyswitch();
+
+        function onSwitch(value, obj) {
+            alert(value);
+        }
+    </script>
+    <script>
+        // Function to handle file input change
+        document
+            .getElementById("imageInput")
+            .addEventListener("change", function () {
+                var selectedFile = this.files[0];
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    // Set the source of the image in the modal
+                    document.getElementById("selectedImage").src = e.target.result;
+                    // Show the modal
+                    $("#imageModal").modal("show");
+                };
+
+                reader.readAsDataURL(selectedFile);
+            });
+    </script>
+    <script>
+        // Function to handle file input change
+        document
+            .getElementById("imageInputthumb")
+            .addEventListener("change", function () {
+                var selectedFile = this.files[0];
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    // Set the source of the image in the modal
+                    document.getElementById("selectedImage").src = e.target.result;
+                    // Show the modal
+                    $("#imageModalthumb").modal("show");
+                };
+
+                reader.readAsDataURL(selectedFile);
+            });
+    </script>
+    <script>
+        // Function to handle file input change
+        document
+            .getElementById("Inputvideo")
+            .addEventListener("change", function () {
+                var selectedFile = this.files[0];
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    // Set the source of the image in the modal
+                    document.getElementById("selectedvideo").src = e.target.result;
+                    // Show the modal
+                    $("#Modalvideo").modal("show");
+                };
+
+                reader.readAsDataURL(selectedFile);
+            });
+    </script>
+    <script>
+        // Function to handle file input change
+        document
+            .getElementById("Inputcertificate")
+            .addEventListener("change", function () {
+                var selectedFile = this.files[0];
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    // Set the source of the image in the modal
+                    document.getElementById("selectedcertificate").src = e.target.result;
+                    // Show the modal
+                    $("#Modalcertificate").modal("show");
+                };
+
+                reader.readAsDataURL(selectedFile);
+            });
+    </script>
+    <script>
+        var formCount = 1;
+
+        function addForm() {
+            formCount++;
+
+            var formContainer = document.getElementById("formContainer");
+
+            var newForm = document.createElement("div");
+            newForm.className = "form";
+            newForm.innerHTML = '<div class="row mt-3">' +
+                '<div class="col-md-2 px-5">' +
+                '<h6>Activity ' + formCount + '</h6>' +
+                '</div>' +
+                '<div class="col-md-8 ms-4">' +
+                '<div class="card pt-4 px-3 cards-form-add2">' +
+                '<div class="form-group">' +
+                '<div class="mb-3">' +
+                '<label for="exampleFormControlInput1" class="form-label">Type</label>' +
+                '<select class="form-select" aria-label="Default select example">' +
+                '<option selected>Choose Type:</option>' +
+                '<option value="1">One</option>' +
+                '<option value="2">Two</option>' +
+                '<option value="3">Three</option>' +
+                '</select>' +
+                '</div>' +
+                '</div>' +
+                '<div class="form-group">' +
+                '<div class="mb-3">' +
+                '<label for="exampleFormControlInput1" class="form-label">Description</label>' +
+                '<textarea class="form-control" name="textarea[]" rows="3" placeholder="Textarea"></textarea>' +
+                '</div>' +
+                '</div>' +
+                '<div class="form-group">' +
+                '<div class="mb-3">' +
+                '<label for="exampleFormControlInput1" class="form-label">URL to Activity</label>' +
+                '<input type="url" placeholder="https://" class="form-control">' +
+                '</div>' +
+                '</div>' +
+                '<div class="form-group d-flex justify-content-end">' +
+                '<button type="button" class="btn btn-danger delete-button" onclick="deleteForm(this)"><i class="fa-solid fa-trash"></i></button>' +
+                '</div>' +
+                '</div>' +
+                '</div>' +
+                '</div>';
+
+            formContainer.appendChild(newForm);
+
+            // Update form numbers
+            updateFormNumbers();
+        }
+
+        function deleteForm(button) {
+            var formContainer = button.closest(".form");
+            formContainer.remove();
+
+            // Update form numbers
+            updateFormNumbers();
+        }
+
+        function updateFormNumbers() {
+            var formContainers = document.querySelectorAll(".form");
+            for (var i = 0; i < formContainers.length; i++) {
+                var activityNumber = i + 1;
+                formContainers[i].querySelector("h6").textContent = "Activity " + activityNumber;
+            }
+        }
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".form-control").change(function () {
+                const fileList = this.files;
+                const fileContainer = $(this).closest("div").find(".file-list");
+                fileContainer.empty();
+
+                $.each(fileList, function (index, file) {
+                    const listItem = $("<div class='file-list-item'></div>").text(file.name);
+                    fileContainer.append(listItem);
+                });
+            });
+
+            $(".upload-button").click(function () {
+                const uploaderId = $(this).data("uploader");
+                const fileInput = $("#" + uploaderId);
+                const fileList = fileInput[0].files;
+
+                if (fileList.length === 0) {
+                    alert("Please select files to upload.");
+                    return;
+                }
+
+                // Simulate file upload with a loading spinner
+                const loadingSpinner = $("<div class='loading-spinner'></div>");
+                const progress = $(this).closest("div").find(".progress");
+                const progressBar = progress.find(".progress-bar");
+                $(this).prop("disabled", true).text("Uploading...");
+                $(this).after(loadingSpinner);
+
+                // Reset the progress bar
+                progressBar.css("width", "0%");
+                progressBar.text("0%");
+
+                setTimeout(function () {
+                    // Simulate successful upload after a delay
+                    loadingSpinner.remove();
+                    fileInput.val(null); // Clear selected files
+                    $(".file-list").empty();
+                    $(".upload-button").prop("disabled", false).text("Upload");
+
+                    // Hide the progress bar after 5 seconds of inactivity
+                    setTimeout(function () {
+                        progress.hide();
+                    }, 5000);
+
+                    alert("Upload successful!");
+                }, 3000); // Adjust the delay as needed
+            });
+
+            // Uploader 1
+            $("#uploader1").change(function () {
+                var file = this.files[0];
+                var progress = $("#progress1");
+
+                if (file) {
+                    var formData = new FormData();
+                    formData.append("file", file);
+
+                    $.ajax({
+                        url: "upload.php", // Replace with your server-side script
+                        type: "POST",
+                        data: formData,
+                        processData: false,
+                        contentType: false,
+                        xhr: function () {
+                            var xhr = new window.XMLHttpRequest();
+                            xhr.upload.addEventListener("progress", function (e) {
+                                if (e.lengthComputable) {
+                                    var percent = (e.loaded / e.total) * 100;
+                                    progress.show();
+                                    progress
+                                        .find(".progress-bar")
+                                        .css("width", percent + "%")
+                                        .text(percent.toFixed(0) + "%");
+                                }
+                            });
+                            return xhr;
+                        },
+                        success: function (response) {
+                            // Handle the response (e.g., show a success message)
+                            console.log(response);
+                        },
+                    });
+                }
+            });
+
+            // Uploader 2 (similar to Uploader 1)
+            $("#uploader2").change(function () {
+                var file = this.files[0];
+                var progress = $("#progress2");
+
+                if (file) {
+                    var formData = new FormData();
+                    formData.append("file", file);
+
+                    $.ajax({
+                        url: "upload.php", // Replace with your server-side script
+                        type: "POST",
+                        data: formData,
+                        processData: false,
+                        contentType: false,
+                        xhr: function () {
+                            var xhr = new window.XMLHttpRequest();
+                            xhr.upload.addEventListener("progress", function (e) {
+                                if (e.lengthComputable) {
+                                    var percent = (e.loaded / e.total) * 100;
+                                    progress.show();
+                                    progress
+                                        .find(".progress-bar")
+                                        .css("width", percent + "%")
+                                        .text(percent.toFixed(0) + "%");
+                                }
+                            });
+                            return xhr;
+                        },
+                        success: function (response) {
+                            // Handle the response (e.g., show a success message)
+                            console.log(response);
+                        },
+                    });
+                }
+            });
+        });
+
+    </script>
+<script>
+    $(document).ready(function() {
+    $("#file-uploader").change(function() {
+        showPreviewImage(this.files[0]);
+    });
+
+    function showPreviewImage(fileObj) {
+        const image = URL.createObjectURL(fileObj);
+        $("img[data-target='image-preview']").attr("src", image);
+    }
+
+    function getArrayBuffer(fileObj) {
+        return new Promise((resolve, reject) => {
+            const reader = new FileReader();
+            reader.onload = function() {
+                resolve(reader.result);
+            };
+            reader.onerror = function() {
+                reject("error occurred in getArrayBuffer");
+            };
+            reader.readAsArrayBuffer(fileObj);
+        });
+    }
+
+    function uploadFileAJAX(arrayBuffer) {
+        return $.ajax({
+            url: "https://jsonplaceholder.typicode.com/posts/",
+            type: "POST",
+            headers: {
+                "version": 1,
+                "content-type": "application/json"
+            },
+            data: JSON.stringify({
+                imageId: 1,
+                icon: Array.from(new Uint8Array(arrayBuffer))
+            }),
+            success: function(data) {
+                console.log(data);
+            },
+            error: function(jqXHR, textStatus, errorThrown) {
+                console.log("Error:", errorThrown);
+            }
+        });
+    }
+
+    function beforeUpload(fileObject) {
+        return new Promise((resolve) => {
+            const validFileTypes = ["image/jpeg", "image/png"];
+            const isValidFileType = validFileTypes.includes(fileObject.type);
+            let errorMessages = [];
+
+            if (!isValidFileType) {
+                errorMessages.push("You can only upload JPG or PNG file!");
+            }
+
+            const isValidFileSize = fileObject.size / 1024 / 1024 < 2;
+            if (!isValidFileSize) {
+                errorMessages.push("Image must be smaller than 2MB!");
+            }
+
+            resolve({
+                isValid: isValidFileType && isValidFileSize,
+                errorMessages: errorMessages.join("\n")
+            });
+        });
+    }
+
+    function setUploading(isUploading) {
+        if (isUploading === true) {
+            $(".spinner-wrapper").addClass("opacity-1");
+        } else {
+            $(".spinner-wrapper").removeClass("opacity-1");
+        }
+    }
+});
+</script>
+    <script>
+        jQuery(function () {
+            initDatePicker();
+            initDatePicker2();
+        });
+        const today = new Date();
+        function initDatePicker() {
+            const fp = jQuery(".datepicker").flatpickr({
+                wrap: true,
+                altInput: true,
+                allowInput: false, // if doesn't need - disable it.
+                altFormat: "F j, Y",
+                dateFormat: "Y-m-d",
+            });
+        }
+        function initDatePicker2() {
+            const fp = jQuery(".datepicker2").flatpickr({
+                wrap: true,
+                altInput: true,
+                allowInput: false, // if doesn't need - disable it.
+                altFormat: "F j, Y",
+                dateFormat: "Y-m-d",
+                defaultDate: today,
+            });
+        }
+    </script>
+
+
+    <script src="Tag.js"></script>
+    <script src="./jquery-stu.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
